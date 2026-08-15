@@ -1,0 +1,36 @@
+{
+  "ticker": "SYS",
+  "train_rows": 1964,
+  "test_rows": 491,
+  "test_period": "2024-08-02 to 2026-07-24",
+  "accuracy": 0.5234,
+  "baseline_accuracy": 0.5153,
+  "precision": 0.5227,
+  "recall": 0.1933,
+  "f1_score": 0.2822,
+  "confusion_matrix": [
+    [
+      211,
+      42
+    ],
+    [
+      192,
+      46
+    ]
+  ],
+  "feature_importance": {
+    "daily_return": 0.1155,
+    "high_low_range": 0.1108,
+    "volume_change": 0.101,
+    "macd_signal": 0.0769,
+    "ma_ratio_5_20": 0.0743,
+    "macd": 0.0717,
+    "volume_ma_10": 0.0697,
+    "volatility_20": 0.0689,
+    "ma_5": 0.0686,
+    "volatility_10": 0.0682,
+    "ma_10": 0.0594,
+    "ma_20": 0.0591,
+    "rsi_14": 0.056
+  }
+}

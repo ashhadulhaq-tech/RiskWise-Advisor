@@ -1,0 +1,61 @@
+2026-08-12 07:36:44 [INFO] psx_ingest: Skipping sheet 'Sheet1' — not a per-ticker data sheet (missing expected columns).
+2026-08-12 07:36:45 [INFO] psx_ingest: [AICL] Ingested 2457 rows (2016-07-04 to 2026-07-27) -> /home/claude/stockapp/data/AICL.csv
+2026-08-12 07:36:45 [INFO] psx_ingest: Skipping ticker 'FFC' (sheet 'FFC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:45 [INFO] psx_ingest: Skipping ticker 'LUCK' (sheet 'LUCK_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:45 [INFO] psx_ingest: Skipping ticker 'MEBL' (sheet 'MEBL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:45 [INFO] psx_ingest: Skipping ticker 'OGDC' (sheet 'OGDC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:45 [INFO] psx_ingest: Skipping ticker 'SYS' (sheet 'SYS_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:45 [INFO] features: [AICL] Features built: 2436 usable rows, 21 columns. Saved to /home/claude/stockapp/data/AICL_features.csv
+2026-08-12 07:36:47 [INFO] model: [AICL] test=2024-08-09 to 2026-07-24 (488d) | acc=48.4% vs baseline=54.7% | precision=0.399 recall=0.276 f1=0.326 | top features: daily_return=0.125, volume_ma_10=0.0922, rsi_14=0.0899, macd_signal=0.0838, high_low_range=0.08
+2026-08-12 07:36:47 [INFO] __main__: [AICL] Daily refresh complete.
+2026-08-12 07:36:47 [INFO] psx_ingest: Skipping sheet 'Sheet1' — not a per-ticker data sheet (missing expected columns).
+2026-08-12 07:36:47 [INFO] psx_ingest: Skipping ticker 'AICL' (sheet 'AICL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:47 [INFO] psx_ingest: [FFC] Ingested 2489 rows (2016-07-04 to 2026-07-27) -> /home/claude/stockapp/data/FFC.csv
+2026-08-12 07:36:48 [INFO] psx_ingest: Skipping ticker 'LUCK' (sheet 'LUCK_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:48 [INFO] psx_ingest: Skipping ticker 'MEBL' (sheet 'MEBL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:48 [INFO] psx_ingest: Skipping ticker 'OGDC' (sheet 'OGDC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:48 [INFO] psx_ingest: Skipping ticker 'SYS' (sheet 'SYS_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:48 [INFO] features: [FFC] Features built: 2468 usable rows, 21 columns. Saved to /home/claude/stockapp/data/FFC_features.csv
+2026-08-12 07:36:50 [INFO] model: [FFC] test=2024-08-01 to 2026-07-24 (494d) | acc=47.8% vs baseline=52.0% | precision=0.473 recall=0.768 f1=0.585 | top features: daily_return=0.0952, ma_ratio_5_20=0.0941, high_low_range=0.0881, macd=0.0875, macd_signal=0.0856
+2026-08-12 07:36:50 [INFO] __main__: [FFC] Daily refresh complete.
+2026-08-12 07:36:50 [INFO] psx_ingest: Skipping sheet 'Sheet1' — not a per-ticker data sheet (missing expected columns).
+2026-08-12 07:36:50 [INFO] psx_ingest: Skipping ticker 'AICL' (sheet 'AICL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:50 [INFO] psx_ingest: Skipping ticker 'FFC' (sheet 'FFC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:50 [INFO] psx_ingest: [LUCK] Ingested 2484 rows (2016-07-04 to 2026-07-27) -> /home/claude/stockapp/data/LUCK.csv
+2026-08-12 07:36:51 [INFO] psx_ingest: Skipping ticker 'MEBL' (sheet 'MEBL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:51 [INFO] psx_ingest: Skipping ticker 'OGDC' (sheet 'OGDC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:51 [INFO] psx_ingest: Skipping ticker 'SYS' (sheet 'SYS_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:51 [INFO] features: [LUCK] Features built: 2463 usable rows, 21 columns. Saved to /home/claude/stockapp/data/LUCK_features.csv
+2026-08-12 07:36:52 [INFO] model: [LUCK] test=2024-07-26 to 2026-07-24 (493d) | acc=46.5% vs baseline=48.7% | precision=0.455 recall=0.221 f1=0.298 | top features: rsi_14=0.1087, ma_ratio_5_20=0.1022, daily_return=0.099, ma_5=0.0802, high_low_range=0.0745
+2026-08-12 07:36:52 [INFO] __main__: [LUCK] Daily refresh complete.
+2026-08-12 07:36:53 [INFO] psx_ingest: Skipping sheet 'Sheet1' — not a per-ticker data sheet (missing expected columns).
+2026-08-12 07:36:53 [INFO] psx_ingest: Skipping ticker 'AICL' (sheet 'AICL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:53 [INFO] psx_ingest: Skipping ticker 'FFC' (sheet 'FFC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:53 [INFO] psx_ingest: Skipping ticker 'LUCK' (sheet 'LUCK_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:53 [INFO] psx_ingest: [MEBL] Ingested 2471 rows (2016-07-04 to 2026-07-27) -> /home/claude/stockapp/data/MEBL.csv
+2026-08-12 07:36:53 [INFO] psx_ingest: Skipping ticker 'OGDC' (sheet 'OGDC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:54 [INFO] psx_ingest: Skipping ticker 'SYS' (sheet 'SYS_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:54 [INFO] features: [MEBL] Features built: 2447 usable rows, 21 columns. Saved to /home/claude/stockapp/data/MEBL_features.csv
+2026-08-12 07:36:55 [INFO] model: [MEBL] test=2024-08-07 to 2026-07-24 (490d) | acc=51.6% vs baseline=49.8% | precision=0.553 recall=0.191 f1=0.284 | top features: daily_return=0.1118, high_low_range=0.0918, volatility_10=0.0807, ma_ratio_5_20=0.0788, rsi_14=0.078
+2026-08-12 07:36:55 [INFO] __main__: [MEBL] Daily refresh complete.
+2026-08-12 07:36:55 [INFO] psx_ingest: Skipping sheet 'Sheet1' — not a per-ticker data sheet (missing expected columns).
+2026-08-12 07:36:55 [INFO] psx_ingest: Skipping ticker 'AICL' (sheet 'AICL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:56 [INFO] psx_ingest: Skipping ticker 'FFC' (sheet 'FFC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:56 [INFO] psx_ingest: Skipping ticker 'LUCK' (sheet 'LUCK_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:56 [INFO] psx_ingest: Skipping ticker 'MEBL' (sheet 'MEBL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:56 [INFO] psx_ingest: [OGDC] Ingested 2489 rows (2016-07-04 to 2026-07-27) -> /home/claude/stockapp/data/OGDC.csv
+2026-08-12 07:36:56 [INFO] psx_ingest: Skipping ticker 'SYS' (sheet 'SYS_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:56 [INFO] features: [OGDC] Features built: 2468 usable rows, 21 columns. Saved to /home/claude/stockapp/data/OGDC_features.csv
+2026-08-12 07:36:58 [INFO] model: [OGDC] test=2024-08-01 to 2026-07-24 (494d) | acc=50.2% vs baseline=49.0% | precision=0.750 recall=0.036 f1=0.068 | top features: volume_change=0.1093, high_low_range=0.0931, macd_signal=0.0875, macd=0.08, rsi_14=0.0777
+2026-08-12 07:36:58 [INFO] __main__: [OGDC] Daily refresh complete.
+2026-08-12 07:36:58 [INFO] psx_ingest: Skipping sheet 'Sheet1' — not a per-ticker data sheet (missing expected columns).
+2026-08-12 07:36:58 [INFO] psx_ingest: Skipping ticker 'AICL' (sheet 'AICL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:58 [INFO] psx_ingest: Skipping ticker 'FFC' (sheet 'FFC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:59 [INFO] psx_ingest: Skipping ticker 'LUCK' (sheet 'LUCK_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:59 [INFO] psx_ingest: Skipping ticker 'MEBL' (sheet 'MEBL_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:59 [INFO] psx_ingest: Skipping ticker 'OGDC' (sheet 'OGDC_01072016_27072026') — not in the configured ticker list.
+2026-08-12 07:36:59 [INFO] psx_ingest: [SYS] Ingested 2476 rows (2016-07-04 to 2026-07-27) -> /home/claude/stockapp/data/SYS.csv
+2026-08-12 07:36:59 [INFO] features: [SYS] Features built: 2455 usable rows, 21 columns. Saved to /home/claude/stockapp/data/SYS_features.csv
+2026-08-12 07:37:00 [INFO] model: [SYS] test=2024-08-02 to 2026-07-24 (491d) | acc=52.3% vs baseline=51.5% | precision=0.523 recall=0.193 f1=0.282 | top features: daily_return=0.1155, high_low_range=0.1108, volume_change=0.101, macd_signal=0.0769, ma_ratio_5_20=0.0743
+2026-08-12 07:37:00 [INFO] __main__: [SYS] Daily refresh complete.
+2026-08-12 07:37:00 [INFO] __main__: Daily refresh summary: 6/6 succeeded.
