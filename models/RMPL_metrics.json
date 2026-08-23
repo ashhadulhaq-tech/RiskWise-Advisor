@@ -1,0 +1,36 @@
+{
+  "ticker": "RMPL",
+  "train_rows": 1195,
+  "test_rows": 299,
+  "test_period": "2025-06-11 to 2026-08-20",
+  "accuracy": 0.5652,
+  "baseline_accuracy": 0.495,
+  "precision": 0.5946,
+  "recall": 0.4371,
+  "f1_score": 0.5038,
+  "confusion_matrix": [
+    [
+      103,
+      45
+    ],
+    [
+      85,
+      66
+    ]
+  ],
+  "feature_importance": {
+    "daily_return": 0.1362,
+    "rsi_14": 0.0864,
+    "high_low_range": 0.0855,
+    "ma_ratio_5_20": 0.0849,
+    "macd": 0.0755,
+    "volatility_20": 0.0738,
+    "ma_5": 0.072,
+    "volatility_10": 0.0707,
+    "macd_signal": 0.0687,
+    "ma_10": 0.068,
+    "volume_ma_10": 0.0646,
+    "ma_20": 0.06,
+    "volume_change": 0.0536
+  }
+}

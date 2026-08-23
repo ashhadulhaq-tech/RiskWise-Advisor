@@ -1,0 +1,36 @@
+{
+  "ticker": "IBFL",
+  "train_rows": 1132,
+  "test_rows": 283,
+  "test_period": "2025-06-05 to 2026-08-20",
+  "accuracy": 0.6396,
+  "baseline_accuracy": 0.7067,
+  "precision": 0.2979,
+  "recall": 0.1687,
+  "f1_score": 0.2154,
+  "confusion_matrix": [
+    [
+      167,
+      33
+    ],
+    [
+      69,
+      14
+    ]
+  ],
+  "feature_importance": {
+    "volatility_10": 0.1242,
+    "volatility_20": 0.1197,
+    "daily_return": 0.0965,
+    "macd": 0.0837,
+    "ma_ratio_5_20": 0.0773,
+    "high_low_range": 0.0755,
+    "macd_signal": 0.0672,
+    "volume_change": 0.0639,
+    "rsi_14": 0.0612,
+    "ma_5": 0.061,
+    "volume_ma_10": 0.0573,
+    "ma_10": 0.0562,
+    "ma_20": 0.0561
+  }
+}

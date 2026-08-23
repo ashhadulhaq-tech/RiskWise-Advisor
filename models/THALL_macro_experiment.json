@@ -1,0 +1,30 @@
+{
+  "ticker": "THALL",
+  "overlap_window": "2026-02-12 to 2026-07-01",
+  "price_only": {
+    "label": "price_only",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.5217,
+    "baseline_accuracy": 0.5109,
+    "precision": 0.5217,
+    "recall": 0.2667,
+    "f1_score": 0.3529,
+    "n_features": 13
+  },
+  "price_plus_macro": {
+    "label": "price_plus_macro",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.5543,
+    "baseline_accuracy": 0.5109,
+    "precision": 0.6111,
+    "recall": 0.2444,
+    "f1_score": 0.3492,
+    "n_features": 29
+  },
+  "accuracy_difference": 0.0326,
+  "interpretation": "Price+macro model scored 3.3 points higher on this ~92-day test period. With a sample this small, this is suggestive, not conclusive \u2014 it could plausibly be noise rather than a real, generalizable effect."
+}

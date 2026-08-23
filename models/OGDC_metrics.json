@@ -1,36 +1,36 @@
 {
   "ticker": "OGDC",
-  "train_rows": 1974,
-  "test_rows": 494,
-  "test_period": "2024-08-01 to 2026-07-24",
-  "accuracy": 0.502,
-  "baseline_accuracy": 0.4899,
-  "precision": 0.75,
-  "recall": 0.0357,
-  "f1_score": 0.0682,
+  "train_rows": 1963,
+  "test_rows": 491,
+  "test_period": "2024-09-02 to 2026-08-20",
+  "accuracy": 0.5071,
+  "baseline_accuracy": 0.4929,
+  "precision": 0.6207,
+  "recall": 0.0723,
+  "f1_score": 0.1295,
   "confusion_matrix": [
     [
-      239,
-      3
+      231,
+      11
     ],
     [
-      243,
-      9
+      231,
+      18
     ]
   ],
   "feature_importance": {
-    "volume_change": 0.1093,
-    "high_low_range": 0.0931,
-    "macd_signal": 0.0875,
-    "macd": 0.08,
-    "rsi_14": 0.0777,
-    "ma_ratio_5_20": 0.076,
-    "volume_ma_10": 0.0754,
-    "ma_5": 0.0732,
-    "daily_return": 0.0707,
-    "volatility_20": 0.0692,
-    "ma_20": 0.0683,
-    "ma_10": 0.0605,
-    "volatility_10": 0.0591
+    "volume_change": 0.1021,
+    "macd_signal": 0.0963,
+    "ma_ratio_5_20": 0.093,
+    "high_low_range": 0.0878,
+    "macd": 0.0823,
+    "volume_ma_10": 0.0742,
+    "ma_5": 0.0739,
+    "rsi_14": 0.0732,
+    "volatility_20": 0.0703,
+    "ma_20": 0.0694,
+    "volatility_10": 0.0649,
+    "daily_return": 0.0564,
+    "ma_10": 0.0561
   }
 }

@@ -1,0 +1,30 @@
+{
+  "ticker": "MEHT",
+  "overlap_window": "2026-02-19 to 2026-07-01",
+  "price_only": {
+    "label": "price_only",
+    "train_rows": 344,
+    "test_rows": 87,
+    "test_period": "2026-02-19 to 2026-07-01",
+    "accuracy": 0.5402,
+    "baseline_accuracy": 0.5517,
+    "precision": 0.4783,
+    "recall": 0.2821,
+    "f1_score": 0.3548,
+    "n_features": 13
+  },
+  "price_plus_macro": {
+    "label": "price_plus_macro",
+    "train_rows": 344,
+    "test_rows": 87,
+    "test_period": "2026-02-19 to 2026-07-01",
+    "accuracy": 0.5172,
+    "baseline_accuracy": 0.5517,
+    "precision": 0.2,
+    "recall": 0.0256,
+    "f1_score": 0.0455,
+    "n_features": 29
+  },
+  "accuracy_difference": -0.023,
+  "interpretation": "Price+macro model scored 2.3 points LOWER than the price-only baseline on this window \u2014 adding these features did not help here, and may have added noise instead."
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "BWCL",
+  "overlap_window": "2026-02-12 to 2026-07-01",
+  "price_only": {
+    "label": "price_only",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.5435,
+    "baseline_accuracy": 0.4457,
+    "precision": 0.8,
+    "recall": 0.2353,
+    "f1_score": 0.3636,
+    "n_features": 13
+  },
+  "price_plus_macro": {
+    "label": "price_plus_macro",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.5326,
+    "baseline_accuracy": 0.4457,
+    "precision": 0.6,
+    "recall": 0.4706,
+    "f1_score": 0.5275,
+    "n_features": 29
+  },
+  "accuracy_difference": -0.0109,
+  "interpretation": "No meaningful difference \u2014 adding macro/commodity data did not measurably change prediction accuracy on this stock, over this window."
+}

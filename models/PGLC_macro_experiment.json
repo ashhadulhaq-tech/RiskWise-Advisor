@@ -1,0 +1,30 @@
+{
+  "ticker": "PGLC",
+  "overlap_window": "2026-02-13 to 2026-07-01",
+  "price_only": {
+    "label": "price_only",
+    "train_rows": 361,
+    "test_rows": 91,
+    "test_period": "2026-02-13 to 2026-07-01",
+    "accuracy": 0.5824,
+    "baseline_accuracy": 0.4725,
+    "precision": 0.5758,
+    "recall": 0.7917,
+    "f1_score": 0.6667,
+    "n_features": 13
+  },
+  "price_plus_macro": {
+    "label": "price_plus_macro",
+    "train_rows": 361,
+    "test_rows": 91,
+    "test_period": "2026-02-13 to 2026-07-01",
+    "accuracy": 0.6264,
+    "baseline_accuracy": 0.4725,
+    "precision": 0.6458,
+    "recall": 0.6458,
+    "f1_score": 0.6458,
+    "n_features": 29
+  },
+  "accuracy_difference": 0.044,
+  "interpretation": "Price+macro model scored 4.4 points higher on this ~91-day test period. With a sample this small, this is suggestive, not conclusive \u2014 it could plausibly be noise rather than a real, generalizable effect."
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "GAL",
+  "overlap_window": "2026-02-12 to 2026-07-01",
+  "price_only": {
+    "label": "price_only",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.4783,
+    "baseline_accuracy": 0.5109,
+    "precision": 0.4737,
+    "recall": 0.6,
+    "f1_score": 0.5294,
+    "n_features": 13
+  },
+  "price_plus_macro": {
+    "label": "price_plus_macro",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.413,
+    "baseline_accuracy": 0.5109,
+    "precision": 0.4262,
+    "recall": 0.5778,
+    "f1_score": 0.4906,
+    "n_features": 29
+  },
+  "accuracy_difference": -0.0653,
+  "interpretation": "Price+macro model scored 6.5 points LOWER than the price-only baseline on this window \u2014 adding these features did not help here, and may have added noise instead."
+}

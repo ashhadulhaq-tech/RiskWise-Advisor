@@ -1,0 +1,36 @@
+{
+  "ticker": "AGP",
+  "train_rows": 1656,
+  "test_rows": 414,
+  "test_period": "2024-12-19 to 2026-08-20",
+  "accuracy": 0.5362,
+  "baseline_accuracy": 0.5169,
+  "precision": 0.6667,
+  "recall": 0.08,
+  "f1_score": 0.1429,
+  "confusion_matrix": [
+    [
+      206,
+      8
+    ],
+    [
+      184,
+      16
+    ]
+  ],
+  "feature_importance": {
+    "macd_signal": 0.1127,
+    "macd": 0.109,
+    "volume_change": 0.0993,
+    "ma_ratio_5_20": 0.0935,
+    "daily_return": 0.0739,
+    "volume_ma_10": 0.0702,
+    "high_low_range": 0.0701,
+    "volatility_20": 0.069,
+    "ma_20": 0.0643,
+    "volatility_10": 0.0633,
+    "rsi_14": 0.0628,
+    "ma_5": 0.0564,
+    "ma_10": 0.0555
+  }
+}

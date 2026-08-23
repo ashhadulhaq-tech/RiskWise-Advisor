@@ -1,0 +1,36 @@
+{
+  "ticker": "GAL",
+  "train_rows": 1962,
+  "test_rows": 491,
+  "test_period": "2024-09-02 to 2026-08-20",
+  "accuracy": 0.5295,
+  "baseline_accuracy": 0.5132,
+  "precision": 0.5833,
+  "recall": 0.1172,
+  "f1_score": 0.1951,
+  "confusion_matrix": [
+    [
+      232,
+      20
+    ],
+    [
+      211,
+      28
+    ]
+  ],
+  "feature_importance": {
+    "daily_return": 0.1654,
+    "volatility_10": 0.1087,
+    "volatility_20": 0.0758,
+    "macd_signal": 0.0751,
+    "volume_change": 0.0724,
+    "volume_ma_10": 0.0717,
+    "ma_ratio_5_20": 0.0695,
+    "ma_10": 0.065,
+    "rsi_14": 0.065,
+    "high_low_range": 0.0633,
+    "ma_5": 0.0608,
+    "ma_20": 0.0562,
+    "macd": 0.0512
+  }
+}

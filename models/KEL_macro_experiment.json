@@ -1,0 +1,30 @@
+{
+  "ticker": "KEL",
+  "overlap_window": "2026-02-12 to 2026-07-01",
+  "price_only": {
+    "label": "price_only",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.4457,
+    "baseline_accuracy": 0.5217,
+    "precision": 0.4,
+    "recall": 0.3182,
+    "f1_score": 0.3544,
+    "n_features": 13
+  },
+  "price_plus_macro": {
+    "label": "price_plus_macro",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.5,
+    "baseline_accuracy": 0.5217,
+    "precision": 0.3333,
+    "recall": 0.0455,
+    "f1_score": 0.08,
+    "n_features": 29
+  },
+  "accuracy_difference": 0.0543,
+  "interpretation": "Price+macro model scored 5.4 points higher on this ~92-day test period. With a sample this small, this is suggestive, not conclusive \u2014 it could plausibly be noise rather than a real, generalizable effect."
+}
