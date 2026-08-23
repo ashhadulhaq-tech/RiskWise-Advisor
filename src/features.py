@@ -24,7 +24,8 @@ import pandas as pd
 import numpy as np
 import os
 
-from config import DATA_DIR, TICKERS, MIN_ROWS_REQUIRED, get_logger
+from config import (DATA_DIR, TICKERS, MIN_ROWS_REQUIRED, get_available_tickers,
+                     raw_parquet_path, features_parquet_path, get_logger)
 
 logger = get_logger(__name__)
 
@@ -75,14 +76,14 @@ def add_technical_indicators(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_features(ticker: str) -> pd.DataFrame:
-    raw_path = os.path.join(DATA_DIR, f"{ticker}.csv")
+    raw_path = raw_parquet_path(ticker)
     if not os.path.exists(raw_path):
         raise FileNotFoundError(
             f"No raw data file for '{ticker}' at {raw_path}. "
-            f"Run data_pipeline.py first to fetch it."
+            f"Run psx_api_fetch.py (or psx_ingest.py for a manual file) first."
         )
 
-    df = pd.read_csv(raw_path)
+    df = pd.read_parquet(raw_path)
     if df.empty:
         raise ValueError(f"[{ticker}] Raw data file is empty.")
 
@@ -99,15 +100,23 @@ def build_features(ticker: str) -> pd.DataFrame:
             f"data too sparse to model reliably."
         )
 
-    out_path = os.path.join(DATA_DIR, f"{ticker}_features.csv")
-    df_clean.to_csv(out_path, index=False)
+    out_path = features_parquet_path(ticker)
+    df_clean.to_parquet(out_path, index=False)
     logger.info(f"[{ticker}] Features built: {df_clean.shape[0]} usable rows, "
                 f"{df_clean.shape[1]} columns. Saved to {out_path}")
     return df_clean
 
 
 if __name__ == "__main__":
-    for t in TICKERS:
+    # Process every raw parquet present in data/, not just the static
+    # TICKERS list — this is what lets a bigger PSX fetch (e.g. all
+    # KSE-100 constituents) flow through automatically.
+    tickers = sorted(
+        f[: -len(".parquet")] for f in os.listdir(DATA_DIR)
+        if f.endswith(".parquet") and not f.endswith("_features.parquet")
+    ) or TICKERS
+
+    for t in tickers:
         try:
             build_features(t)
         except Exception as e:

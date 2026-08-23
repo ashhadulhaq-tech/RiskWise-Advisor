@@ -30,9 +30,14 @@ import pandas as pd
 import numpy as np
 import os
 import json
+import base64
+import hashlib
 
 from config import (DATA_DIR, MODEL_DIR, TICKERS, VOLATILITY_BANDS,
-                     TRADING_DAYS_PER_YEAR, RISK_CATEGORY_ALLOWED_BANDS, get_logger)
+                     TRADING_DAYS_PER_YEAR, RISK_CATEGORY_ALLOWED_BANDS,
+                     RISK_FREE_RATE, PROJECTION_HORIZONS_MONTHS,
+                     TRADING_DAYS_PER_MONTH, TICKER_SECTORS, MARKET_INDEX_TICKER,
+                     features_parquet_path, get_logger)
 
 logger = get_logger(__name__)
 
@@ -103,7 +108,147 @@ QUESTIONNAIRE = [
             ("Excited - volatility means opportunity", 4),
         ],
     },
+    {
+        "id": "q7",
+        "question": "How many people financially depend on you (spouse, children, parents)?",
+        "options": [
+            ("Several - I'm the primary provider", 1),
+            ("A few, but income is shared", 2),
+            ("One or two, with some support", 3),
+            ("None - I only support myself", 4),
+        ],
+    },
+    {
+        "id": "q8",
+        "question": "How much debt or fixed monthly financial obligation do you currently carry?",
+        "options": [
+            ("High - loans/rent take up most of my income", 1),
+            ("Moderate - manageable but noticeable", 2),
+            ("Low - small, easily covered", 3),
+            ("None - I have no significant debt", 4),
+        ],
+    },
+    {
+        "id": "q9",
+        "question": "If you needed this invested money back urgently, how soon might that be?",
+        "options": [
+            ("Possibly within a few months", 1),
+            ("Within a year or two", 2),
+            ("Unlikely for several years", 3),
+            ("I won't need it back - it's long-term capital", 4),
+        ],
+    },
+    {
+        "id": "q10",
+        "question": "How comfortable are you putting a large portion of your money into just one or two stocks, rather than spreading it out?",
+        "options": [
+            ("Not at all - I want to spread risk widely", 1),
+            ("Only a small portion in a few picks", 2),
+            ("Somewhat comfortable with concentration", 3),
+            ("Very comfortable - I'll back my best picks heavily", 4),
+        ],
+    },
+    {
+        "id": "q11",
+        "question": "How do you usually react to news/hype about a stock suddenly surging?",
+        "options": [
+            ("I avoid it - sudden surges make me nervous", 1),
+            ("I watch cautiously before doing anything", 2),
+            ("I'm tempted to get in on the momentum", 3),
+            ("I actively look for these opportunities", 4),
+        ],
+    },
+    {
+        "id": "q12",
+        "question": "Have you experienced a real investment loss before, and how did you handle it?",
+        "options": [
+            ("Never invested, and worried about how I'd react", 1),
+            ("Yes, and it made me significantly more cautious", 2),
+            ("Yes, and I stayed the course without much stress", 3),
+            ("Yes, and I saw it as a normal part of investing", 4),
+        ],
+    },
+    {
+        "id": "q13",
+        "question": "Which would you prefer?",
+        "options": [
+            ("A guaranteed 5% annual return, no risk", 1),
+            ("Likely 8-10%, with occasional small dips", 2),
+            ("Likely 12-15%, with real chance of notable drops", 3),
+            ("Potentially 20%+, accepting large swings either way", 4),
+        ],
+    },
+    {
+        "id": "q14",
+        "question": "How would you describe your understanding of how the stock market works?",
+        "options": [
+            ("Very limited - I'm still learning the basics", 1),
+            ("Basic - I understand prices go up and down", 2),
+            ("Good - I understand risk, return, and diversification", 3),
+            ("Advanced - I actively analyze stocks and market trends", 4),
+        ],
+    },
+    {
+        "id": "q15",
+        "question": "What is your main goal for this investment?",
+        "options": [
+            ("Preserve what I have - avoid losing money", 1),
+            ("Grow savings steadily for a future goal", 2),
+            ("Build wealth over the long run, accepting risk", 3),
+            ("Maximize returns, even if it means high risk", 4),
+        ],
+    },
 ]
+
+
+PROFILE_CODE_PREFIX = "RW1-"  # version tag, so future format changes don't silently misparse old codes
+
+
+def encode_profile_code(answers: dict) -> str:
+    """
+    Turn a completed questionnaire's answers into a short, shareable text
+    code the user can save and paste back in later to skip re-answering —
+    a lightweight stand-in for a real login/database, with no backend
+    required. Not tied to any account; anyone with the code can restore
+    that exact profile, so treat it like a saved setting, not a password.
+    """
+    payload = json.dumps(answers, sort_keys=True, separators=(",", ":"))
+    checksum = hashlib.sha256(payload.encode()).hexdigest()[:4]
+    encoded = base64.urlsafe_b64encode(payload.encode()).decode().rstrip("=")
+    return f"{PROFILE_CODE_PREFIX}{encoded}.{checksum}"
+
+
+def decode_profile_code(code: str) -> dict:
+    """
+    Reverse of encode_profile_code(). Raises ValueError with a clear message
+    on a malformed, corrupted, or mistyped code rather than a raw traceback.
+    """
+    code = code.strip()
+    if not code.startswith(PROFILE_CODE_PREFIX):
+        raise ValueError(f"That doesn't look like a valid profile code "
+                          f"(should start with '{PROFILE_CODE_PREFIX}').")
+
+    body = code[len(PROFILE_CODE_PREFIX):]
+    if "." not in body:
+        raise ValueError("That profile code looks incomplete or corrupted.")
+
+    encoded, _, checksum = body.rpartition(".")
+    try:
+        padded = encoded + "=" * (-len(encoded) % 4)
+        payload = base64.urlsafe_b64decode(padded.encode()).decode()
+        expected_checksum = hashlib.sha256(payload.encode()).hexdigest()[:4]
+        if checksum != expected_checksum:
+            raise ValueError("That profile code appears to have a typo — please check it and try again.")
+        answers = json.loads(payload)
+    except ValueError:
+        raise
+    except Exception:
+        raise ValueError("That profile code could not be read — please check it and try again.")
+
+    if not isinstance(answers, dict):
+        raise ValueError("That profile code doesn't contain a valid set of answers.")
+
+    return answers
 
 
 def score_questionnaire(answers: dict) -> dict:
@@ -185,16 +330,32 @@ def _band_for_volatility(annualized_vol: float) -> str:
 
 def get_market_returns(tickers: list) -> pd.Series:
     """
-    PLACEHOLDER market benchmark: equal-weighted average daily return across
-    all tracked tickers, indexed by date. Real deployments should replace
-    this with an actual index (e.g. KSE-100) once a live data feed exists.
+    Market benchmark returns for beta/CAPM. Prefers the REAL KSE-100 index
+    (config.MARKET_INDEX_TICKER) if its data has been ingested — this is
+    genuine market data, not a proxy. Falls back to an equal-weighted
+    average of the tracked tickers' own returns only if real index data
+    isn't available, clearly logged either way so it's never silently
+    ambiguous which one a given run actually used.
     """
+    index_path = features_parquet_path(MARKET_INDEX_TICKER)
+    if os.path.exists(index_path):
+        try:
+            df = pd.read_parquet(index_path)[["date", "daily_return"]].set_index("date")
+            logger.info(f"Using REAL {MARKET_INDEX_TICKER} index data as the market benchmark.")
+            return df["daily_return"]
+        except Exception as e:
+            logger.warning(f"Found {MARKET_INDEX_TICKER} data but couldn't read it ({e}) — "
+                            f"falling back to the equal-weighted proxy.")
+
+    logger.warning(f"No {MARKET_INDEX_TICKER} index data found — using an equal-weighted "
+                    f"average of tracked tickers as a PROXY market benchmark. Beta/alpha "
+                    f"computed this way are approximations, not real index-relative figures.")
     all_returns = []
     for t in tickers:
-        path = os.path.join(DATA_DIR, f"{t}_features.csv")
+        path = features_parquet_path(t)
         if not os.path.exists(path):
             continue
-        df = pd.read_csv(path)[["date", "daily_return"]].set_index("date")
+        df = pd.read_parquet(path)[["date", "daily_return"]].set_index("date")
         df.columns = [t]
         all_returns.append(df)
     if not all_returns:
@@ -214,22 +375,50 @@ def _compute_beta(stock_returns: pd.Series, market_returns: pd.Series) -> float:
     return cov / market_var
 
 
+def _compute_correlation(stock_returns: pd.Series, market_returns: pd.Series) -> float:
+    """Pearson correlation between a stock's daily returns and the market
+    proxy's — how closely the stock tends to move WITH the market, separate
+    from beta (which is about magnitude, not just direction/co-movement)."""
+    aligned = pd.concat([stock_returns, market_returns], axis=1).dropna()
+    if len(aligned) < 20:
+        return np.nan
+    return aligned.iloc[:, 0].corr(aligned.iloc[:, 1])
+
+
+def _capm_expected_return(beta: float, market_annual_return: float) -> float:
+    """
+    CAPM: Expected Return = risk_free + beta * (market_return - risk_free).
+    This is a RISK-ADJUSTED expected return, not a price forecast and not a
+    fundamental valuation — it answers "given how risky this stock is
+    relative to the market, what return would it need to deliver to be
+    fairly compensating investors for that risk?"
+    """
+    if beta is None or np.isnan(beta) or np.isnan(market_annual_return):
+        return np.nan
+    return RISK_FREE_RATE + beta * (market_annual_return - RISK_FREE_RATE)
+
+
 def get_stock_risk_metrics(tickers: list) -> pd.DataFrame:
     """
-    Compute risk metrics per ticker: annualized volatility (fixed-band
-    classified), beta vs. the market proxy, and current price.
+    Compute risk + return metrics per ticker: annualized volatility
+    (fixed-band classified), beta and correlation vs. the market proxy,
+    realized (historical) annualized return, CAPM expected return, and
+    alpha (realized - expected — a risk-adjusted performance signal, NOT a
+    fundamental over/undervaluation judgment; see README for why true
+    valuation isn't computable from price history alone).
     Tickers with missing/unreadable data are skipped with a logged warning
     rather than crashing the whole batch (evaluation Bug #1).
     """
     market_returns = get_market_returns(tickers)
+    market_annual_return = market_returns.mean() * TRADING_DAYS_PER_YEAR if not market_returns.empty else np.nan
 
     rows = []
     for t in tickers:
-        path = os.path.join(DATA_DIR, f"{t}_features.csv")
+        path = features_parquet_path(t)
         try:
             if not os.path.exists(path):
                 raise FileNotFoundError(f"No feature file for '{t}' at {path}")
-            df = pd.read_csv(path)
+            df = pd.read_parquet(path)
             if df.empty:
                 raise ValueError(f"Feature file for '{t}' is empty")
 
@@ -239,6 +428,14 @@ def get_stock_risk_metrics(tickers: list) -> pd.DataFrame:
 
             stock_returns = df.set_index("date")["daily_return"]
             beta = _compute_beta(stock_returns, market_returns)
+            correlation = _compute_correlation(stock_returns, market_returns)
+
+            # Realized return uses the FULL history (not just the last 60
+            # days) — a more stable estimate of actual long-run performance.
+            realized_annual_return = stock_returns.mean() * TRADING_DAYS_PER_YEAR
+            expected_annual_return = _capm_expected_return(beta, market_annual_return)
+            alpha = (realized_annual_return - expected_annual_return
+                     if not np.isnan(expected_annual_return) else np.nan)
 
             rows.append({
                 "ticker": t,
@@ -246,6 +443,10 @@ def get_stock_risk_metrics(tickers: list) -> pd.DataFrame:
                 "annualized_volatility": ann_vol,
                 "risk_band": _band_for_volatility(ann_vol),
                 "beta": round(beta, 3) if not np.isnan(beta) else None,
+                "correlation_with_market": round(correlation, 3) if not np.isnan(correlation) else None,
+                "realized_annual_return": round(realized_annual_return, 4),
+                "expected_annual_return_capm": round(expected_annual_return, 4) if not np.isnan(expected_annual_return) else None,
+                "alpha": round(alpha, 4) if not np.isnan(alpha) else None,
                 "avg_daily_return": recent["daily_return"].mean(),
                 "last_close": df["close"].iloc[-1],
             })
@@ -260,6 +461,99 @@ def get_stock_risk_metrics(tickers: list) -> pd.DataFrame:
         )
 
     return pd.DataFrame(rows).sort_values("annualized_volatility").reset_index(drop=True)
+
+
+def get_pairwise_correlation_matrix(tickers: list) -> pd.DataFrame:
+    """
+    Full stock-vs-stock correlation matrix (not stock-vs-market-proxy — see
+    _compute_correlation for that). Answers "how do these stocks move
+    relative to EACH OTHER", which matters for portfolio diversification —
+    two stocks with high mutual correlation don't diversify each other's
+    risk, even if both individually look "safe". Built entirely from
+    tracked tickers' own return history — no external data needed, no
+    caveats about a proxy required.
+    """
+    all_returns = {}
+    for t in tickers:
+        path = features_parquet_path(t)
+        if not os.path.exists(path):
+            continue
+        df = pd.read_parquet(path)[["date", "daily_return"]].set_index("date")
+        all_returns[t] = df["daily_return"]
+
+    if len(all_returns) < 2:
+        raise ValueError("Need at least 2 tickers with data to compute a correlation matrix.")
+
+    combined = pd.DataFrame(all_returns)
+    return combined.corr().round(3)
+
+
+def project_future_price(ticker: str, months: int = None) -> dict:
+    """
+    Long-term outlook via TREND EXTRAPOLATION — deliberately NOT a new ML
+    forecasting model. This distinction matters and should be stated
+    explicitly wherever this is shown/discussed:
+
+    The model.py Random Forest predicts next-DAY direction only, evaluated
+    honestly at ~50% accuracy (see README/report). Training a similar
+    model to predict returns 1-12 MONTHS out would very likely show
+    similarly weak (near-random) accuracy at that horizon too — multi-month
+    stock forecasting from technical indicators alone is not something this
+    project can honestly claim to do well, and presenting a shaky ML number
+    dressed up as a "prediction" would invite MORE scrutiny in a viva, not
+    less.
+
+    Instead, this computes a standard, transparent, teachable projection:
+    if the stock's historical average annual growth rate (realized CAGR)
+    and historical volatility continue unchanged, where would the price
+    plausibly be at each horizon? This is explicitly a "what if the past
+    trend continues" statement, not a prediction of what WILL happen —
+    the range widens with time specifically to communicate growing
+    uncertainty, which is honest and expected.
+    """
+    path = features_parquet_path(ticker)
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"No feature data for '{ticker}'.")
+
+    df = pd.read_parquet(path)
+    if df.empty:
+        raise ValueError(f"[{ticker}] Feature file is empty.")
+
+    current_price = float(df["close"].iloc[-1])
+    daily_returns = df["daily_return"].dropna()
+
+    annual_return = float(daily_returns.mean() * TRADING_DAYS_PER_YEAR)
+    annual_vol = float(daily_returns.std() * np.sqrt(TRADING_DAYS_PER_YEAR))
+
+    horizons = [months] if months is not None else PROJECTION_HORIZONS_MONTHS
+    projections = []
+    for m in horizons:
+        years = m / 12.0
+        # Point estimate: compound the historical annual return forward
+        point = current_price * ((1 + annual_return) ** years)
+        # Uncertainty range: volatility scales with sqrt(time) under a
+        # standard random-walk assumption — widening range = growing
+        # uncertainty the further out you project, shown honestly rather
+        # than hidden behind a single confident-looking number.
+        range_pct = annual_vol * np.sqrt(years)
+        low = point * (1 - range_pct)
+        high = point * (1 + range_pct)
+        projections.append({
+            "months": m,
+            "projected_price": round(point, 2),
+            "low_estimate": round(max(low, 0), 2),
+            "high_estimate": round(high, 2),
+        })
+
+    return {
+        "ticker": ticker,
+        "current_price": round(current_price, 2),
+        "historical_annual_return_pct": round(annual_return * 100, 2),
+        "historical_annual_volatility_pct": round(annual_vol * 100, 2),
+        "trend_direction": "Growing" if annual_return > 0.02 else
+                            ("Declining" if annual_return < -0.02 else "Roughly flat"),
+        "projections": projections,
+    }
 
 
 def get_model_prediction(ticker: str):

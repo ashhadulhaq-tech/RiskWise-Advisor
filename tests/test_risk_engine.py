@@ -82,7 +82,7 @@ class TestVolatilityBands:
 
 
 class TestRecommendStocks:
-    """These require feature CSVs to exist (run data_pipeline.py + features.py first)."""
+    """These require feature parquet files to exist (run scripts/update_data.py first)."""
 
     def test_unknown_risk_category_raises(self):
         with pytest.raises(ValueError, match="Unknown risk category"):
