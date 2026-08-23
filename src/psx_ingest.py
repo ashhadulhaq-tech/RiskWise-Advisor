@@ -4,7 +4,7 @@ src/psx_ingest.py - PSX historical data ingestion
 Job: read a manually-downloaded PSX historical data Excel file (downloaded
 by the user personally from dps.psx.com.pk, per PSX's terms of use — see
 README for the licensing discussion) and convert it into the same
-data/{TICKER}.csv format that data_pipeline.py produces from yfinance.
+data/{TICKER}.parquet format that psx_api_fetch.py (or this file) produces.
 
 This lets the REST of the pipeline (features.py, model.py, risk_engine.py,
 app.py) work completely unchanged - they don't know or care whether a
@@ -20,7 +20,7 @@ import os
 import re
 import pandas as pd
 
-from config import DATA_DIR, RAW_UPLOADS_DIR, TICKERS, get_logger
+from config import DATA_DIR, RAW_UPLOADS_DIR, TICKERS, raw_parquet_path, get_logger
 
 logger = get_logger(__name__)
 
@@ -28,9 +28,15 @@ REQUIRED_COLUMNS = {"Symbol", "Date", "Open", "High", "Low", "Close", "Volume"}
 
 
 def _extract_ticker_from_sheet_name(sheet_name: str) -> str:
-    """'AICL_01072016_27072026' -> 'AICL'. Falls back to the part before the first underscore."""
+    """'AICL_01072016_27072026' -> 'AICL'. Also handles plain sheet names
+    like 'AICL' or 'KSE 100' (normalized to 'KSE100') from newer exports
+    that don't use the date-range-suffixed naming convention."""
     match = re.match(r"^([A-Za-z0-9]+)_", sheet_name)
-    return match.group(1).upper() if match else sheet_name.split("_")[0].upper()
+    if match:
+        return match.group(1).upper()
+    # No underscore pattern — strip all non-alphanumeric characters so
+    # "KSE 100" -> "KSE100", "AICL" -> "AICL"
+    return re.sub(r"[^A-Za-z0-9]", "", sheet_name).upper()
 
 
 def ingest_psx_excel(xlsx_path: str, tickers_filter: list = None) -> dict:
@@ -78,15 +84,16 @@ def ingest_psx_excel(xlsx_path: str, tickers_filter: list = None) -> dict:
             logger.error(f"[{ticker}] No usable rows after cleaning — skipped.")
             continue
 
-        out_path = os.path.join(DATA_DIR, f"{ticker}.csv")
-        out.to_csv(out_path, index=False)
+        out_path = raw_parquet_path(ticker)
+        out.to_parquet(out_path, index=False)
         results[ticker] = len(out)
         logger.info(f"[{ticker}] Ingested {len(out)} rows "
                     f"({out['date'].min().date()} to {out['date'].max().date()}) -> {out_path}")
 
-    missing = set(tickers_filter or TICKERS) - set(results.keys())
-    if missing:
-        logger.warning(f"Tickers configured but NOT found in the PSX file: {missing}")
+    if tickers_filter:
+        missing = set(tickers_filter) - set(results.keys())
+        if missing:
+            logger.warning(f"Tickers requested but NOT found in the PSX file: {missing}")
 
     return results
 
@@ -101,5 +108,9 @@ if __name__ == "__main__":
         )
     xlsx_path = os.path.join(RAW_UPLOADS_DIR, candidates[0])
     logger.info(f"Ingesting {xlsx_path} ...")
-    results = ingest_psx_excel(xlsx_path, tickers_filter=TICKERS)
-    logger.info(f"Ingestion complete: {results}")
+    # tickers_filter=None -> ingest EVERY ticker sheet found in the file, not
+    # just the ones in config.TICKERS. This is what lets a bigger file (e.g.
+    # all ~100 KSE-100 constituents) get picked up automatically without
+    # editing config.py first.
+    results = ingest_psx_excel(xlsx_path, tickers_filter=None)
+    logger.info(f"Ingestion complete: {len(results)} tickers -> {sorted(results.keys())}")

@@ -32,7 +32,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import (accuracy_score, precision_score, recall_score,
                               f1_score, confusion_matrix, classification_report)
 
-from config import DATA_DIR, MODEL_DIR, TICKERS, get_logger
+from config import DATA_DIR, MODEL_DIR, TICKERS, get_available_tickers, features_parquet_path, get_logger
 
 logger = get_logger(__name__)
 
@@ -59,8 +59,8 @@ def chronological_split(df: pd.DataFrame, test_size: float = 0.2):
 
 
 def train_model(ticker: str, n_estimators: int = 300, max_depth: int = 6):
-    path = os.path.join(DATA_DIR, f"{ticker}_features.csv")
-    df = pd.read_csv(path)
+    path = features_parquet_path(ticker)
+    df = pd.read_parquet(path)
     df["date"] = pd.to_datetime(df["date"])
     df = df.sort_values("date").reset_index(drop=True)
 
@@ -143,13 +143,13 @@ def predict_next_day(ticker: str):
     """
     model = load_model(ticker)
 
-    feat_path = os.path.join(DATA_DIR, f"{ticker}_features.csv")
+    feat_path = features_parquet_path(ticker)
     if not os.path.exists(feat_path):
         raise FileNotFoundError(
             f"No feature data found for '{ticker}'. Run features.py first."
         )
 
-    df = pd.read_csv(feat_path)
+    df = pd.read_parquet(feat_path)
     if df.empty:
         raise ValueError(f"[{ticker}] Feature file is empty — cannot predict.")
 
@@ -165,8 +165,9 @@ def predict_next_day(ticker: str):
 
 
 if __name__ == "__main__":
+    tickers = get_available_tickers()  # scales automatically to however many are present
     all_metrics = []
-    for t in TICKERS:
+    for t in tickers:
         try:
             _, m = train_model(t)
             all_metrics.append(m)
