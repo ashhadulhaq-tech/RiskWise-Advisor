@@ -1,13 +1,13 @@
 {
   "ticker": "IBFL",
   "train_rows": 1132,
-  "test_rows": 283,
-  "test_period": "2025-06-05 to 2026-08-20",
-  "accuracy": 0.6396,
-  "baseline_accuracy": 0.7067,
-  "precision": 0.2979,
-  "recall": 0.1687,
-  "f1_score": 0.2154,
+  "test_rows": 284,
+  "test_period": "2025-06-05 to 2026-08-21",
+  "accuracy": 0.6408,
+  "baseline_accuracy": 0.7042,
+  "precision": 0.3125,
+  "recall": 0.1786,
+  "f1_score": 0.2273,
   "confusion_matrix": [
     [
       167,
@@ -15,7 +15,7 @@
     ],
     [
       69,
-      14
+      15
     ]
   ],
   "feature_importance": {

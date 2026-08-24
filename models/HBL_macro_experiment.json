@@ -1,0 +1,30 @@
+{
+  "ticker": "HBL",
+  "overlap_window": "2026-02-12 to 2026-07-01",
+  "price_only": {
+    "label": "price_only",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.4565,
+    "baseline_accuracy": 0.5109,
+    "precision": 0.4658,
+    "recall": 0.7556,
+    "f1_score": 0.5763,
+    "n_features": 13
+  },
+  "price_plus_macro": {
+    "label": "price_plus_macro",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.4891,
+    "baseline_accuracy": 0.5109,
+    "precision": 0.4808,
+    "recall": 0.5556,
+    "f1_score": 0.5155,
+    "n_features": 29
+  },
+  "accuracy_difference": 0.0326,
+  "interpretation": "Price+macro model scored 3.3 points higher on this ~92-day test period. With a sample this small, this is suggestive, not conclusive \u2014 it could plausibly be noise rather than a real, generalizable effect."
+}

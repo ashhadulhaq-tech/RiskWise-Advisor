@@ -1,17 +1,17 @@
 {
   "ticker": "AHCL",
   "train_rows": 1828,
-  "test_rows": 457,
-  "test_period": "2024-10-16 to 2026-08-20",
-  "accuracy": 0.488,
-  "baseline_accuracy": 0.512,
-  "precision": 0.4682,
+  "test_rows": 458,
+  "test_period": "2024-10-16 to 2026-08-21",
+  "accuracy": 0.4869,
+  "baseline_accuracy": 0.5131,
+  "precision": 0.4655,
   "recall": 0.3632,
-  "f1_score": 0.4091,
+  "f1_score": 0.4081,
   "confusion_matrix": [
     [
       142,
-      92
+      93
     ],
     [
       142,

@@ -1,17 +1,17 @@
 {
   "ticker": "PSX",
-  "train_rows": 1795,
+  "train_rows": 1796,
   "test_rows": 449,
-  "test_period": "2024-10-31 to 2026-08-20",
-  "accuracy": 0.5345,
+  "test_period": "2024-11-01 to 2026-08-21",
+  "accuracy": 0.5323,
   "baseline_accuracy": 0.5167,
-  "precision": 0.6667,
+  "precision": 0.64,
   "recall": 0.0737,
-  "f1_score": 0.1328,
+  "f1_score": 0.1322,
   "confusion_matrix": [
     [
-      224,
-      8
+      223,
+      9
     ],
     [
       201,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1229,
-    "high_low_range": 0.0971,
-    "ma_5": 0.0832,
-    "rsi_14": 0.0783,
-    "volatility_10": 0.0764,
-    "macd_signal": 0.0748,
-    "ma_ratio_5_20": 0.0711,
-    "volume_ma_10": 0.07,
-    "volume_change": 0.069,
-    "ma_20": 0.0661,
-    "ma_10": 0.066,
-    "macd": 0.0652,
-    "volatility_20": 0.0599
+    "daily_return": 0.1227,
+    "high_low_range": 0.0974,
+    "ma_5": 0.082,
+    "rsi_14": 0.0782,
+    "volatility_10": 0.0751,
+    "macd_signal": 0.0729,
+    "volume_change": 0.0714,
+    "ma_ratio_5_20": 0.0708,
+    "volume_ma_10": 0.0685,
+    "ma_10": 0.0681,
+    "ma_20": 0.0666,
+    "macd": 0.0653,
+    "volatility_20": 0.061
   }
 }

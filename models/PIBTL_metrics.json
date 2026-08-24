@@ -1,17 +1,17 @@
 {
   "ticker": "PIBTL",
-  "train_rows": 1963,
+  "train_rows": 1964,
   "test_rows": 491,
-  "test_period": "2024-09-02 to 2026-08-20",
-  "accuracy": 0.5356,
+  "test_period": "2024-09-03 to 2026-08-21",
+  "accuracy": 0.5377,
   "baseline_accuracy": 0.5255,
-  "precision": 0.5385,
+  "precision": 0.5469,
   "recall": 0.1502,
-  "f1_score": 0.2349,
+  "f1_score": 0.2357,
   "confusion_matrix": [
     [
-      228,
-      30
+      229,
+      29
     ],
     [
       198,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1013,
-    "volatility_10": 0.0972,
+    "daily_return": 0.1032,
+    "volatility_10": 0.0969,
     "ma_ratio_5_20": 0.0919,
-    "high_low_range": 0.0841,
-    "volume_change": 0.081,
-    "volatility_20": 0.0751,
-    "macd": 0.0749,
-    "ma_20": 0.0718,
-    "ma_10": 0.0688,
-    "macd_signal": 0.068,
-    "volume_ma_10": 0.0629,
-    "ma_5": 0.0617,
-    "rsi_14": 0.0613
+    "high_low_range": 0.0824,
+    "volume_change": 0.0819,
+    "volatility_20": 0.0765,
+    "macd": 0.0743,
+    "ma_20": 0.0727,
+    "ma_10": 0.0693,
+    "macd_signal": 0.066,
+    "volume_ma_10": 0.0632,
+    "ma_5": 0.0619,
+    "rsi_14": 0.0597
   }
 }

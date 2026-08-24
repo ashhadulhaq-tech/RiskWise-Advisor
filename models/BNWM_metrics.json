@@ -1,16 +1,16 @@
 {
   "ticker": "BNWM",
   "train_rows": 1604,
-  "test_rows": 401,
-  "test_period": "2025-01-08 to 2026-08-20",
-  "accuracy": 0.5611,
-  "baseline_accuracy": 0.586,
+  "test_rows": 402,
+  "test_period": "2025-01-08 to 2026-08-21",
+  "accuracy": 0.5622,
+  "baseline_accuracy": 0.5871,
   "precision": 0.4167,
   "recall": 0.1506,
   "f1_score": 0.2212,
   "confusion_matrix": [
     [
-      200,
+      201,
       35
     ],
     [

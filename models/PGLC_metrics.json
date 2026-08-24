@@ -1,36 +1,36 @@
 {
   "ticker": "PGLC",
-  "train_rows": 916,
+  "train_rows": 917,
   "test_rows": 230,
-  "test_period": "2025-09-18 to 2026-08-20",
-  "accuracy": 0.5609,
-  "baseline_accuracy": 0.5043,
-  "precision": 0.6585,
-  "recall": 0.2368,
-  "f1_score": 0.3484,
+  "test_period": "2025-09-19 to 2026-08-21",
+  "accuracy": 0.5783,
+  "baseline_accuracy": 0.5087,
+  "precision": 0.6538,
+  "recall": 0.3009,
+  "f1_score": 0.4121,
   "confusion_matrix": [
     [
-      102,
-      14
+      99,
+      18
     ],
     [
-      87,
-      27
+      79,
+      34
     ]
   ],
   "feature_importance": {
     "daily_return": 0.1487,
-    "volume_change": 0.0869,
-    "rsi_14": 0.0856,
-    "volume_ma_10": 0.0822,
-    "ma_5": 0.0793,
-    "volatility_10": 0.0778,
-    "macd": 0.0698,
-    "ma_ratio_5_20": 0.0683,
-    "ma_20": 0.0682,
-    "ma_10": 0.0604,
-    "volatility_20": 0.06,
-    "macd_signal": 0.0575,
-    "high_low_range": 0.0552
+    "volume_change": 0.088,
+    "rsi_14": 0.0855,
+    "volume_ma_10": 0.0838,
+    "ma_5": 0.0775,
+    "volatility_10": 0.0756,
+    "macd": 0.0723,
+    "ma_ratio_5_20": 0.0694,
+    "ma_20": 0.0667,
+    "ma_10": 0.0629,
+    "volatility_20": 0.0593,
+    "macd_signal": 0.0568,
+    "high_low_range": 0.0537
   }
 }
