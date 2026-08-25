@@ -1,20 +1,20 @@
 {
   "ticker": "LUCK",
   "train_rows": 1960,
-  "test_rows": 490,
-  "test_period": "2024-08-28 to 2026-08-21",
-  "accuracy": 0.4633,
-  "baseline_accuracy": 0.4878,
+  "test_rows": 491,
+  "test_period": "2024-08-28 to 2026-08-24",
+  "accuracy": 0.4623,
+  "baseline_accuracy": 0.4868,
   "precision": 0.4583,
-  "recall": 0.2629,
-  "f1_score": 0.3342,
+  "recall": 0.2619,
+  "f1_score": 0.3333,
   "confusion_matrix": [
     [
       161,
       78
     ],
     [
-      185,
+      186,
       66
     ]
   ],

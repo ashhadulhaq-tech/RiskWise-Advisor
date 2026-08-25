@@ -1,20 +1,20 @@
 {
   "ticker": "MLCF",
   "train_rows": 1964,
-  "test_rows": 491,
-  "test_period": "2024-09-03 to 2026-08-21",
-  "accuracy": 0.5255,
-  "baseline_accuracy": 0.5234,
+  "test_rows": 492,
+  "test_period": "2024-09-03 to 2026-08-24",
+  "accuracy": 0.5244,
+  "baseline_accuracy": 0.5224,
   "precision": 0.5072,
-  "recall": 0.1496,
-  "f1_score": 0.231,
+  "recall": 0.1489,
+  "f1_score": 0.2303,
   "confusion_matrix": [
     [
       223,
       34
     ],
     [
-      199,
+      200,
       35
     ]
   ],

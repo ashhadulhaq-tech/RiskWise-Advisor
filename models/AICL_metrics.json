@@ -1,36 +1,36 @@
 {
   "ticker": "AICL",
-  "train_rows": 1938,
+  "train_rows": 1939,
   "test_rows": 485,
-  "test_period": "2024-09-11 to 2026-08-21",
-  "accuracy": 0.5134,
-  "baseline_accuracy": 0.5464,
-  "precision": 0.454,
-  "recall": 0.3591,
-  "f1_score": 0.401,
+  "test_period": "2024-09-12 to 2026-08-24",
+  "accuracy": 0.5072,
+  "baseline_accuracy": 0.5443,
+  "precision": 0.4477,
+  "recall": 0.3484,
+  "f1_score": 0.3919,
   "confusion_matrix": [
     [
-      170,
+      169,
       95
     ],
     [
-      141,
-      79
+      144,
+      77
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1329,
-    "volume_ma_10": 0.0924,
-    "macd_signal": 0.0879,
-    "rsi_14": 0.0848,
-    "high_low_range": 0.0805,
-    "ma_5": 0.0757,
-    "macd": 0.0714,
-    "ma_10": 0.0703,
-    "volume_change": 0.0656,
-    "volatility_10": 0.0622,
-    "ma_20": 0.0615,
-    "ma_ratio_5_20": 0.061,
-    "volatility_20": 0.0539
+    "daily_return": 0.1332,
+    "volume_ma_10": 0.0907,
+    "rsi_14": 0.088,
+    "macd_signal": 0.0866,
+    "high_low_range": 0.0796,
+    "ma_5": 0.0772,
+    "macd": 0.0717,
+    "ma_10": 0.0696,
+    "volume_change": 0.0659,
+    "ma_ratio_5_20": 0.0621,
+    "ma_20": 0.0614,
+    "volatility_10": 0.0604,
+    "volatility_20": 0.0538
   }
 }

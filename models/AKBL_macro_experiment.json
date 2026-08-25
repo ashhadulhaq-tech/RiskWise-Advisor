@@ -1,0 +1,30 @@
+{
+  "ticker": "AKBL",
+  "overlap_window": "2026-02-12 to 2026-07-01",
+  "price_only": {
+    "label": "price_only",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.4348,
+    "baseline_accuracy": 0.5326,
+    "precision": 0.4727,
+    "recall": 0.5306,
+    "f1_score": 0.5,
+    "n_features": 13
+  },
+  "price_plus_macro": {
+    "label": "price_plus_macro",
+    "train_rows": 364,
+    "test_rows": 92,
+    "test_period": "2026-02-12 to 2026-07-01",
+    "accuracy": 0.4457,
+    "baseline_accuracy": 0.5326,
+    "precision": 0.4815,
+    "recall": 0.5306,
+    "f1_score": 0.5049,
+    "n_features": 29
+  },
+  "accuracy_difference": 0.0109,
+  "interpretation": "No meaningful difference \u2014 adding macro/commodity data did not measurably change prediction accuracy on this stock, over this window."
+}

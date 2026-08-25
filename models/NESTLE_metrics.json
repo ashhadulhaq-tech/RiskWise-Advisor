@@ -1,16 +1,16 @@
 {
   "ticker": "NESTLE",
   "train_rows": 1460,
-  "test_rows": 365,
-  "test_period": "2025-03-03 to 2026-08-21",
-  "accuracy": 0.5288,
-  "baseline_accuracy": 0.5233,
+  "test_rows": 366,
+  "test_period": "2025-03-03 to 2026-08-24",
+  "accuracy": 0.5301,
+  "baseline_accuracy": 0.5246,
   "precision": 0.5172,
   "recall": 0.1724,
   "f1_score": 0.2586,
   "confusion_matrix": [
     [
-      163,
+      164,
       28
     ],
     [

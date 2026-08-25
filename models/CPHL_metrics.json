@@ -1,36 +1,36 @@
 {
   "ticker": "CPHL",
-  "train_rows": 997,
+  "train_rows": 998,
   "test_rows": 250,
-  "test_period": "2025-08-22 to 2026-08-21",
-  "accuracy": 0.56,
+  "test_period": "2025-08-25 to 2026-08-24",
+  "accuracy": 0.552,
   "baseline_accuracy": 0.508,
-  "precision": 0.697,
-  "recall": 0.187,
-  "f1_score": 0.2949,
+  "precision": 0.6486,
+  "recall": 0.1951,
+  "f1_score": 0.3,
   "confusion_matrix": [
     [
-      117,
-      10
+      114,
+      13
     ],
     [
-      100,
-      23
+      99,
+      24
     ]
   ],
   "feature_importance": {
-    "volume_change": 0.0897,
-    "ma_ratio_5_20": 0.0887,
-    "ma_20": 0.0837,
-    "rsi_14": 0.0834,
-    "ma_10": 0.0831,
-    "daily_return": 0.0802,
-    "volatility_10": 0.0789,
-    "macd": 0.0762,
-    "high_low_range": 0.0735,
+    "ma_ratio_5_20": 0.0895,
+    "volume_change": 0.0892,
+    "ma_10": 0.0822,
+    "daily_return": 0.0821,
+    "ma_20": 0.082,
+    "rsi_14": 0.0803,
+    "volatility_10": 0.0787,
+    "macd": 0.075,
     "volatility_20": 0.0731,
-    "macd_signal": 0.0671,
-    "volume_ma_10": 0.063,
-    "ma_5": 0.0595
+    "high_low_range": 0.0723,
+    "macd_signal": 0.0695,
+    "volume_ma_10": 0.0651,
+    "ma_5": 0.061
   }
 }

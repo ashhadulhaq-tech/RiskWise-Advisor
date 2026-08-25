@@ -1,16 +1,16 @@
 {
   "ticker": "PSX",
   "train_rows": 1796,
-  "test_rows": 449,
-  "test_period": "2024-11-01 to 2026-08-21",
-  "accuracy": 0.5323,
-  "baseline_accuracy": 0.5167,
+  "test_rows": 450,
+  "test_period": "2024-11-01 to 2026-08-24",
+  "accuracy": 0.5333,
+  "baseline_accuracy": 0.5178,
   "precision": 0.64,
   "recall": 0.0737,
   "f1_score": 0.1322,
   "confusion_matrix": [
     [
-      223,
+      224,
       9
     ],
     [

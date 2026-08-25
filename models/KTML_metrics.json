@@ -1,36 +1,36 @@
 {
   "ticker": "KTML",
-  "train_rows": 1851,
+  "train_rows": 1852,
   "test_rows": 463,
-  "test_period": "2024-10-14 to 2026-08-21",
-  "accuracy": 0.4946,
-  "baseline_accuracy": 0.5248,
-  "precision": 0.48,
-  "recall": 0.7636,
-  "f1_score": 0.5895,
+  "test_period": "2024-10-15 to 2026-08-24",
+  "accuracy": 0.5011,
+  "baseline_accuracy": 0.5227,
+  "precision": 0.4854,
+  "recall": 0.7511,
+  "f1_score": 0.5897,
   "confusion_matrix": [
     [
-      61,
-      182
+      66,
+      176
     ],
     [
-      52,
-      168
+      55,
+      166
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1226,
-    "high_low_range": 0.1122,
-    "volume_change": 0.0908,
-    "volatility_10": 0.0794,
-    "ma_5": 0.0726,
-    "rsi_14": 0.0726,
-    "volume_ma_10": 0.0706,
-    "ma_10": 0.0696,
-    "ma_ratio_5_20": 0.0662,
-    "ma_20": 0.0629,
-    "volatility_20": 0.0621,
-    "macd_signal": 0.0605,
-    "macd": 0.058
+    "daily_return": 0.1161,
+    "high_low_range": 0.1141,
+    "volume_change": 0.0884,
+    "volatility_10": 0.079,
+    "rsi_14": 0.0747,
+    "volume_ma_10": 0.0723,
+    "ma_5": 0.0722,
+    "ma_10": 0.0686,
+    "ma_ratio_5_20": 0.0685,
+    "ma_20": 0.0624,
+    "macd_signal": 0.0617,
+    "volatility_20": 0.0617,
+    "macd": 0.0603
   }
 }
