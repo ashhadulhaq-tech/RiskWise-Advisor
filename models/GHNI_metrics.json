@@ -1,36 +1,36 @@
 {
   "ticker": "GHNI",
-  "train_rows": 1964,
+  "train_rows": 1965,
   "test_rows": 492,
-  "test_period": "2024-09-03 to 2026-08-24",
-  "accuracy": 0.4919,
+  "test_period": "2024-09-04 to 2026-08-25",
+  "accuracy": 0.4959,
   "baseline_accuracy": 0.498,
-  "precision": 0.4835,
-  "recall": 0.1781,
-  "f1_score": 0.2604,
+  "precision": 0.4943,
+  "recall": 0.1741,
+  "f1_score": 0.2575,
   "confusion_matrix": [
     [
-      198,
-      47
+      201,
+      44
     ],
     [
-      203,
-      44
+      204,
+      43
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.138,
-    "volatility_10": 0.0881,
-    "macd_signal": 0.087,
-    "high_low_range": 0.0856,
-    "ma_ratio_5_20": 0.0777,
-    "volatility_20": 0.0715,
-    "macd": 0.0701,
-    "rsi_14": 0.0679,
-    "ma_10": 0.0674,
-    "ma_5": 0.0659,
-    "volume_ma_10": 0.0612,
-    "ma_20": 0.0599,
-    "volume_change": 0.0598
+    "daily_return": 0.1358,
+    "volatility_10": 0.0886,
+    "macd_signal": 0.088,
+    "high_low_range": 0.0859,
+    "ma_ratio_5_20": 0.0765,
+    "volatility_20": 0.0734,
+    "ma_10": 0.0688,
+    "macd": 0.0688,
+    "ma_5": 0.0668,
+    "rsi_14": 0.0667,
+    "volume_ma_10": 0.0621,
+    "ma_20": 0.0601,
+    "volume_change": 0.0586
   }
 }

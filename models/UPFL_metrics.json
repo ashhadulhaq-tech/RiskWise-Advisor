@@ -1,10 +1,10 @@
 {
   "ticker": "UPFL",
   "train_rows": 1020,
-  "test_rows": 255,
-  "test_period": "2025-08-18 to 2026-08-24",
-  "accuracy": 0.5294,
-  "baseline_accuracy": 0.5294,
+  "test_rows": 256,
+  "test_period": "2025-08-18 to 2026-08-25",
+  "accuracy": 0.5273,
+  "baseline_accuracy": 0.5273,
   "precision": 0.0,
   "recall": 0.0,
   "f1_score": 0.0,
@@ -14,7 +14,7 @@
       0
     ],
     [
-      120,
+      121,
       0
     ]
   ],

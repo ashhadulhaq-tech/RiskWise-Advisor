@@ -1,13 +1,13 @@
 {
   "ticker": "KTML",
   "train_rows": 1852,
-  "test_rows": 463,
-  "test_period": "2024-10-15 to 2026-08-24",
-  "accuracy": 0.5011,
-  "baseline_accuracy": 0.5227,
-  "precision": 0.4854,
-  "recall": 0.7511,
-  "f1_score": 0.5897,
+  "test_rows": 464,
+  "test_period": "2024-10-15 to 2026-08-25",
+  "accuracy": 0.5022,
+  "baseline_accuracy": 0.5216,
+  "precision": 0.4869,
+  "recall": 0.7523,
+  "f1_score": 0.5912,
   "confusion_matrix": [
     [
       66,
@@ -15,7 +15,7 @@
     ],
     [
       55,
-      166
+      167
     ]
   ],
   "feature_importance": {

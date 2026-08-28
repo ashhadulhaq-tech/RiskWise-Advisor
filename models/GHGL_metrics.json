@@ -1,20 +1,20 @@
 {
   "ticker": "GHGL",
   "train_rows": 1960,
-  "test_rows": 490,
-  "test_period": "2024-09-05 to 2026-08-24",
-  "accuracy": 0.5163,
-  "baseline_accuracy": 0.498,
+  "test_rows": 491,
+  "test_period": "2024-09-05 to 2026-08-25",
+  "accuracy": 0.5153,
+  "baseline_accuracy": 0.4969,
   "precision": 0.5714,
-  "recall": 0.1463,
-  "f1_score": 0.233,
+  "recall": 0.1457,
+  "f1_score": 0.2323,
   "confusion_matrix": [
     [
       217,
       27
     ],
     [
-      210,
+      211,
       36
     ]
   ],
