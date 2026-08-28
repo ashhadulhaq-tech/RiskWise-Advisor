@@ -1,36 +1,36 @@
 {
   "ticker": "SNGP",
-  "train_rows": 1965,
+  "train_rows": 1966,
   "test_rows": 492,
-  "test_period": "2024-09-04 to 2026-08-25",
-  "accuracy": 0.5244,
+  "test_period": "2024-09-05 to 2026-08-27",
+  "accuracy": 0.5224,
   "baseline_accuracy": 0.5427,
-  "precision": 0.4698,
-  "recall": 0.3111,
-  "f1_score": 0.3743,
+  "precision": 0.4653,
+  "recall": 0.2978,
+  "f1_score": 0.3631,
   "confusion_matrix": [
     [
-      188,
-      79
+      190,
+      77
     ],
     [
-      155,
-      70
+      158,
+      67
     ]
   ],
   "feature_importance": {
-    "rsi_14": 0.1094,
-    "high_low_range": 0.1057,
-    "volatility_20": 0.0871,
-    "volatility_10": 0.0862,
-    "macd": 0.0782,
-    "daily_return": 0.0776,
-    "ma_ratio_5_20": 0.0761,
-    "volume_ma_10": 0.0738,
-    "macd_signal": 0.0698,
-    "volume_change": 0.0685,
-    "ma_5": 0.0572,
-    "ma_10": 0.0553,
-    "ma_20": 0.0549
+    "rsi_14": 0.1101,
+    "high_low_range": 0.1065,
+    "volatility_20": 0.0877,
+    "volatility_10": 0.0842,
+    "daily_return": 0.079,
+    "macd": 0.0771,
+    "volume_ma_10": 0.0746,
+    "ma_ratio_5_20": 0.0744,
+    "macd_signal": 0.0696,
+    "volume_change": 0.0675,
+    "ma_5": 0.0586,
+    "ma_10": 0.0567,
+    "ma_20": 0.0541
   }
 }

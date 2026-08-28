@@ -1,36 +1,36 @@
 {
   "ticker": "POL",
-  "train_rows": 1965,
+  "train_rows": 1966,
   "test_rows": 492,
-  "test_period": "2024-09-04 to 2026-08-25",
+  "test_period": "2024-09-05 to 2026-08-27",
   "accuracy": 0.5102,
   "baseline_accuracy": 0.5081,
-  "precision": 0.5033,
-  "recall": 0.3182,
-  "f1_score": 0.3899,
+  "precision": 0.5034,
+  "recall": 0.3058,
+  "f1_score": 0.3805,
   "confusion_matrix": [
     [
-      174,
-      76
+      177,
+      73
     ],
     [
-      165,
-      77
+      168,
+      74
     ]
   ],
   "feature_importance": {
-    "rsi_14": 0.093,
-    "high_low_range": 0.092,
-    "ma_20": 0.0885,
-    "daily_return": 0.085,
-    "ma_ratio_5_20": 0.0763,
-    "ma_10": 0.0746,
-    "ma_5": 0.0742,
-    "volume_ma_10": 0.0738,
-    "macd_signal": 0.0722,
-    "volume_change": 0.0703,
-    "volatility_10": 0.0676,
-    "macd": 0.067,
-    "volatility_20": 0.0653
+    "rsi_14": 0.0944,
+    "high_low_range": 0.0908,
+    "ma_20": 0.089,
+    "daily_return": 0.0853,
+    "ma_ratio_5_20": 0.0772,
+    "ma_5": 0.0733,
+    "ma_10": 0.0733,
+    "volume_change": 0.0728,
+    "macd_signal": 0.0727,
+    "volume_ma_10": 0.0716,
+    "volatility_10": 0.0679,
+    "macd": 0.0673,
+    "volatility_20": 0.0646
   }
 }

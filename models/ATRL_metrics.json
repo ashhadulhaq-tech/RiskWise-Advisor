@@ -1,36 +1,36 @@
 {
   "ticker": "ATRL",
-  "train_rows": 1965,
+  "train_rows": 1966,
   "test_rows": 492,
-  "test_period": "2024-09-04 to 2026-08-25",
-  "accuracy": 0.5183,
-  "baseline_accuracy": 0.5244,
+  "test_period": "2024-09-05 to 2026-08-27",
+  "accuracy": 0.5163,
+  "baseline_accuracy": 0.5224,
   "precision": 0.4118,
-  "recall": 0.0299,
-  "f1_score": 0.0558,
+  "recall": 0.0298,
+  "f1_score": 0.0556,
   "confusion_matrix": [
     [
-      248,
+      247,
       10
     ],
     [
-      227,
+      228,
       7
     ]
   ],
   "feature_importance": {
-    "volume_change": 0.102,
-    "daily_return": 0.0986,
-    "volatility_10": 0.0864,
-    "volatility_20": 0.0779,
-    "volume_ma_10": 0.0766,
-    "ma_5": 0.076,
-    "high_low_range": 0.0728,
-    "ma_20": 0.0722,
-    "ma_ratio_5_20": 0.0711,
-    "ma_10": 0.0688,
-    "macd": 0.068,
-    "macd_signal": 0.0653,
-    "rsi_14": 0.0643
+    "volume_change": 0.1036,
+    "daily_return": 0.0999,
+    "volatility_10": 0.0862,
+    "volatility_20": 0.0789,
+    "ma_5": 0.0787,
+    "volume_ma_10": 0.0749,
+    "high_low_range": 0.0721,
+    "ma_20": 0.0706,
+    "ma_10": 0.0692,
+    "ma_ratio_5_20": 0.0686,
+    "macd": 0.0679,
+    "rsi_14": 0.065,
+    "macd_signal": 0.0645
   }
 }

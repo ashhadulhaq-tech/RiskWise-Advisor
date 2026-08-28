@@ -1,36 +1,36 @@
 {
   "ticker": "HINOON",
-  "train_rows": 1955,
+  "train_rows": 1956,
   "test_rows": 489,
-  "test_period": "2024-09-09 to 2026-08-25",
-  "accuracy": 0.544,
-  "baseline_accuracy": 0.5317,
+  "test_period": "2024-09-10 to 2026-08-27",
+  "accuracy": 0.546,
+  "baseline_accuracy": 0.5337,
   "precision": 0.875,
-  "recall": 0.0306,
-  "f1_score": 0.0591,
+  "recall": 0.0307,
+  "f1_score": 0.0593,
   "confusion_matrix": [
     [
-      259,
+      260,
       1
     ],
     [
-      222,
+      221,
       7
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1925,
-    "macd_signal": 0.0819,
-    "volatility_10": 0.0755,
-    "high_low_range": 0.0724,
-    "volume_change": 0.0696,
-    "volatility_20": 0.0693,
-    "ma_20": 0.0661,
-    "ma_10": 0.0658,
-    "macd": 0.0652,
-    "volume_ma_10": 0.0647,
-    "ma_5": 0.0625,
-    "rsi_14": 0.0586,
-    "ma_ratio_5_20": 0.0558
+    "daily_return": 0.1927,
+    "macd_signal": 0.0816,
+    "volatility_10": 0.0749,
+    "volume_change": 0.0721,
+    "volatility_20": 0.0708,
+    "high_low_range": 0.07,
+    "volume_ma_10": 0.067,
+    "macd": 0.0653,
+    "ma_20": 0.0651,
+    "ma_10": 0.0641,
+    "ma_5": 0.0635,
+    "rsi_14": 0.0601,
+    "ma_ratio_5_20": 0.0528
   }
 }

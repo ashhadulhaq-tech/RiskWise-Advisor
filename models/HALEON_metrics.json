@@ -1,36 +1,36 @@
 {
   "ticker": "HALEON",
-  "train_rows": 683,
+  "train_rows": 684,
   "test_rows": 171,
-  "test_period": "2025-12-15 to 2026-08-25",
-  "accuracy": 0.5029,
-  "baseline_accuracy": 0.5673,
-  "precision": 0.4267,
-  "recall": 0.4324,
-  "f1_score": 0.4295,
+  "test_period": "2025-12-16 to 2026-08-27",
+  "accuracy": 0.5146,
+  "baseline_accuracy": 0.5731,
+  "precision": 0.4342,
+  "recall": 0.4521,
+  "f1_score": 0.443,
   "confusion_matrix": [
     [
-      54,
+      55,
       43
     ],
     [
-      42,
-      32
+      40,
+      33
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1192,
-    "volume_change": 0.118,
-    "rsi_14": 0.088,
-    "volatility_10": 0.0822,
-    "ma_ratio_5_20": 0.077,
-    "volume_ma_10": 0.0766,
-    "volatility_20": 0.0752,
-    "high_low_range": 0.068,
-    "ma_5": 0.066,
-    "macd_signal": 0.0644,
-    "ma_20": 0.0571,
-    "ma_10": 0.055,
-    "macd": 0.0532
+    "daily_return": 0.1225,
+    "volume_change": 0.1225,
+    "rsi_14": 0.0855,
+    "volatility_10": 0.0827,
+    "volume_ma_10": 0.0755,
+    "volatility_20": 0.0751,
+    "ma_ratio_5_20": 0.0736,
+    "high_low_range": 0.0708,
+    "macd_signal": 0.065,
+    "ma_5": 0.0645,
+    "ma_20": 0.0553,
+    "ma_10": 0.0541,
+    "macd": 0.0529
   }
 }

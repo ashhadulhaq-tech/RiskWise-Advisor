@@ -1,36 +1,36 @@
 {
   "ticker": "RMPL",
-  "train_rows": 1197,
+  "train_rows": 1198,
   "test_rows": 300,
-  "test_period": "2025-06-13 to 2026-08-25",
-  "accuracy": 0.57,
-  "baseline_accuracy": 0.4933,
-  "precision": 0.6139,
-  "recall": 0.4079,
-  "f1_score": 0.4901,
+  "test_period": "2025-06-16 to 2026-08-27",
+  "accuracy": 0.5567,
+  "baseline_accuracy": 0.49,
+  "precision": 0.6,
+  "recall": 0.3922,
+  "f1_score": 0.4743,
   "confusion_matrix": [
     [
-      109,
-      39
+      107,
+      40
     ],
     [
-      90,
-      62
+      93,
+      60
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1365,
-    "high_low_range": 0.0866,
-    "ma_ratio_5_20": 0.0864,
-    "rsi_14": 0.0846,
-    "macd": 0.0786,
+    "daily_return": 0.1372,
+    "ma_ratio_5_20": 0.0865,
+    "rsi_14": 0.0839,
+    "high_low_range": 0.0836,
+    "macd": 0.0781,
     "volatility_20": 0.0723,
-    "ma_5": 0.0722,
-    "volatility_10": 0.0709,
-    "macd_signal": 0.0693,
+    "ma_5": 0.0719,
+    "macd_signal": 0.0718,
+    "volatility_10": 0.0718,
     "ma_10": 0.0684,
-    "volume_ma_10": 0.0628,
-    "ma_20": 0.0596,
-    "volume_change": 0.0517
+    "volume_ma_10": 0.0607,
+    "ma_20": 0.0605,
+    "volume_change": 0.0533
   }
 }

@@ -1,36 +1,36 @@
 {
   "ticker": "PIOC",
-  "train_rows": 1965,
+  "train_rows": 1966,
   "test_rows": 492,
-  "test_period": "2024-09-04 to 2026-08-25",
-  "accuracy": 0.4898,
+  "test_period": "2024-09-05 to 2026-08-27",
+  "accuracy": 0.4939,
   "baseline_accuracy": 0.5183,
-  "precision": 0.4583,
-  "recall": 0.3249,
-  "f1_score": 0.3802,
+  "precision": 0.4634,
+  "recall": 0.3207,
+  "f1_score": 0.3791,
   "confusion_matrix": [
     [
-      164,
-      91
+      167,
+      88
     ],
     [
-      160,
-      77
+      161,
+      76
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1333,
-    "high_low_range": 0.0905,
-    "volatility_10": 0.0885,
-    "volume_change": 0.0815,
+    "daily_return": 0.1326,
+    "high_low_range": 0.0913,
+    "volatility_10": 0.0896,
+    "volume_change": 0.0821,
     "ma_ratio_5_20": 0.0772,
-    "macd": 0.0767,
-    "macd_signal": 0.074,
-    "volatility_20": 0.0686,
-    "ma_5": 0.0667,
-    "ma_20": 0.0663,
-    "ma_10": 0.0629,
-    "volume_ma_10": 0.0587,
-    "rsi_14": 0.0552
+    "macd_signal": 0.076,
+    "macd": 0.0757,
+    "volatility_20": 0.0682,
+    "ma_20": 0.0662,
+    "ma_5": 0.0646,
+    "ma_10": 0.0626,
+    "volume_ma_10": 0.06,
+    "rsi_14": 0.0539
   }
 }

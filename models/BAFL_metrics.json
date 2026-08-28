@@ -1,0 +1,36 @@
+{
+  "ticker": "BAFL",
+  "train_rows": 1962,
+  "test_rows": 491,
+  "test_period": "2024-09-06 to 2026-08-27",
+  "accuracy": 0.5316,
+  "baseline_accuracy": 0.5295,
+  "precision": 0.5294,
+  "recall": 0.039,
+  "f1_score": 0.0726,
+  "confusion_matrix": [
+    [
+      252,
+      8
+    ],
+    [
+      222,
+      9
+    ]
+  ],
+  "feature_importance": {
+    "daily_return": 0.0896,
+    "volume_change": 0.0893,
+    "ma_ratio_5_20": 0.0847,
+    "macd": 0.0823,
+    "volatility_10": 0.0787,
+    "ma_20": 0.0763,
+    "macd_signal": 0.0754,
+    "volatility_20": 0.0741,
+    "volume_ma_10": 0.0725,
+    "high_low_range": 0.0711,
+    "ma_5": 0.069,
+    "ma_10": 0.069,
+    "rsi_14": 0.068
+  }
+}

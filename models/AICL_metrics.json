@@ -1,17 +1,17 @@
 {
   "ticker": "AICL",
   "train_rows": 1940,
-  "test_rows": 485,
-  "test_period": "2024-09-13 to 2026-08-25",
-  "accuracy": 0.5134,
-  "baseline_accuracy": 0.5443,
-  "precision": 0.4545,
+  "test_rows": 486,
+  "test_period": "2024-09-13 to 2026-08-27",
+  "accuracy": 0.5123,
+  "baseline_accuracy": 0.5453,
+  "precision": 0.4518,
   "recall": 0.3394,
-  "f1_score": 0.3886,
+  "f1_score": 0.3876,
   "confusion_matrix": [
     [
       174,
-      90
+      91
     ],
     [
       146,

@@ -1,36 +1,36 @@
 {
   "ticker": "OGDC",
-  "train_rows": 1965,
+  "train_rows": 1966,
   "test_rows": 492,
-  "test_period": "2024-09-04 to 2026-08-25",
+  "test_period": "2024-09-05 to 2026-08-27",
   "accuracy": 0.5061,
-  "baseline_accuracy": 0.4959,
-  "precision": 0.5806,
-  "recall": 0.0726,
+  "baseline_accuracy": 0.4939,
+  "precision": 0.6,
+  "recall": 0.0723,
   "f1_score": 0.129,
   "confusion_matrix": [
     [
       231,
-      13
+      12
     ],
     [
-      230,
+      231,
       18
     ]
   ],
   "feature_importance": {
-    "volume_change": 0.1004,
-    "macd_signal": 0.096,
-    "ma_ratio_5_20": 0.0937,
-    "high_low_range": 0.0874,
-    "macd": 0.0823,
-    "ma_5": 0.0772,
-    "volume_ma_10": 0.0736,
-    "rsi_14": 0.0718,
-    "volatility_20": 0.0711,
-    "ma_20": 0.0674,
-    "volatility_10": 0.0649,
-    "daily_return": 0.0586,
-    "ma_10": 0.0555
+    "volume_change": 0.0977,
+    "macd_signal": 0.097,
+    "ma_ratio_5_20": 0.094,
+    "high_low_range": 0.088,
+    "macd": 0.0844,
+    "ma_5": 0.0765,
+    "volume_ma_10": 0.0737,
+    "rsi_14": 0.0726,
+    "volatility_20": 0.0712,
+    "ma_20": 0.0665,
+    "volatility_10": 0.066,
+    "daily_return": 0.0575,
+    "ma_10": 0.0549
   }
 }
