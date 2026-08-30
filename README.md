@@ -304,3 +304,56 @@ experiment comparison, in that order, right before the existing
 correlation matrix and beta sections. The main model and its predictions
 elsewhere in the app are UNCHANGED by any of this — still price/volume
 only, still the same ~50% honest accuracy story.
+
+## Multi-page structure with login (latest addition)
+
+The app was restructured from a single page with tabs into a proper
+multi-page app, per instructor feedback requesting an intro page and
+login flow before the main app content:
+
+- **Welcome** (intro page) — what the app does, shown to everyone
+- **Login** — a simple username/password gate
+- **1. Risk Questionnaire → 4. Analysis & Methodology** — the real app,
+  only reachable after logging in
+
+### How the login works — read this before presenting
+This is a **simple demo-level login gate, not real authentication**.
+One shared username/password (default: `student` / `riskwise2026`,
+shown on the login screen itself if you haven't set your own), no
+per-user accounts, no password hashing. This was a deliberate scope
+choice: it satisfies "the app should have a login" visually and
+functionally for a university presentation, without the added setup of
+registering a real OAuth provider (Google/Microsoft) for what's ultimately
+a class project. Say this plainly if asked in a viva — it's a legitimate,
+disclosed limitation, not something to be caught out on.
+
+**To set your own login** (recommended before a real presentation, so
+the default password isn't visible on screen): copy
+`.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and fill
+in your own username/password. This file is gitignored — never commit
+real secrets to a public repo.
+
+### Upgrading to real login later
+Streamlit has a built-in `st.login()` supporting real OAuth (Google,
+Microsoft, etc.) from version 1.42+. That requires registering an OAuth
+app with the provider and configuring client credentials — genuinely more
+setup than this project's scope, but the natural next step if this ever
+needs real per-user accounts.
+
+### File structure of the app itself
+    app/
+    ├── app.py                        -> entry point: session state, login
+    │                                    gate, builds the page list, calls
+    │                                    st.navigation()
+    └── page_modules/
+        ├── shared.py                 -> cached wrappers used by multiple pages
+        ├── intro.py                  -> Welcome page
+        ├── login.py                  -> Login page
+        ├── questionnaire.py          -> Page 1
+        ├── recommendations.py        -> Page 2
+        ├── stock_explorer.py         -> Page 3
+        └── methodology.py            -> Page 4
+
+Deploying to Streamlit Community Cloud: the "Main file path" setting
+stays `app/app.py` — unchanged from before, no redeploy configuration
+needed, just push the new files.
