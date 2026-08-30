@@ -20,11 +20,14 @@ DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 MODEL_DIR = os.path.join(PROJECT_ROOT, "models")
 LOG_DIR = os.path.join(PROJECT_ROOT, "logs")
 RAW_UPLOADS_DIR = os.path.join(PROJECT_ROOT, "raw_uploads")
+USERS_DIR = os.path.join(PROJECT_ROOT, "users")
+USERS_FILE = os.path.join(USERS_DIR, "users.json")
 
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(MODEL_DIR, exist_ok=True)
 os.makedirs(LOG_DIR, exist_ok=True)
 os.makedirs(RAW_UPLOADS_DIR, exist_ok=True)
+os.makedirs(USERS_DIR, exist_ok=True)
 
 # ---------------------------------------------------------------------------
 # Tickers - THE ONE PLACE this list is defined

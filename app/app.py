@@ -50,6 +50,8 @@ if "recommendations" not in st.session_state:
     st.session_state.recommendations = None
 if "profile_code" not in st.session_state:
     st.session_state.profile_code = None
+if "username" not in st.session_state:
+    st.session_state.username = None
 
 # ---------------------------------------------------------------------------
 # Page list — gated by login state. Before login, only Welcome + Login are
@@ -65,8 +67,11 @@ if st.session_state.authenticated:
     ]
 
     with st.sidebar:
+        if st.session_state.username:
+            st.caption(f"Logged in as **{st.session_state.username}**")
         if st.button("🚪 Log out", use_container_width=True):
             st.session_state.authenticated = False
+            st.session_state.username = None
             st.rerun()
 
         st.divider()

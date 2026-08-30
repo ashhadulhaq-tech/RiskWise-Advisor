@@ -1,63 +1,72 @@
 """
-app/page_modules/login.py - Simple login gate
-==================================================
-NOT real per-user authentication — a single shared username/password,
-configurable via .streamlit/secrets.toml. This is deliberate: it gives the
-app a genuine login SCREEN and gated flow (what was actually requested
-— examiners expecting an "intro then login then app" structure), without
-the added scope of registering a real OAuth provider for a university
-project. Documented plainly here and in the README so this is never
-mistaken for production-grade security. See README "Upgrading to real
-login" for the path to Streamlit's built-in st.login() (Google/Microsoft
-OAuth) if this project ever needs genuine per-user accounts.
+app/page_modules/login.py - Real multi-user sign-up + login
+=================================================================
+Accounts are stored in users/users.json, with salted+hashed passwords
+(see src/auth_store.py for the hashing details and the honest note on
+Streamlit Cloud's ephemeral filesystem — accounts persist for the life
+of the running app instance, not across reboots/redeploys, unless
+users.json is committed back to the repo).
+
+The original shared demo account still works as a fallback:
+    Username: student   Password: riskwise2026
 """
 import streamlit as st
 
-# Fallback credentials used ONLY if .streamlit/secrets.toml isn't
-# configured — so the app still runs out of the box, with a visible
-# notice rather than a silent, unlabeled default a viewer might miss.
-DEFAULT_USERNAME = "student"
-DEFAULT_PASSWORD = "riskwise2026"
-
-
-def _get_credentials():
-    """Returns (username, password, using_custom_secrets)."""
-    try:
-        return st.secrets["auth"]["username"], st.secrets["auth"]["password"], True
-    except Exception:
-        return DEFAULT_USERNAME, DEFAULT_PASSWORD, False
+from auth_store import (
+    create_user,
+    verify_user,
+    DEFAULT_USERNAME,
+    DEFAULT_PASSWORD,
+)
 
 
 def render_login():
     st.title("🔒 Login")
 
-    valid_username, valid_password, using_real_secrets = _get_credentials()
-
-    if not using_real_secrets:
-        st.info(
-            f"No custom credentials configured — using the built-in demo "
-            f"login. **Username:** `{DEFAULT_USERNAME}` · **Password:** "
-            f"`{DEFAULT_PASSWORD}`. Set your own in `.streamlit/secrets.toml` "
-            f"(see README) if you'd rather not show this default during "
-            f"a presentation."
-        )
-
     st.caption(
-        "This is a simple login gate for demo/presentation purposes, not "
-        "production-grade authentication — no real user accounts, no "
-        "password hashing. That scope is intentional for a university "
-        "project; see README for how to upgrade to real sign-in later."
+        "Real accounts, stored locally with salted/hashed passwords — not "
+        "production-grade infrastructure (no real database, no email "
+        "verification), which is intentional scope for a university "
+        "project. See README for details."
     )
 
-    with st.form("login_form"):
-        username = st.text_input("Username")
-        password = st.text_input("Password", type="password")
-        submitted = st.form_submit_button("Log in")
+    login_tab, signup_tab = st.tabs(["Log in", "Sign up"])
 
-    if submitted:
-        if username == valid_username and password == valid_password:
-            st.session_state.authenticated = True
-            st.success("Logged in — redirecting...")
-            st.rerun()
-        else:
-            st.error("Incorrect username or password.")
+    with login_tab:
+        st.info(
+            f"Don't want to sign up? The demo account still works — "
+            f"**Username:** `{DEFAULT_USERNAME}` · **Password:** `{DEFAULT_PASSWORD}`"
+        )
+        with st.form("login_form"):
+            username = st.text_input("Username", key="login_username")
+            password = st.text_input("Password", type="password", key="login_password")
+            submitted = st.form_submit_button("Log in")
+
+        if submitted:
+            if verify_user(username, password):
+                st.session_state.authenticated = True
+                st.session_state.username = username
+                st.success("Logged in — redirecting...")
+                st.rerun()
+            else:
+                st.error("Incorrect username or password.")
+
+    with signup_tab:
+        with st.form("signup_form"):
+            new_username = st.text_input("Choose a username", key="signup_username")
+            new_password = st.text_input("Choose a password", type="password", key="signup_password")
+            confirm_password = st.text_input("Confirm password", type="password", key="signup_confirm")
+            signup_submitted = st.form_submit_button("Sign up")
+
+        if signup_submitted:
+            if new_password != confirm_password:
+                st.error("Passwords don't match.")
+            else:
+                success, message = create_user(new_username, new_password)
+                if success:
+                    st.session_state.authenticated = True
+                    st.session_state.username = new_username
+                    st.success("Account created — logging you in...")
+                    st.rerun()
+                else:
+                    st.error(message)
