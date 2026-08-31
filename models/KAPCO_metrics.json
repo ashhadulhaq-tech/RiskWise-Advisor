@@ -1,36 +1,36 @@
 {
   "ticker": "KAPCO",
-  "train_rows": 1966,
+  "train_rows": 1967,
   "test_rows": 492,
-  "test_period": "2024-09-05 to 2026-08-27",
-  "accuracy": 0.5366,
+  "test_period": "2024-09-06 to 2026-08-28",
+  "accuracy": 0.5488,
   "baseline_accuracy": 0.5589,
-  "precision": 0.453,
-  "recall": 0.2442,
-  "f1_score": 0.3174,
+  "precision": 0.479,
+  "recall": 0.2627,
+  "f1_score": 0.3393,
   "confusion_matrix": [
     [
-      211,
-      64
+      213,
+      62
     ],
     [
-      164,
-      53
+      160,
+      57
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1459,
-    "high_low_range": 0.0897,
-    "volatility_20": 0.0893,
-    "rsi_14": 0.0806,
-    "macd_signal": 0.0764,
-    "macd": 0.0758,
-    "volatility_10": 0.0687,
-    "ma_10": 0.0679,
-    "ma_20": 0.0663,
-    "ma_ratio_5_20": 0.0658,
-    "ma_5": 0.0593,
-    "volume_change": 0.0577,
-    "volume_ma_10": 0.0566
+    "daily_return": 0.147,
+    "high_low_range": 0.0893,
+    "volatility_20": 0.089,
+    "rsi_14": 0.0798,
+    "macd_signal": 0.0752,
+    "macd": 0.0747,
+    "volatility_10": 0.0699,
+    "ma_10": 0.0682,
+    "ma_20": 0.0678,
+    "ma_ratio_5_20": 0.0656,
+    "ma_5": 0.0614,
+    "volume_ma_10": 0.0571,
+    "volume_change": 0.055
   }
 }

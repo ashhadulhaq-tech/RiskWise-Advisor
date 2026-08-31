@@ -1,36 +1,36 @@
 {
   "ticker": "CHCC",
-  "train_rows": 1966,
+  "train_rows": 1967,
   "test_rows": 492,
-  "test_period": "2024-09-05 to 2026-08-27",
-  "accuracy": 0.4939,
-  "baseline_accuracy": 0.5122,
-  "precision": 0.4237,
-  "recall": 0.1042,
-  "f1_score": 0.1672,
+  "test_period": "2024-09-06 to 2026-08-28",
+  "accuracy": 0.4898,
+  "baseline_accuracy": 0.5142,
+  "precision": 0.4032,
+  "recall": 0.1046,
+  "f1_score": 0.1661,
   "confusion_matrix": [
     [
-      218,
-      34
+      216,
+      37
     ],
     [
-      215,
+      214,
       25
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1475,
-    "volume_change": 0.0972,
-    "high_low_range": 0.0875,
-    "volume_ma_10": 0.0856,
-    "macd": 0.082,
-    "volatility_20": 0.0755,
+    "daily_return": 0.1479,
+    "volume_change": 0.0936,
+    "high_low_range": 0.0889,
+    "volume_ma_10": 0.0865,
+    "macd": 0.0793,
+    "volatility_20": 0.0756,
     "macd_signal": 0.0754,
-    "volatility_10": 0.0676,
-    "ma_5": 0.0619,
-    "ma_10": 0.0602,
-    "rsi_14": 0.056,
-    "ma_ratio_5_20": 0.052,
-    "ma_20": 0.0516
+    "volatility_10": 0.0665,
+    "ma_5": 0.0632,
+    "ma_10": 0.0601,
+    "rsi_14": 0.0556,
+    "ma_20": 0.0549,
+    "ma_ratio_5_20": 0.0525
   }
 }

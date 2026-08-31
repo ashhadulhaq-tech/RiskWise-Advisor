@@ -1,17 +1,17 @@
 {
   "ticker": "HALEON",
   "train_rows": 684,
-  "test_rows": 171,
-  "test_period": "2025-12-16 to 2026-08-27",
-  "accuracy": 0.5146,
-  "baseline_accuracy": 0.5731,
-  "precision": 0.4342,
+  "test_rows": 172,
+  "test_period": "2025-12-16 to 2026-08-28",
+  "accuracy": 0.5116,
+  "baseline_accuracy": 0.5756,
+  "precision": 0.4286,
   "recall": 0.4521,
-  "f1_score": 0.443,
+  "f1_score": 0.44,
   "confusion_matrix": [
     [
       55,
-      43
+      44
     ],
     [
       40,

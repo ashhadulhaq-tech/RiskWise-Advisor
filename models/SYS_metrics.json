@@ -1,17 +1,17 @@
 {
   "ticker": "SYS",
   "train_rows": 1956,
-  "test_rows": 489,
-  "test_period": "2024-09-06 to 2026-08-27",
-  "accuracy": 0.5256,
-  "baseline_accuracy": 0.5194,
-  "precision": 0.5146,
+  "test_rows": 490,
+  "test_period": "2024-09-06 to 2026-08-28",
+  "accuracy": 0.5245,
+  "baseline_accuracy": 0.5204,
+  "precision": 0.5096,
   "recall": 0.2255,
-  "f1_score": 0.3136,
+  "f1_score": 0.3127,
   "confusion_matrix": [
     [
       204,
-      50
+      51
     ],
     [
       182,

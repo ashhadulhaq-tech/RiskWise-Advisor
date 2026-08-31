@@ -1,36 +1,36 @@
 {
   "ticker": "LCI",
-  "train_rows": 1936,
+  "train_rows": 1937,
   "test_rows": 485,
-  "test_period": "2024-09-16 to 2026-08-27",
-  "accuracy": 0.5691,
+  "test_period": "2024-09-18 to 2026-08-28",
+  "accuracy": 0.567,
   "baseline_accuracy": 0.567,
-  "precision": 0.5049,
-  "recall": 0.2476,
-  "f1_score": 0.3323,
+  "precision": 0.5,
+  "recall": 0.2238,
+  "f1_score": 0.3092,
   "confusion_matrix": [
     [
-      224,
-      51
+      228,
+      47
     ],
     [
-      158,
-      52
+      163,
+      47
     ]
   ],
   "feature_importance": {
-    "volatility_10": 0.111,
-    "rsi_14": 0.0956,
-    "high_low_range": 0.0903,
-    "volatility_20": 0.0852,
-    "daily_return": 0.0808,
-    "ma_ratio_5_20": 0.0801,
-    "macd": 0.0761,
-    "ma_5": 0.0714,
-    "macd_signal": 0.0692,
+    "volatility_10": 0.1114,
+    "rsi_14": 0.0968,
+    "high_low_range": 0.0913,
+    "volatility_20": 0.0825,
+    "ma_ratio_5_20": 0.0804,
+    "daily_return": 0.0791,
+    "macd": 0.0752,
+    "ma_5": 0.0712,
+    "macd_signal": 0.0685,
+    "volume_change": 0.0653,
     "volume_ma_10": 0.065,
-    "volume_change": 0.0626,
-    "ma_20": 0.0596,
-    "ma_10": 0.0532
+    "ma_20": 0.0592,
+    "ma_10": 0.0542
   }
 }

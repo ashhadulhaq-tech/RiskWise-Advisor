@@ -1,17 +1,17 @@
 {
   "ticker": "CNERGY",
-  "train_rows": 1966,
+  "train_rows": 1967,
   "test_rows": 492,
-  "test_period": "2024-09-05 to 2026-08-27",
-  "accuracy": 0.5244,
+  "test_period": "2024-09-06 to 2026-08-28",
+  "accuracy": 0.5264,
   "baseline_accuracy": 0.5305,
-  "precision": 0.3636,
+  "precision": 0.4,
   "recall": 0.0173,
-  "f1_score": 0.0331,
+  "f1_score": 0.0332,
   "confusion_matrix": [
     [
-      254,
-      7
+      255,
+      6
     ],
     [
       227,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "macd_signal": 0.0944,
-    "ma_ratio_5_20": 0.0919,
-    "macd": 0.0915,
-    "high_low_range": 0.0855,
-    "daily_return": 0.0852,
-    "volatility_10": 0.0827,
-    "volume_ma_10": 0.0748,
-    "rsi_14": 0.0739,
-    "volume_change": 0.0738,
-    "volatility_20": 0.0687,
-    "ma_20": 0.0649,
-    "ma_10": 0.0588,
-    "ma_5": 0.0538
+    "macd_signal": 0.0936,
+    "ma_ratio_5_20": 0.0929,
+    "macd": 0.091,
+    "daily_return": 0.0853,
+    "volatility_10": 0.0841,
+    "high_low_range": 0.0836,
+    "volume_ma_10": 0.0763,
+    "volume_change": 0.0753,
+    "rsi_14": 0.0733,
+    "volatility_20": 0.0666,
+    "ma_20": 0.0653,
+    "ma_10": 0.0585,
+    "ma_5": 0.0543
   }
 }

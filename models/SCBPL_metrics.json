@@ -1,20 +1,20 @@
 {
   "ticker": "SCBPL",
   "train_rows": 1728,
-  "test_rows": 432,
-  "test_period": "2024-11-29 to 2026-08-27",
-  "accuracy": 0.5116,
-  "baseline_accuracy": 0.5162,
+  "test_rows": 433,
+  "test_period": "2024-11-29 to 2026-08-28",
+  "accuracy": 0.5104,
+  "baseline_accuracy": 0.515,
   "precision": 0.4857,
-  "recall": 0.1627,
-  "f1_score": 0.2437,
+  "recall": 0.1619,
+  "f1_score": 0.2429,
   "confusion_matrix": [
     [
       187,
       36
     ],
     [
-      175,
+      176,
       34
     ]
   ],

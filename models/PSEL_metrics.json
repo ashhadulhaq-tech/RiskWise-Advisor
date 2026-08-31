@@ -1,20 +1,20 @@
 {
   "ticker": "PSEL",
   "train_rows": 716,
-  "test_rows": 179,
-  "test_period": "2025-12-04 to 2026-08-27",
-  "accuracy": 0.5922,
-  "baseline_accuracy": 0.581,
+  "test_rows": 180,
+  "test_period": "2025-12-04 to 2026-08-28",
+  "accuracy": 0.5889,
+  "baseline_accuracy": 0.5778,
   "precision": 0.5238,
-  "recall": 0.2933,
-  "f1_score": 0.3761,
+  "recall": 0.2895,
+  "f1_score": 0.3729,
   "confusion_matrix": [
     [
       84,
       20
     ],
     [
-      53,
+      54,
       22
     ]
   ],

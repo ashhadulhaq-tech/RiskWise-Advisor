@@ -2512,3 +2512,488 @@
 2026-08-28 22:08:34 [INFO] __main__: [YOUW] Refresh complete (updated, +1 rows).
 2026-08-28 22:08:34 [INFO] __main__: Refresh summary: 94/100 stocks succeeded. Market index (KSE100): OK.
 2026-08-28 22:08:34 [WARNING] __main__: Failed/unavailable tickers (existing data, if any, left untouched): ['ABLXD', 'BWCLXD', 'FABLXD', 'HMBXD', 'MCBXD', 'MEBLXD']
+2026-08-31 17:05:12 [INFO] psx_api_fetch: Fetched 100 KSE-100 constituents from psxdata.
+2026-08-31 17:05:16 [INFO] __main__: [KSE100] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:16 [INFO] features: [KSE100] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/KSE100_features.parquet
+2026-08-31 17:05:16 [INFO] __main__: [KSE100] Index refresh complete (updated, +1 rows).
+2026-08-31 17:05:16 [WARNING] psx_api_fetch: [ABLXD] No data returned for 2016-08-31..2026-08-31 (possibly delisted, suspended, or not yet listed in this range).
+2026-08-31 17:05:16 [WARNING] __main__: [ABLXD] First-run backfill returned no data (possibly delisted, suspended, or not covered by the source).
+2026-08-31 17:05:20 [INFO] __main__: [ABOT] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:20 [INFO] features: [ABOT] Features built: 2391 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/ABOT_features.parquet
+2026-08-31 17:05:21 [INFO] model: [ABOT] test=2024-09-26 to 2026-08-28 (479d) | acc=55.5% vs baseline=55.7% | precision=0.494 recall=0.189 f1=0.273 | top features: high_low_range=0.1101, volume_ma_10=0.11, ma_10=0.0931, ma_5=0.0842, ma_20=0.0814
+2026-08-31 17:05:21 [INFO] macro_experiment: [ABOT] Macro experiment: price-only=57.6% vs price+macro=54.4% (-3.3pp)
+2026-08-31 17:05:21 [INFO] __main__: [ABOT] Refresh complete (updated, +1 rows).
+2026-08-31 17:05:26 [INFO] __main__: [AGP] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:26 [INFO] features: [AGP] Features built: 2075 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/AGP_features.parquet
+2026-08-31 17:05:27 [INFO] model: [AGP] test=2024-12-26 to 2026-08-28 (415d) | acc=52.8% vs baseline=52.3% | precision=0.516 recall=0.162 f1=0.246 | top features: macd_signal=0.1149, macd=0.1094, volume_change=0.0987, ma_ratio_5_20=0.0959, volume_ma_10=0.0712
+2026-08-31 17:05:28 [INFO] macro_experiment: [AGP] Macro experiment: price-only=57.6% vs price+macro=55.4% (-2.2pp)
+2026-08-31 17:05:28 [INFO] __main__: [AGP] Refresh complete (updated, +1 rows).
+2026-08-31 17:05:31 [INFO] __main__: [AHCL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:31 [INFO] features: [AHCL] Features built: 2290 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/AHCL_features.parquet
+2026-08-31 17:05:32 [INFO] model: [AHCL] test=2024-10-22 to 2026-08-28 (458d) | acc=48.5% vs baseline=51.3% | precision=0.465 recall=0.390 f1=0.424 | top features: daily_return=0.1351, volume_ma_10=0.0903, rsi_14=0.0866, ma_ratio_5_20=0.0849, macd=0.0769
+2026-08-31 17:05:33 [INFO] macro_experiment: [AHCL] Macro experiment: price-only=50.5% vs price+macro=53.8% (+3.3pp)
+2026-08-31 17:05:33 [INFO] __main__: [AHCL] Refresh complete (updated, +1 rows).
+2026-08-31 17:05:36 [INFO] __main__: [AICL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:36 [INFO] features: [AICL] Features built: 2427 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/AICL_features.parquet
+2026-08-31 17:05:37 [INFO] model: [AICL] test=2024-09-16 to 2026-08-28 (486d) | acc=50.8% vs baseline=54.3% | precision=0.450 recall=0.347 f1=0.392 | top features: daily_return=0.1344, volume_ma_10=0.0904, macd_signal=0.0879, rsi_14=0.0867, ma_5=0.0791
+2026-08-31 17:05:38 [INFO] macro_experiment: [AICL] Macro experiment: price-only=54.4% vs price+macro=56.5% (+2.2pp)
+2026-08-31 17:05:38 [INFO] __main__: [AICL] Refresh complete (updated, +1 rows).
+2026-08-31 17:05:40 [INFO] __main__: [AIRLINK] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:40 [INFO] features: [AIRLINK] Features built: 1202 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/AIRLINK_features.parquet
+2026-08-31 17:05:41 [INFO] model: [AIRLINK] test=2025-09-10 to 2026-08-28 (241d) | acc=53.1% vs baseline=55.2% | precision=0.456 recall=0.241 f1=0.315 | top features: macd=0.1005, volatility_10=0.094, daily_return=0.0867, volume_ma_10=0.0843, high_low_range=0.0824
+2026-08-31 17:05:42 [INFO] macro_experiment: [AIRLINK] Macro experiment: price-only=48.9% vs price+macro=48.9% (+0.0pp)
+2026-08-31 17:05:42 [INFO] __main__: [AIRLINK] Refresh complete (updated, +1 rows).
+2026-08-31 17:05:47 [INFO] __main__: [AKBL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:47 [INFO] features: [AKBL] Features built: 2456 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/AKBL_features.parquet
+2026-08-31 17:05:47 [INFO] model: [AKBL] test=2024-09-06 to 2026-08-28 (492d) | acc=48.2% vs baseline=48.2% | precision=0.500 recall=0.067 f1=0.118 | top features: daily_return=0.1183, high_low_range=0.0863, rsi_14=0.0856, volume_change=0.0844, volatility_10=0.0777
+2026-08-31 17:05:48 [INFO] macro_experiment: [AKBL] Macro experiment: price-only=43.5% vs price+macro=44.6% (+1.1pp)
+2026-08-31 17:05:48 [INFO] __main__: [AKBL] Refresh complete (updated, +1 rows).
+2026-08-31 17:05:53 [INFO] __main__: [APL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:53 [INFO] features: [APL] Features built: 2454 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/APL_features.parquet
+2026-08-31 17:05:54 [INFO] model: [APL] test=2024-09-09 to 2026-08-28 (491d) | acc=53.6% vs baseline=52.3% | precision=0.543 recall=0.162 f1=0.250 | top features: volatility_10=0.1087, volatility_20=0.0906, ma_20=0.0803, high_low_range=0.0799, macd_signal=0.0792
+2026-08-31 17:05:54 [INFO] macro_experiment: [APL] Macro experiment: price-only=47.8% vs price+macro=56.5% (+8.7pp)
+2026-08-31 17:05:54 [INFO] __main__: [APL] Refresh complete (updated, +1 rows).
+2026-08-31 17:05:58 [INFO] __main__: [ATLH] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:05:58 [INFO] features: [ATLH] Features built: 2121 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/ATLH_features.parquet
+2026-08-31 17:05:59 [INFO] model: [ATLH] test=2024-12-11 to 2026-08-28 (425d) | acc=49.2% vs baseline=49.4% | precision=0.480 recall=0.056 f1=0.100 | top features: daily_return=0.1425, rsi_14=0.0879, volatility_10=0.0814, volume_change=0.0812, macd_signal=0.0767
+2026-08-31 17:05:59 [INFO] macro_experiment: [ATLH] Macro experiment: price-only=56.5% vs price+macro=52.2% (-4.3pp)
+2026-08-31 17:05:59 [INFO] __main__: [ATLH] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:03 [INFO] __main__: [ATRL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:03 [INFO] features: [ATRL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/ATRL_features.parquet
+2026-08-31 17:06:04 [INFO] model: [ATRL] test=2024-09-06 to 2026-08-28 (492d) | acc=51.8% vs baseline=52.0% | precision=0.474 recall=0.038 f1=0.071 | top features: volume_change=0.103, daily_return=0.0965, volatility_10=0.0839, volatility_20=0.0791, ma_5=0.0777
+2026-08-31 17:06:04 [INFO] macro_experiment: [ATRL] Macro experiment: price-only=54.4% vs price+macro=53.3% (-1.1pp)
+2026-08-31 17:06:04 [INFO] __main__: [ATRL] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:08 [INFO] __main__: [BAFL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:08 [INFO] features: [BAFL] Features built: 2454 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/BAFL_features.parquet
+2026-08-31 17:06:09 [INFO] model: [BAFL] test=2024-09-09 to 2026-08-28 (491d) | acc=53.4% vs baseline=52.8% | precision=0.600 recall=0.039 f1=0.073 | top features: volume_change=0.0905, daily_return=0.0897, ma_ratio_5_20=0.0871, macd=0.0793, volatility_10=0.0767
+2026-08-31 17:06:09 [INFO] macro_experiment: [BAFL] Macro experiment: price-only=57.6% vs price+macro=52.2% (-5.4pp)
+2026-08-31 17:06:09 [INFO] __main__: [BAFL] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:12 [WARNING] psx_api_fetch: [BAHLXD] No data returned for 2016-08-31..2026-08-31 (possibly delisted, suspended, or not yet listed in this range).
+2026-08-31 17:06:12 [WARNING] __main__: [BAHLXD] First-run backfill returned no data (possibly delisted, suspended, or not covered by the source).
+2026-08-31 17:06:15 [INFO] __main__: [BNWM] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:15 [INFO] features: [BNWM] Features built: 2010 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/BNWM_features.parquet
+2026-08-31 17:06:16 [INFO] model: [BNWM] test=2025-01-14 to 2026-08-28 (402d) | acc=57.0% vs baseline=58.7% | precision=0.441 recall=0.157 f1=0.231 | top features: daily_return=0.1415, macd=0.1006, macd_signal=0.0881, high_low_range=0.0844, ma_ratio_5_20=0.0781
+2026-08-31 17:06:16 [INFO] macro_experiment: [BNWM] Macro experiment: price-only=55.4% vs price+macro=54.4% (-1.1pp)
+2026-08-31 17:06:16 [INFO] __main__: [BNWM] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:20 [INFO] __main__: [BOP] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:20 [INFO] features: [BOP] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/BOP_features.parquet
+2026-08-31 17:06:21 [INFO] model: [BOP] test=2024-09-06 to 2026-08-28 (492d) | acc=49.4% vs baseline=48.6% | precision=0.525 recall=0.166 f1=0.252 | top features: volume_change=0.112, volatility_10=0.097, daily_return=0.082, volatility_20=0.0797, high_low_range=0.0783
+2026-08-31 17:06:21 [INFO] macro_experiment: [BOP] Macro experiment: price-only=56.5% vs price+macro=50.0% (-6.5pp)
+2026-08-31 17:06:21 [INFO] __main__: [BOP] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:23 [WARNING] psx_api_fetch: [BWCLXD] No data returned for 2016-08-31..2026-08-31 (possibly delisted, suspended, or not yet listed in this range).
+2026-08-31 17:06:23 [WARNING] __main__: [BWCLXD] First-run backfill returned no data (possibly delisted, suspended, or not covered by the source).
+2026-08-31 17:06:27 [INFO] __main__: [CHCC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:27 [INFO] features: [CHCC] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/CHCC_features.parquet
+2026-08-31 17:06:28 [INFO] model: [CHCC] test=2024-09-06 to 2026-08-28 (492d) | acc=49.0% vs baseline=51.4% | precision=0.403 recall=0.105 f1=0.166 | top features: daily_return=0.1479, volume_change=0.0936, high_low_range=0.0889, volume_ma_10=0.0865, macd=0.0793
+2026-08-31 17:06:29 [INFO] macro_experiment: [CHCC] Macro experiment: price-only=45.6% vs price+macro=51.1% (+5.4pp)
+2026-08-31 17:06:29 [INFO] __main__: [CHCC] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:32 [INFO] __main__: [CNERGY] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:32 [INFO] features: [CNERGY] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/CNERGY_features.parquet
+2026-08-31 17:06:33 [INFO] model: [CNERGY] test=2024-09-06 to 2026-08-28 (492d) | acc=52.6% vs baseline=53.0% | precision=0.400 recall=0.017 f1=0.033 | top features: macd_signal=0.0936, ma_ratio_5_20=0.0929, macd=0.091, daily_return=0.0853, volatility_10=0.0841
+2026-08-31 17:06:34 [INFO] macro_experiment: [CNERGY] Macro experiment: price-only=55.4% vs price+macro=51.1% (-4.3pp)
+2026-08-31 17:06:34 [INFO] __main__: [CNERGY] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:39 [INFO] __main__: [COLG] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:39 [INFO] features: [COLG] Features built: 1949 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/COLG_features.parquet
+2026-08-31 17:06:40 [INFO] model: [COLG] test=2025-01-30 to 2026-08-28 (390d) | acc=52.0% vs baseline=55.4% | precision=0.429 recall=0.224 f1=0.294 | top features: daily_return=0.1198, rsi_14=0.0949, volume_change=0.088, macd_signal=0.0809, high_low_range=0.0787
+2026-08-31 17:06:41 [INFO] macro_experiment: [COLG] Macro experiment: price-only=46.7% vs price+macro=52.2% (+5.4pp)
+2026-08-31 17:06:41 [INFO] __main__: [COLG] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:44 [INFO] __main__: [CPHL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:44 [INFO] features: [CPHL] Features built: 1251 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/CPHL_features.parquet
+2026-08-31 17:06:45 [INFO] model: [CPHL] test=2025-08-27 to 2026-08-28 (251d) | acc=55.0% vs baseline=51.0% | precision=0.632 recall=0.195 f1=0.298 | top features: volume_change=0.0884, ma_ratio_5_20=0.0876, rsi_14=0.0843, daily_return=0.0838, ma_10=0.0826
+2026-08-31 17:06:45 [INFO] macro_experiment: [CPHL] Macro experiment: price-only=53.3% vs price+macro=51.1% (-2.2pp)
+2026-08-31 17:06:45 [INFO] __main__: [CPHL] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:50 [INFO] __main__: [DCR] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:50 [INFO] features: [DCR] Features built: 2455 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/DCR_features.parquet
+2026-08-31 17:06:51 [INFO] model: [DCR] test=2024-09-09 to 2026-08-28 (491d) | acc=49.5% vs baseline=46.0% | precision=0.553 recall=0.332 f1=0.415 | top features: daily_return=0.1891, high_low_range=0.0942, macd_signal=0.0779, volatility_10=0.0755, rsi_14=0.0753
+2026-08-31 17:06:52 [INFO] macro_experiment: [DCR] Macro experiment: price-only=55.4% vs price+macro=57.6% (+2.2pp)
+2026-08-31 17:06:52 [INFO] __main__: [DCR] Refresh complete (updated, +1 rows).
+2026-08-31 17:06:57 [INFO] __main__: [DGKC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:06:57 [INFO] features: [DGKC] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/DGKC_features.parquet
+2026-08-31 17:06:58 [INFO] model: [DGKC] test=2024-09-06 to 2026-08-28 (492d) | acc=48.6% vs baseline=51.0% | precision=0.435 recall=0.166 f1=0.240 | top features: daily_return=0.1017, rsi_14=0.0976, ma_ratio_5_20=0.0896, volume_change=0.087, volume_ma_10=0.0812
+2026-08-31 17:06:58 [INFO] macro_experiment: [DGKC] Macro experiment: price-only=53.3% vs price+macro=43.5% (-9.8pp)
+2026-08-31 17:06:58 [INFO] __main__: [DGKC] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:01 [INFO] __main__: [EFERT] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:01 [INFO] features: [EFERT] Features built: 2458 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/EFERT_features.parquet
+2026-08-31 17:07:02 [INFO] model: [EFERT] test=2024-09-06 to 2026-08-28 (492d) | acc=54.3% vs baseline=45.3% | precision=0.492 recall=0.296 f1=0.370 | top features: daily_return=0.0976, high_low_range=0.0917, volume_change=0.0912, volatility_10=0.0781, ma_5=0.0753
+2026-08-31 17:07:03 [INFO] macro_experiment: [EFERT] Macro experiment: price-only=51.1% vs price+macro=54.4% (+3.3pp)
+2026-08-31 17:07:03 [INFO] __main__: [EFERT] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:06 [INFO] __main__: [ENGROH] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:06 [INFO] features: [ENGROH] Features built: 2439 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/ENGROH_features.parquet
+2026-08-31 17:07:07 [INFO] model: [ENGROH] test=2024-09-12 to 2026-08-28 (488d) | acc=49.8% vs baseline=50.4% | precision=0.286 recall=0.008 f1=0.016 | top features: daily_return=0.1435, ma_20=0.0919, volume_change=0.0877, ma_5=0.0835, rsi_14=0.0832
+2026-08-31 17:07:07 [INFO] macro_experiment: [ENGROH] Macro experiment: price-only=47.8% vs price+macro=47.8% (+0.0pp)
+2026-08-31 17:07:07 [INFO] __main__: [ENGROH] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:09 [WARNING] psx_api_fetch: [FABLXD] No data returned for 2016-08-31..2026-08-31 (possibly delisted, suspended, or not yet listed in this range).
+2026-08-31 17:07:09 [WARNING] __main__: [FABLXD] First-run backfill returned no data (possibly delisted, suspended, or not covered by the source).
+2026-08-31 17:07:12 [INFO] __main__: [FATIMA] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:12 [INFO] features: [FATIMA] Features built: 2456 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/FATIMA_features.parquet
+2026-08-31 17:07:13 [INFO] model: [FATIMA] test=2024-09-06 to 2026-08-28 (492d) | acc=53.0% vs baseline=49.4% | precision=0.618 recall=0.189 f1=0.289 | top features: daily_return=0.1289, high_low_range=0.117, volatility_10=0.0787, volume_change=0.0752, volume_ma_10=0.0751
+2026-08-31 17:07:14 [INFO] macro_experiment: [FATIMA] Macro experiment: price-only=50.0% vs price+macro=46.7% (-3.3pp)
+2026-08-31 17:07:14 [INFO] __main__: [FATIMA] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:17 [INFO] __main__: [FCCL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:17 [INFO] features: [FCCL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/FCCL_features.parquet
+2026-08-31 17:07:18 [INFO] model: [FCCL] test=2024-09-06 to 2026-08-28 (492d) | acc=51.6% vs baseline=52.4% | precision=0.389 recall=0.030 f1=0.056 | top features: high_low_range=0.0894, rsi_14=0.0852, daily_return=0.0852, ma_ratio_5_20=0.0834, volume_ma_10=0.0814
+2026-08-31 17:07:19 [INFO] macro_experiment: [FCCL] Macro experiment: price-only=44.6% vs price+macro=41.3% (-3.3pp)
+2026-08-31 17:07:19 [INFO] __main__: [FCCL] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:23 [INFO] __main__: [FFC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:23 [INFO] features: [FFC] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/FFC_features.parquet
+2026-08-31 17:07:24 [INFO] model: [FFC] test=2024-09-06 to 2026-08-28 (492d) | acc=47.6% vs baseline=52.0% | precision=0.476 recall=0.919 f1=0.627 | top features: daily_return=0.1002, volume_ma_10=0.0895, ma_ratio_5_20=0.0854, high_low_range=0.0852, macd_signal=0.0825
+2026-08-31 17:07:24 [INFO] macro_experiment: [FFC] Macro experiment: price-only=54.4% vs price+macro=50.0% (-4.3pp)
+2026-08-31 17:07:24 [INFO] __main__: [FFC] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:29 [INFO] __main__: [FFL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:29 [INFO] features: [FFL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/FFL_features.parquet
+2026-08-31 17:07:29 [INFO] model: [FFL] test=2024-09-06 to 2026-08-28 (492d) | acc=56.3% vs baseline=55.9% | precision=0.512 recall=0.194 f1=0.281 | top features: daily_return=0.1828, volume_change=0.0967, volatility_20=0.081, volatility_10=0.0776, rsi_14=0.0725
+2026-08-31 17:07:30 [INFO] macro_experiment: [FFL] Macro experiment: price-only=53.3% vs price+macro=53.3% (+0.0pp)
+2026-08-31 17:07:30 [INFO] __main__: [FFL] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:34 [INFO] __main__: [FHAM] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:34 [INFO] features: [FHAM] Features built: 2201 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/FHAM_features.parquet
+2026-08-31 17:07:35 [INFO] model: [FHAM] test=2024-11-19 to 2026-08-28 (441d) | acc=54.9% vs baseline=49.2% | precision=0.560 recall=0.522 f1=0.540 | top features: daily_return=0.2392, volume_change=0.1, rsi_14=0.0902, ma_ratio_5_20=0.0693, volatility_10=0.0681
+2026-08-31 17:07:35 [INFO] macro_experiment: [FHAM] Macro experiment: price-only=45.6% vs price+macro=46.7% (+1.1pp)
+2026-08-31 17:07:35 [INFO] __main__: [FHAM] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:39 [INFO] __main__: [GADT] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:39 [INFO] features: [GADT] Features built: 2070 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/GADT_features.parquet
+2026-08-31 17:07:40 [INFO] model: [GADT] test=2024-12-27 to 2026-08-28 (414d) | acc=57.5% vs baseline=54.8% | precision=0.641 recall=0.134 f1=0.221 | top features: daily_return=0.1252, rsi_14=0.0882, macd_signal=0.0845, macd=0.0842, high_low_range=0.084
+2026-08-31 17:07:40 [INFO] macro_experiment: [GADT] Macro experiment: price-only=53.8% vs price+macro=52.8% (-1.1pp)
+2026-08-31 17:07:40 [INFO] __main__: [GADT] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:43 [INFO] __main__: [GAL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:43 [INFO] features: [GAL] Features built: 2458 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/GAL_features.parquet
+2026-08-31 17:07:44 [INFO] model: [GAL] test=2024-09-06 to 2026-08-28 (492d) | acc=52.8% vs baseline=51.0% | precision=0.605 recall=0.108 f1=0.183 | top features: daily_return=0.1682, volatility_10=0.1082, volatility_20=0.0741, macd_signal=0.0735, volume_change=0.0734
+2026-08-31 17:07:45 [INFO] macro_experiment: [GAL] Macro experiment: price-only=47.8% vs price+macro=41.3% (-6.5pp)
+2026-08-31 17:07:45 [INFO] __main__: [GAL] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:48 [INFO] __main__: [GHGL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:48 [INFO] features: [GHGL] Features built: 2453 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/GHGL_features.parquet
+2026-08-31 17:07:49 [INFO] model: [GHGL] test=2024-09-09 to 2026-08-28 (491d) | acc=51.9% vs baseline=49.7% | precision=0.585 recall=0.154 f1=0.244 | top features: daily_return=0.138, volume_change=0.1127, volume_ma_10=0.0819, rsi_14=0.0787, ma_20=0.0705
+2026-08-31 17:07:50 [INFO] macro_experiment: [GHGL] Macro experiment: price-only=53.3% vs price+macro=53.3% (+0.0pp)
+2026-08-31 17:07:50 [INFO] __main__: [GHGL] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:53 [INFO] __main__: [GHNI] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:53 [INFO] features: [GHNI] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/GHNI_features.parquet
+2026-08-31 17:07:54 [INFO] model: [GHNI] test=2024-09-06 to 2026-08-28 (492d) | acc=49.8% vs baseline=49.8% | precision=0.500 recall=0.162 f1=0.245 | top features: daily_return=0.1378, volatility_10=0.0911, macd_signal=0.0856, high_low_range=0.0853, ma_ratio_5_20=0.0766
+2026-08-31 17:07:55 [INFO] macro_experiment: [GHNI] Macro experiment: price-only=53.3% vs price+macro=56.5% (+3.3pp)
+2026-08-31 17:07:55 [INFO] __main__: [GHNI] Refresh complete (updated, +1 rows).
+2026-08-31 17:07:58 [INFO] __main__: [GLAXO] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:07:58 [INFO] features: [GLAXO] Features built: 2457 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/GLAXO_features.parquet
+2026-08-31 17:07:59 [INFO] model: [GLAXO] test=2024-09-06 to 2026-08-28 (492d) | acc=56.3% vs baseline=53.5% | precision=0.569 recall=0.253 f1=0.350 | top features: high_low_range=0.1036, daily_return=0.1035, volatility_10=0.0897, volume_change=0.0878, macd_signal=0.0795
+2026-08-31 17:07:59 [INFO] macro_experiment: [GLAXO] Macro experiment: price-only=53.3% vs price+macro=52.2% (-1.1pp)
+2026-08-31 17:07:59 [INFO] __main__: [GLAXO] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:01 [INFO] __main__: [HALEON] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:01 [INFO] features: [HALEON] Features built: 856 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/HALEON_features.parquet
+2026-08-31 17:08:02 [INFO] model: [HALEON] test=2025-12-16 to 2026-08-28 (172d) | acc=51.2% vs baseline=57.6% | precision=0.429 recall=0.452 f1=0.440 | top features: daily_return=0.1225, volume_change=0.1225, rsi_14=0.0855, volatility_10=0.0827, volume_ma_10=0.0755
+2026-08-31 17:08:03 [INFO] macro_experiment: [HALEON] Macro experiment: price-only=54.4% vs price+macro=53.3% (-1.1pp)
+2026-08-31 17:08:03 [INFO] __main__: [HALEON] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:06 [INFO] __main__: [HBL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:06 [INFO] features: [HBL] Features built: 2458 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/HBL_features.parquet
+2026-08-31 17:08:07 [INFO] model: [HBL] test=2024-09-06 to 2026-08-28 (492d) | acc=52.2% vs baseline=51.0% | precision=0.524 recall=0.270 f1=0.356 | top features: daily_return=0.1318, volume_change=0.1013, high_low_range=0.1, volume_ma_10=0.082, volatility_10=0.0745
+2026-08-31 17:08:07 [INFO] macro_experiment: [HBL] Macro experiment: price-only=45.6% vs price+macro=48.9% (+3.3pp)
+2026-08-31 17:08:07 [INFO] __main__: [HBL] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:11 [INFO] __main__: [HCAR] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:11 [INFO] features: [HCAR] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/HCAR_features.parquet
+2026-08-31 17:08:12 [INFO] model: [HCAR] test=2024-09-06 to 2026-08-28 (492d) | acc=54.1% vs baseline=55.1% | precision=0.466 recall=0.154 f1=0.231 | top features: daily_return=0.1974, volatility_10=0.0892, macd_signal=0.077, rsi_14=0.0757, volatility_20=0.0709
+2026-08-31 17:08:12 [INFO] macro_experiment: [HCAR] Macro experiment: price-only=46.7% vs price+macro=55.4% (+8.7pp)
+2026-08-31 17:08:12 [INFO] __main__: [HCAR] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:16 [INFO] __main__: [HGFA] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:16 [INFO] features: [HGFA] Features built: 1709 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/HGFA_features.parquet
+2026-08-31 17:08:17 [INFO] model: [HGFA] test=2025-04-14 to 2026-08-28 (342d) | acc=50.0% vs baseline=49.4% | precision=0.529 recall=0.104 f1=0.174 | top features: daily_return=0.1815, high_low_range=0.1141, volume_ma_10=0.1062, volume_change=0.0985, volatility_10=0.066
+2026-08-31 17:08:17 [INFO] macro_experiment: [HGFA] Macro experiment: price-only=50.5% vs price+macro=51.6% (+1.1pp)
+2026-08-31 17:08:17 [INFO] __main__: [HGFA] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:21 [INFO] __main__: [HINOON] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:21 [INFO] features: [HINOON] Features built: 2446 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/HINOON_features.parquet
+2026-08-31 17:08:22 [INFO] model: [HINOON] test=2024-09-10 to 2026-08-28 (490d) | acc=54.7% vs baseline=53.5% | precision=0.875 recall=0.031 f1=0.059 | top features: daily_return=0.1927, macd_signal=0.0816, volatility_10=0.0749, volume_change=0.0721, volatility_20=0.0708
+2026-08-31 17:08:23 [INFO] macro_experiment: [HINOON] Macro experiment: price-only=45.6% vs price+macro=50.0% (+4.3pp)
+2026-08-31 17:08:23 [INFO] __main__: [HINOON] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:25 [WARNING] psx_api_fetch: [HMBXD] No data returned for 2016-08-31..2026-08-31 (possibly delisted, suspended, or not yet listed in this range).
+2026-08-31 17:08:25 [WARNING] __main__: [HMBXD] First-run backfill returned no data (possibly delisted, suspended, or not covered by the source).
+2026-08-31 17:08:28 [INFO] __main__: [HUBC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:28 [INFO] features: [HUBC] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/HUBC_features.parquet
+2026-08-31 17:08:29 [INFO] model: [HUBC] test=2024-09-06 to 2026-08-28 (492d) | acc=51.8% vs baseline=52.2% | precision=0.486 recall=0.153 f1=0.233 | top features: volume_ma_10=0.093, ma_5=0.0873, volatility_20=0.0859, daily_return=0.0853, rsi_14=0.0822
+2026-08-31 17:08:29 [INFO] macro_experiment: [HUBC] Macro experiment: price-only=58.7% vs price+macro=52.2% (-6.5pp)
+2026-08-31 17:08:29 [INFO] __main__: [HUBC] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:32 [INFO] __main__: [HUMNL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:32 [INFO] features: [HUMNL] Features built: 2455 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/HUMNL_features.parquet
+2026-08-31 17:08:33 [INFO] model: [HUMNL] test=2024-09-09 to 2026-08-28 (491d) | acc=52.8% vs baseline=52.3% | precision=0.556 recall=0.043 f1=0.079 | top features: daily_return=0.1113, high_low_range=0.1051, volume_change=0.0901, ma_ratio_5_20=0.0852, volume_ma_10=0.0847
+2026-08-31 17:08:33 [INFO] macro_experiment: [HUMNL] Macro experiment: price-only=44.6% vs price+macro=43.5% (-1.1pp)
+2026-08-31 17:08:33 [INFO] __main__: [HUMNL] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:36 [INFO] __main__: [IBFL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:36 [INFO] features: [IBFL] Features built: 1420 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/IBFL_features.parquet
+2026-08-31 17:08:37 [INFO] model: [IBFL] test=2025-06-13 to 2026-08-28 (284d) | acc=63.4% vs baseline=70.1% | precision=0.306 recall=0.176 f1=0.224 | top features: volatility_10=0.1257, volatility_20=0.1209, daily_return=0.0961, macd=0.0816, ma_ratio_5_20=0.0788
+2026-08-31 17:08:38 [INFO] macro_experiment: [IBFL] Macro experiment: price-only=61.5% vs price+macro=65.1% (+3.6pp)
+2026-08-31 17:08:38 [INFO] __main__: [IBFL] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:42 [INFO] __main__: [ILP] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:42 [INFO] features: [ILP] Features built: 1809 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/ILP_features.parquet
+2026-08-31 17:08:43 [INFO] model: [ILP] test=2025-03-12 to 2026-08-28 (362d) | acc=55.0% vs baseline=54.1% | precision=0.537 recall=0.133 f1=0.213 | top features: daily_return=0.1172, volume_change=0.0949, high_low_range=0.0889, ma_5=0.0875, volume_ma_10=0.0789
+2026-08-31 17:08:43 [INFO] macro_experiment: [ILP] Macro experiment: price-only=56.5% vs price+macro=60.9% (+4.3pp)
+2026-08-31 17:08:43 [INFO] __main__: [ILP] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:47 [INFO] __main__: [INDU] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:47 [INFO] features: [INDU] Features built: 2458 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/INDU_features.parquet
+2026-08-31 17:08:48 [INFO] model: [INDU] test=2024-09-06 to 2026-08-28 (492d) | acc=50.6% vs baseline=50.0% | precision=0.588 recall=0.041 f1=0.076 | top features: ma_5=0.1057, ma_10=0.0922, ma_ratio_5_20=0.0876, ma_20=0.0835, daily_return=0.0795
+2026-08-31 17:08:48 [INFO] macro_experiment: [INDU] Macro experiment: price-only=51.1% vs price+macro=58.7% (+7.6pp)
+2026-08-31 17:08:48 [INFO] __main__: [INDU] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:52 [INFO] __main__: [INIL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:52 [INFO] features: [INIL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/INIL_features.parquet
+2026-08-31 17:08:52 [INFO] model: [INIL] test=2024-09-06 to 2026-08-28 (492d) | acc=51.8% vs baseline=54.7% | precision=0.435 recall=0.211 f1=0.284 | top features: high_low_range=0.1164, daily_return=0.0956, volume_change=0.0949, volatility_10=0.0911, ma_5=0.0789
+2026-08-31 17:08:53 [INFO] macro_experiment: [INIL] Macro experiment: price-only=57.6% vs price+macro=53.3% (-4.3pp)
+2026-08-31 17:08:53 [INFO] __main__: [INIL] Refresh complete (updated, +1 rows).
+2026-08-31 17:08:58 [INFO] __main__: [ISL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:08:58 [INFO] features: [ISL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/ISL_features.parquet
+2026-08-31 17:08:59 [INFO] model: [ISL] test=2024-09-06 to 2026-08-28 (492d) | acc=55.1% vs baseline=55.9% | precision=0.485 recall=0.304 f1=0.374 | top features: daily_return=0.1064, high_low_range=0.0989, macd=0.0921, volatility_10=0.0844, volume_change=0.0815
+2026-08-31 17:09:00 [INFO] macro_experiment: [ISL] Macro experiment: price-only=56.5% vs price+macro=60.9% (+4.3pp)
+2026-08-31 17:09:00 [INFO] __main__: [ISL] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:03 [INFO] __main__: [JDWS] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:03 [INFO] features: [JDWS] Features built: 1539 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/JDWS_features.parquet
+2026-08-31 17:09:04 [INFO] model: [JDWS] test=2025-06-03 to 2026-08-28 (308d) | acc=50.0% vs baseline=52.3% | precision=0.462 recall=0.292 f1=0.358 | top features: daily_return=0.1502, ma_ratio_5_20=0.0946, rsi_14=0.0818, volatility_10=0.0783, volatility_20=0.0727
+2026-08-31 17:09:04 [INFO] macro_experiment: [JDWS] Macro experiment: price-only=50.5% vs price+macro=48.4% (-2.2pp)
+2026-08-31 17:09:04 [INFO] __main__: [JDWS] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:08 [INFO] __main__: [JVDC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:08 [INFO] features: [JVDC] Features built: 2071 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/JVDC_features.parquet
+2026-08-31 17:09:09 [INFO] model: [JVDC] test=2024-12-26 to 2026-08-28 (415d) | acc=48.7% vs baseline=48.7% | precision=0.500 recall=0.089 f1=0.151 | top features: volume_change=0.1063, daily_return=0.0974, volume_ma_10=0.0852, macd_signal=0.0806, macd=0.0793
+2026-08-31 17:09:10 [INFO] macro_experiment: [JVDC] Macro experiment: price-only=45.6% vs price+macro=47.8% (+2.2pp)
+2026-08-31 17:09:10 [INFO] __main__: [JVDC] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:15 [INFO] __main__: [KAPCO] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:15 [INFO] features: [KAPCO] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/KAPCO_features.parquet
+2026-08-31 17:09:15 [INFO] model: [KAPCO] test=2024-09-06 to 2026-08-28 (492d) | acc=54.9% vs baseline=55.9% | precision=0.479 recall=0.263 f1=0.339 | top features: daily_return=0.147, high_low_range=0.0893, volatility_20=0.089, rsi_14=0.0798, macd_signal=0.0752
+2026-08-31 17:09:16 [INFO] macro_experiment: [KAPCO] Macro experiment: price-only=50.0% vs price+macro=55.4% (+5.4pp)
+2026-08-31 17:09:16 [INFO] __main__: [KAPCO] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:19 [INFO] __main__: [KEL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:19 [INFO] features: [KEL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/KEL_features.parquet
+2026-08-31 17:09:20 [INFO] model: [KEL] test=2024-09-06 to 2026-08-28 (492d) | acc=55.3% vs baseline=54.9% | precision=0.750 recall=0.013 f1=0.026 | top features: daily_return=0.0991, volume_ma_10=0.0985, rsi_14=0.0931, high_low_range=0.0806, volume_change=0.0796
+2026-08-31 17:09:20 [INFO] macro_experiment: [KEL] Macro experiment: price-only=44.6% vs price+macro=50.0% (+5.4pp)
+2026-08-31 17:09:20 [INFO] __main__: [KEL] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:25 [INFO] __main__: [KOHC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:25 [INFO] features: [KOHC] Features built: 2458 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/KOHC_features.parquet
+2026-08-31 17:09:26 [INFO] model: [KOHC] test=2024-09-06 to 2026-08-28 (492d) | acc=52.8% vs baseline=53.2% | precision=0.493 recall=0.322 f1=0.390 | top features: daily_return=0.1437, volume_change=0.0949, volatility_10=0.0918, volatility_20=0.0866, high_low_range=0.0858
+2026-08-31 17:09:27 [INFO] macro_experiment: [KOHC] Macro experiment: price-only=55.4% vs price+macro=55.4% (+0.0pp)
+2026-08-31 17:09:27 [INFO] __main__: [KOHC] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:32 [INFO] __main__: [KTML] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:32 [INFO] features: [KTML] Features built: 2318 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/KTML_features.parquet
+2026-08-31 17:09:32 [INFO] model: [KTML] test=2024-10-17 to 2026-08-28 (464d) | acc=48.7% vs baseline=52.6% | precision=0.474 recall=0.750 f1=0.581 | top features: daily_return=0.1193, high_low_range=0.1132, volume_change=0.0883, volatility_10=0.0785, rsi_14=0.0734
+2026-08-31 17:09:33 [INFO] macro_experiment: [KTML] Macro experiment: price-only=48.4% vs price+macro=49.5% (+1.1pp)
+2026-08-31 17:09:33 [INFO] __main__: [KTML] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:38 [INFO] __main__: [LCI] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:38 [INFO] features: [LCI] Features built: 2422 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/LCI_features.parquet
+2026-08-31 17:09:39 [INFO] model: [LCI] test=2024-09-18 to 2026-08-28 (485d) | acc=56.7% vs baseline=56.7% | precision=0.500 recall=0.224 f1=0.309 | top features: volatility_10=0.1114, rsi_14=0.0968, high_low_range=0.0913, volatility_20=0.0825, ma_ratio_5_20=0.0804
+2026-08-31 17:09:39 [INFO] macro_experiment: [LCI] Macro experiment: price-only=58.7% vs price+macro=55.4% (-3.3pp)
+2026-08-31 17:09:39 [INFO] __main__: [LCI] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:43 [INFO] __main__: [LOTCHEM] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:43 [INFO] features: [LOTCHEM] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/LOTCHEM_features.parquet
+2026-08-31 17:09:44 [INFO] model: [LOTCHEM] test=2024-09-06 to 2026-08-28 (492d) | acc=52.0% vs baseline=53.7% | precision=0.457 recall=0.184 f1=0.263 | top features: volume_ma_10=0.0971, high_low_range=0.0966, rsi_14=0.0867, daily_return=0.0851, ma_10=0.0753
+2026-08-31 17:09:44 [INFO] macro_experiment: [LOTCHEM] Macro experiment: price-only=51.1% vs price+macro=57.6% (+6.5pp)
+2026-08-31 17:09:44 [INFO] __main__: [LOTCHEM] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:49 [INFO] __main__: [LUCK] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:49 [INFO] features: [LUCK] Features built: 2454 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/LUCK_features.parquet
+2026-08-31 17:09:50 [INFO] model: [LUCK] test=2024-09-02 to 2026-08-28 (491d) | acc=45.2% vs baseline=48.7% | precision=0.444 recall=0.266 f1=0.333 | top features: rsi_14=0.1087, daily_return=0.0972, ma_ratio_5_20=0.0935, ma_5=0.0832, high_low_range=0.08
+2026-08-31 17:09:51 [INFO] macro_experiment: [LUCK] Macro experiment: price-only=51.6% vs price+macro=48.4% (-3.3pp)
+2026-08-31 17:09:51 [INFO] __main__: [LUCK] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:54 [INFO] __main__: [MARI] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:09:54 [INFO] features: [MARI] Features built: 2458 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/MARI_features.parquet
+2026-08-31 17:09:55 [INFO] model: [MARI] test=2024-09-05 to 2026-08-28 (492d) | acc=44.9% vs baseline=54.9% | precision=0.449 recall=0.969 f1=0.613 | top features: daily_return=0.139, volume_change=0.0872, volatility_20=0.0833, volume_ma_10=0.0763, ma_ratio_5_20=0.0746
+2026-08-31 17:09:56 [INFO] macro_experiment: [MARI] Macro experiment: price-only=46.2% vs price+macro=49.5% (+3.3pp)
+2026-08-31 17:09:56 [INFO] __main__: [MARI] Refresh complete (updated, +1 rows).
+2026-08-31 17:09:58 [WARNING] psx_api_fetch: [MCBXD] No data returned for 2016-08-31..2026-08-31 (possibly delisted, suspended, or not yet listed in this range).
+2026-08-31 17:09:58 [WARNING] __main__: [MCBXD] First-run backfill returned no data (possibly delisted, suspended, or not covered by the source).
+2026-08-31 17:10:00 [WARNING] psx_api_fetch: [MEBLXD] No data returned for 2016-08-31..2026-08-31 (possibly delisted, suspended, or not yet listed in this range).
+2026-08-31 17:10:00 [WARNING] __main__: [MEBLXD] First-run backfill returned no data (possibly delisted, suspended, or not covered by the source).
+2026-08-31 17:10:03 [INFO] __main__: [MEHT] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:03 [INFO] features: [MEHT] Features built: 906 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/MEHT_features.parquet
+2026-08-31 17:10:03 [INFO] model: [MEHT] test=2025-12-02 to 2026-08-28 (182d) | acc=44.5% vs baseline=57.7% | precision=0.412 recall=0.727 f1=0.526 | top features: volatility_20=0.1124, daily_return=0.1102, volume_ma_10=0.1088, volatility_10=0.1041, macd_signal=0.0857
+2026-08-31 17:10:04 [INFO] macro_experiment: [MEHT] Macro experiment: price-only=54.0% vs price+macro=51.7% (-2.3pp)
+2026-08-31 17:10:04 [INFO] __main__: [MEHT] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:09 [INFO] __main__: [MLCF] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:09 [INFO] features: [MLCF] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/MLCF_features.parquet
+2026-08-31 17:10:10 [INFO] model: [MLCF] test=2024-09-06 to 2026-08-28 (492d) | acc=53.0% vs baseline=52.4% | precision=0.523 recall=0.145 f1=0.227 | top features: daily_return=0.1273, volume_change=0.0925, volatility_10=0.0859, macd=0.0787, volume_ma_10=0.0768
+2026-08-31 17:10:10 [INFO] macro_experiment: [MLCF] Macro experiment: price-only=43.5% vs price+macro=47.8% (+4.3pp)
+2026-08-31 17:10:10 [INFO] __main__: [MLCF] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:14 [INFO] __main__: [MTL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:14 [INFO] features: [MTL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/MTL_features.parquet
+2026-08-31 17:10:15 [INFO] model: [MTL] test=2024-09-06 to 2026-08-28 (492d) | acc=50.0% vs baseline=53.9% | precision=0.470 recall=0.652 f1=0.546 | top features: daily_return=0.1271, volume_ma_10=0.0847, volume_change=0.0846, macd_signal=0.0786, ma_5=0.0784
+2026-08-31 17:10:15 [INFO] macro_experiment: [MTL] Macro experiment: price-only=55.4% vs price+macro=54.4% (-1.1pp)
+2026-08-31 17:10:15 [INFO] __main__: [MTL] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:19 [INFO] __main__: [MUREB] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:19 [INFO] features: [MUREB] Features built: 2178 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/MUREB_features.parquet
+2026-08-31 17:10:20 [INFO] model: [MUREB] test=2024-11-26 to 2026-08-28 (436d) | acc=54.6% vs baseline=54.4% | precision=0.512 recall=0.111 f1=0.182 | top features: daily_return=0.1137, rsi_14=0.0951, ma_20=0.0834, high_low_range=0.0796, ma_5=0.0784
+2026-08-31 17:10:21 [INFO] macro_experiment: [MUREB] Macro experiment: price-only=58.7% vs price+macro=54.4% (-4.3pp)
+2026-08-31 17:10:21 [INFO] __main__: [MUREB] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:24 [INFO] __main__: [NATF] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:24 [INFO] features: [NATF] Features built: 2376 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/NATF_features.parquet
+2026-08-31 17:10:25 [INFO] model: [NATF] test=2024-10-01 to 2026-08-28 (476d) | acc=51.9% vs baseline=51.9% | precision=0.500 recall=0.022 f1=0.042 | top features: high_low_range=0.1318, daily_return=0.0986, volume_change=0.0826, ma_10=0.0768, rsi_14=0.0752
+2026-08-31 17:10:26 [INFO] macro_experiment: [NATF] Macro experiment: price-only=43.5% vs price+macro=37.0% (-6.5pp)
+2026-08-31 17:10:26 [INFO] __main__: [NATF] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:30 [INFO] __main__: [NBP] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:30 [INFO] features: [NBP] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/NBP_features.parquet
+2026-08-31 17:10:31 [INFO] model: [NBP] test=2024-09-06 to 2026-08-28 (492d) | acc=48.4% vs baseline=50.2% | precision=0.442 recall=0.139 f1=0.211 | top features: daily_return=0.1246, volume_change=0.094, rsi_14=0.0897, volatility_10=0.0797, volume_ma_10=0.0794
+2026-08-31 17:10:31 [INFO] macro_experiment: [NBP] Macro experiment: price-only=52.2% vs price+macro=54.4% (+2.2pp)
+2026-08-31 17:10:31 [INFO] __main__: [NBP] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:35 [INFO] __main__: [NESTLE] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:35 [INFO] features: [NESTLE] Features built: 1829 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/NESTLE_features.parquet
+2026-08-31 17:10:36 [INFO] model: [NESTLE] test=2025-03-06 to 2026-08-28 (366d) | acc=53.3% vs baseline=52.7% | precision=0.517 recall=0.179 f1=0.266 | top features: daily_return=0.2168, volume_change=0.0815, rsi_14=0.0748, volatility_10=0.0706, macd=0.0689
+2026-08-31 17:10:36 [INFO] macro_experiment: [NESTLE] Macro experiment: price-only=48.9% vs price+macro=50.0% (+1.1pp)
+2026-08-31 17:10:36 [INFO] __main__: [NESTLE] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:41 [INFO] __main__: [NML] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:41 [INFO] features: [NML] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/NML_features.parquet
+2026-08-31 17:10:42 [INFO] model: [NML] test=2024-09-06 to 2026-08-28 (492d) | acc=49.4% vs baseline=50.2% | precision=0.488 recall=0.347 f1=0.406 | top features: high_low_range=0.1043, macd=0.0903, volume_change=0.09, ma_ratio_5_20=0.0888, daily_return=0.085
+2026-08-31 17:10:42 [INFO] macro_experiment: [NML] Macro experiment: price-only=55.4% vs price+macro=53.3% (-2.2pp)
+2026-08-31 17:10:42 [INFO] __main__: [NML] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:46 [INFO] __main__: [NPL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:46 [INFO] features: [NPL] Features built: 2426 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/NPL_features.parquet
+2026-08-31 17:10:47 [INFO] model: [NPL] test=2024-09-16 to 2026-08-28 (486d) | acc=52.9% vs baseline=54.3% | precision=0.477 recall=0.329 f1=0.389 | top features: volume_change=0.116, high_low_range=0.1084, daily_return=0.0976, volatility_20=0.0788, ma_ratio_5_20=0.0787
+2026-08-31 17:10:48 [INFO] macro_experiment: [NPL] Macro experiment: price-only=52.2% vs price+macro=52.2% (+0.0pp)
+2026-08-31 17:10:48 [INFO] __main__: [NPL] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:52 [INFO] __main__: [OGDC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:52 [INFO] features: [OGDC] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/OGDC_features.parquet
+2026-08-31 17:10:53 [INFO] model: [OGDC] test=2024-09-06 to 2026-08-28 (492d) | acc=51.0% vs baseline=49.2% | precision=0.655 recall=0.076 f1=0.136 | top features: macd_signal=0.097, volume_change=0.0968, ma_ratio_5_20=0.095, macd=0.0873, high_low_range=0.0871
+2026-08-31 17:10:54 [INFO] macro_experiment: [OGDC] Macro experiment: price-only=58.7% vs price+macro=59.8% (+1.1pp)
+2026-08-31 17:10:54 [INFO] __main__: [OGDC] Refresh complete (updated, +1 rows).
+2026-08-31 17:10:58 [INFO] __main__: [PABC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:10:58 [INFO] features: [PABC] Features built: 1245 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PABC_features.parquet
+2026-08-31 17:10:58 [INFO] model: [PABC] test=2025-08-29 to 2026-08-28 (249d) | acc=55.8% vs baseline=58.6% | precision=0.462 recall=0.417 f1=0.439 | top features: volume_change=0.1123, high_low_range=0.0936, daily_return=0.0904, macd_signal=0.0816, volatility_10=0.0792
+2026-08-31 17:10:59 [INFO] macro_experiment: [PABC] Macro experiment: price-only=58.7% vs price+macro=57.6% (-1.1pp)
+2026-08-31 17:10:59 [INFO] __main__: [PABC] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:03 [INFO] __main__: [PAEL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:03 [INFO] features: [PAEL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PAEL_features.parquet
+2026-08-31 17:11:03 [INFO] model: [PAEL] test=2024-09-06 to 2026-08-28 (492d) | acc=52.6% vs baseline=52.0% | precision=0.516 recall=0.203 f1=0.292 | top features: volatility_10=0.1096, daily_return=0.0926, macd_signal=0.091, volume_ma_10=0.0882, high_low_range=0.0857
+2026-08-31 17:11:04 [INFO] macro_experiment: [PAEL] Macro experiment: price-only=51.1% vs price+macro=52.2% (+1.1pp)
+2026-08-31 17:11:04 [INFO] __main__: [PAEL] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:08 [INFO] __main__: [PAKT] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:08 [INFO] features: [PAKT] Features built: 1790 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PAKT_features.parquet
+2026-08-31 17:11:08 [INFO] model: [PAKT] test=2025-03-18 to 2026-08-28 (358d) | acc=51.4% vs baseline=48.6% | precision=0.522 recall=0.630 f1=0.571 | top features: daily_return=0.1299, high_low_range=0.1174, ma_ratio_5_20=0.1064, volume_ma_10=0.0907, macd=0.0691
+2026-08-31 17:11:09 [INFO] macro_experiment: [PAKT] Macro experiment: price-only=50.0% vs price+macro=50.0% (+0.0pp)
+2026-08-31 17:11:09 [INFO] __main__: [PAKT] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:13 [INFO] __main__: [PGLC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:13 [INFO] features: [PGLC] Features built: 1151 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PGLC_features.parquet
+2026-08-31 17:11:13 [INFO] model: [PGLC] test=2025-09-24 to 2026-08-28 (231d) | acc=59.3% vs baseline=51.1% | precision=0.679 recall=0.319 f1=0.434 | top features: daily_return=0.1541, volume_change=0.09, rsi_14=0.0896, ma_5=0.0784, volatility_10=0.0758
+2026-08-31 17:11:14 [INFO] macro_experiment: [PGLC] Macro experiment: price-only=58.2% vs price+macro=62.6% (+4.4pp)
+2026-08-31 17:11:14 [INFO] __main__: [PGLC] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:18 [INFO] __main__: [PIBTL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:18 [INFO] features: [PIBTL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PIBTL_features.parquet
+2026-08-31 17:11:19 [INFO] model: [PIBTL] test=2024-09-06 to 2026-08-28 (492d) | acc=53.0% vs baseline=52.6% | precision=0.516 recall=0.142 f1=0.222 | top features: daily_return=0.1028, volatility_10=0.0975, ma_ratio_5_20=0.0911, high_low_range=0.0854, volume_change=0.0786
+2026-08-31 17:11:19 [INFO] macro_experiment: [PIBTL] Macro experiment: price-only=45.6% vs price+macro=53.3% (+7.6pp)
+2026-08-31 17:11:19 [INFO] __main__: [PIBTL] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:24 [INFO] __main__: [PIOC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:24 [INFO] features: [PIOC] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PIOC_features.parquet
+2026-08-31 17:11:25 [INFO] model: [PIOC] test=2024-09-06 to 2026-08-28 (492d) | acc=50.2% vs baseline=52.0% | precision=0.475 recall=0.364 f1=0.412 | top features: daily_return=0.1335, high_low_range=0.0939, volatility_10=0.0916, volume_change=0.08, ma_ratio_5_20=0.078
+2026-08-31 17:11:26 [INFO] macro_experiment: [PIOC] Macro experiment: price-only=50.0% vs price+macro=52.2% (+2.2pp)
+2026-08-31 17:11:26 [INFO] __main__: [PIOC] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:30 [INFO] __main__: [PKGS] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:30 [INFO] features: [PKGS] Features built: 2439 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PKGS_features.parquet
+2026-08-31 17:11:30 [INFO] model: [PKGS] test=2024-09-12 to 2026-08-28 (488d) | acc=49.8% vs baseline=50.2% | precision=0.494 recall=0.317 f1=0.386 | top features: high_low_range=0.118, daily_return=0.1134, volume_change=0.0889, ma_5=0.0834, ma_ratio_5_20=0.0822
+2026-08-31 17:11:31 [INFO] macro_experiment: [PKGS] Macro experiment: price-only=46.7% vs price+macro=45.6% (-1.1pp)
+2026-08-31 17:11:31 [INFO] __main__: [PKGS] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:36 [INFO] __main__: [POL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:36 [INFO] features: [POL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/POL_features.parquet
+2026-08-31 17:11:37 [INFO] model: [POL] test=2024-09-06 to 2026-08-28 (492d) | acc=50.6% vs baseline=50.8% | precision=0.497 recall=0.314 f1=0.385 | top features: rsi_14=0.0942, high_low_range=0.0937, ma_20=0.0879, daily_return=0.0842, ma_5=0.0754
+2026-08-31 17:11:37 [INFO] macro_experiment: [POL] Macro experiment: price-only=50.0% vs price+macro=54.4% (+4.3pp)
+2026-08-31 17:11:37 [INFO] __main__: [POL] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:42 [INFO] __main__: [POWER] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:42 [INFO] features: [POWER] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/POWER_features.parquet
+2026-08-31 17:11:43 [INFO] model: [POWER] test=2024-09-06 to 2026-08-28 (492d) | acc=51.0% vs baseline=52.2% | precision=0.364 recall=0.034 f1=0.062 | top features: daily_return=0.0946, ma_ratio_5_20=0.0926, macd=0.091, volatility_10=0.0885, rsi_14=0.0864
+2026-08-31 17:11:44 [INFO] macro_experiment: [POWER] Macro experiment: price-only=60.9% vs price+macro=56.5% (-4.3pp)
+2026-08-31 17:11:44 [INFO] __main__: [POWER] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:48 [INFO] __main__: [PPL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:48 [INFO] features: [PPL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PPL_features.parquet
+2026-08-31 17:11:48 [INFO] model: [PPL] test=2024-09-06 to 2026-08-28 (492d) | acc=50.2% vs baseline=50.6% | precision=0.489 recall=0.185 f1=0.269 | top features: volume_ma_10=0.1153, daily_return=0.0879, high_low_range=0.0849, volatility_10=0.0821, ma_5=0.0797
+2026-08-31 17:11:49 [INFO] macro_experiment: [PPL] Macro experiment: price-only=52.2% vs price+macro=50.0% (-2.2pp)
+2026-08-31 17:11:49 [INFO] __main__: [PPL] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:53 [INFO] __main__: [PSEL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:53 [INFO] features: [PSEL] Features built: 896 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PSEL_features.parquet
+2026-08-31 17:11:54 [INFO] model: [PSEL] test=2025-12-04 to 2026-08-28 (180d) | acc=58.9% vs baseline=57.8% | precision=0.524 recall=0.289 f1=0.373 | top features: daily_return=0.1908, high_low_range=0.0957, volatility_20=0.0793, ma_ratio_5_20=0.078, volatility_10=0.0719
+2026-08-31 17:11:54 [INFO] macro_experiment: [PSEL] Macro experiment: price-only=60.9% vs price+macro=55.4% (-5.4pp)
+2026-08-31 17:11:54 [INFO] __main__: [PSEL] Refresh complete (updated, +1 rows).
+2026-08-31 17:11:59 [INFO] __main__: [PSO] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:11:59 [INFO] features: [PSO] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PSO_features.parquet
+2026-08-31 17:12:00 [INFO] model: [PSO] test=2024-09-06 to 2026-08-28 (492d) | acc=49.4% vs baseline=51.0% | precision=0.462 recall=0.199 f1=0.278 | top features: volume_ma_10=0.11, high_low_range=0.0885, volatility_20=0.0857, volatility_10=0.0844, ma_ratio_5_20=0.081
+2026-08-31 17:12:00 [INFO] macro_experiment: [PSO] Macro experiment: price-only=48.9% vs price+macro=46.7% (-2.2pp)
+2026-08-31 17:12:00 [INFO] __main__: [PSO] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:04 [INFO] __main__: [PSX] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:04 [INFO] features: [PSX] Features built: 2249 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PSX_features.parquet
+2026-08-31 17:12:05 [INFO] model: [PSX] test=2024-11-06 to 2026-08-28 (450d) | acc=53.6% vs baseline=52.0% | precision=0.630 recall=0.079 f1=0.140 | top features: daily_return=0.1254, high_low_range=0.0972, ma_5=0.0846, rsi_14=0.0806, volatility_10=0.0762
+2026-08-31 17:12:05 [INFO] macro_experiment: [PSX] Macro experiment: price-only=51.1% vs price+macro=50.0% (-1.1pp)
+2026-08-31 17:12:05 [INFO] __main__: [PSX] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:10 [INFO] __main__: [PTC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:10 [INFO] features: [PTC] Features built: 2458 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/PTC_features.parquet
+2026-08-31 17:12:11 [INFO] model: [PTC] test=2024-09-06 to 2026-08-28 (492d) | acc=53.5% vs baseline=53.7% | precision=0.400 recall=0.009 f1=0.017 | top features: high_low_range=0.094, daily_return=0.0896, volume_ma_10=0.0864, ma_ratio_5_20=0.0806, volume_change=0.0794
+2026-08-31 17:12:11 [INFO] macro_experiment: [PTC] Macro experiment: price-only=47.8% vs price+macro=48.9% (+1.1pp)
+2026-08-31 17:12:11 [INFO] __main__: [PTC] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:15 [INFO] __main__: [RMPL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:15 [INFO] features: [RMPL] Features built: 1499 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/RMPL_features.parquet
+2026-08-31 17:12:16 [INFO] model: [RMPL] test=2025-06-17 to 2026-08-28 (300d) | acc=53.7% vs baseline=49.3% | precision=0.567 recall=0.362 f1=0.442 | top features: daily_return=0.135, ma_ratio_5_20=0.0887, rsi_14=0.0877, high_low_range=0.0856, macd=0.0782
+2026-08-31 17:12:16 [INFO] macro_experiment: [RMPL] Macro experiment: price-only=53.8% vs price+macro=52.8% (-1.1pp)
+2026-08-31 17:12:16 [INFO] __main__: [RMPL] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:20 [INFO] __main__: [SAZEW] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:20 [INFO] features: [SAZEW] Features built: 2416 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SAZEW_features.parquet
+2026-08-31 17:12:21 [INFO] model: [SAZEW] test=2024-09-19 to 2026-08-28 (484d) | acc=57.9% vs baseline=57.0% | precision=0.521 recall=0.240 f1=0.329 | top features: daily_return=0.203, ma_ratio_5_20=0.087, volume_ma_10=0.0765, volatility_10=0.0742, volume_change=0.0735
+2026-08-31 17:12:22 [INFO] macro_experiment: [SAZEW] Macro experiment: price-only=60.9% vs price+macro=64.1% (+3.3pp)
+2026-08-31 17:12:22 [INFO] __main__: [SAZEW] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:27 [INFO] __main__: [SCBPL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:27 [INFO] features: [SCBPL] Features built: 2161 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SCBPL_features.parquet
+2026-08-31 17:12:27 [INFO] model: [SCBPL] test=2024-11-29 to 2026-08-28 (433d) | acc=51.0% vs baseline=51.5% | precision=0.486 recall=0.162 f1=0.243 | top features: daily_return=0.1241, high_low_range=0.1068, volume_ma_10=0.1026, ma_10=0.0782, ma_5=0.0736
+2026-08-31 17:12:28 [INFO] macro_experiment: [SCBPL] Macro experiment: price-only=50.0% vs price+macro=50.0% (+0.0pp)
+2026-08-31 17:12:28 [INFO] __main__: [SCBPL] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:31 [INFO] __main__: [SEARL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:31 [INFO] features: [SEARL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SEARL_features.parquet
+2026-08-31 17:12:32 [INFO] model: [SEARL] test=2024-09-06 to 2026-08-28 (492d) | acc=50.0% vs baseline=49.8% | precision=0.508 recall=0.126 f1=0.201 | top features: daily_return=0.1063, high_low_range=0.0953, volume_change=0.0911, volatility_10=0.0793, ma_ratio_5_20=0.0776
+2026-08-31 17:12:33 [INFO] macro_experiment: [SEARL] Macro experiment: price-only=44.6% vs price+macro=43.5% (-1.1pp)
+2026-08-31 17:12:33 [INFO] __main__: [SEARL] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:36 [INFO] __main__: [SHFA] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:37 [INFO] features: [SHFA] Features built: 2211 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SHFA_features.parquet
+2026-08-31 17:12:37 [INFO] model: [SHFA] test=2024-11-15 to 2026-08-28 (443d) | acc=53.0% vs baseline=52.8% | precision=1.000 recall=0.005 f1=0.009 | top features: daily_return=0.1068, volatility_10=0.0871, volatility_20=0.0869, volume_ma_10=0.082, ma_20=0.0779
+2026-08-31 17:12:38 [INFO] macro_experiment: [SHFA] Macro experiment: price-only=57.6% vs price+macro=54.4% (-3.3pp)
+2026-08-31 17:12:38 [INFO] __main__: [SHFA] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:42 [INFO] __main__: [SNGP] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:42 [INFO] features: [SNGP] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SNGP_features.parquet
+2026-08-31 17:12:43 [INFO] model: [SNGP] test=2024-09-06 to 2026-08-28 (492d) | acc=51.4% vs baseline=54.1% | precision=0.456 recall=0.301 f1=0.363 | top features: rsi_14=0.1106, high_low_range=0.1059, volatility_20=0.0866, volatility_10=0.0863, daily_return=0.0786
+2026-08-31 17:12:44 [INFO] macro_experiment: [SNGP] Macro experiment: price-only=55.4% vs price+macro=55.4% (+0.0pp)
+2026-08-31 17:12:44 [INFO] __main__: [SNGP] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:48 [INFO] __main__: [SRVI] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:48 [INFO] features: [SRVI] Features built: 2384 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SRVI_features.parquet
+2026-08-31 17:12:49 [INFO] model: [SRVI] test=2024-09-30 to 2026-08-28 (477d) | acc=54.3% vs baseline=53.0% | precision=0.550 recall=0.147 f1=0.232 | top features: daily_return=0.1603, volatility_10=0.0948, high_low_range=0.0891, volume_ma_10=0.0854, volatility_20=0.0801
+2026-08-31 17:12:49 [INFO] macro_experiment: [SRVI] Macro experiment: price-only=46.7% vs price+macro=47.8% (+1.1pp)
+2026-08-31 17:12:49 [INFO] __main__: [SRVI] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:54 [INFO] __main__: [SSGC] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:54 [INFO] features: [SSGC] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SSGC_features.parquet
+2026-08-31 17:12:54 [INFO] model: [SSGC] test=2024-09-06 to 2026-08-28 (492d) | acc=50.2% vs baseline=55.7% | precision=0.448 recall=0.527 f1=0.484 | top features: volatility_20=0.1091, volatility_10=0.1073, ma_20=0.088, daily_return=0.0878, macd_signal=0.0813
+2026-08-31 17:12:55 [INFO] macro_experiment: [SSGC] Macro experiment: price-only=51.1% vs price+macro=52.2% (+1.1pp)
+2026-08-31 17:12:55 [INFO] __main__: [SSGC] Refresh complete (updated, +1 rows).
+2026-08-31 17:12:59 [INFO] __main__: [SSOM] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:12:59 [INFO] features: [SSOM] Features built: 1733 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SSOM_features.parquet
+2026-08-31 17:12:59 [INFO] model: [SSOM] test=2025-04-08 to 2026-08-28 (347d) | acc=54.2% vs baseline=51.3% | precision=0.552 recall=0.314 f1=0.400 | top features: daily_return=0.2188, ma_20=0.0831, volatility_10=0.0807, ma_5=0.0783, ma_10=0.0743
+2026-08-31 17:13:00 [INFO] macro_experiment: [SSOM] Macro experiment: price-only=46.2% vs price+macro=50.5% (+4.4pp)
+2026-08-31 17:13:00 [INFO] __main__: [SSOM] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:04 [INFO] __main__: [SYS] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:13:04 [INFO] features: [SYS] Features built: 2446 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/SYS_features.parquet
+2026-08-31 17:13:05 [INFO] model: [SYS] test=2024-09-06 to 2026-08-28 (490d) | acc=52.4% vs baseline=52.0% | precision=0.510 recall=0.226 f1=0.313 | top features: high_low_range=0.1123, daily_return=0.1074, ma_ratio_5_20=0.0878, volume_change=0.0814, macd_signal=0.0789
+2026-08-31 17:13:05 [INFO] macro_experiment: [SYS] Macro experiment: price-only=52.8% vs price+macro=57.1% (+4.4pp)
+2026-08-31 17:13:05 [INFO] __main__: [SYS] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:10 [INFO] __main__: [TGL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:13:10 [INFO] features: [TGL] Features built: 2457 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/TGL_features.parquet
+2026-08-31 17:13:11 [INFO] model: [TGL] test=2024-09-06 to 2026-08-28 (492d) | acc=49.0% vs baseline=53.0% | precision=0.414 recall=0.208 f1=0.277 | top features: daily_return=0.1034, ma_5=0.0967, rsi_14=0.0931, macd_signal=0.0821, ma_10=0.0802
+2026-08-31 17:13:11 [INFO] macro_experiment: [TGL] Macro experiment: price-only=47.8% vs price+macro=50.0% (+2.2pp)
+2026-08-31 17:13:11 [INFO] __main__: [TGL] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:16 [INFO] __main__: [THALL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:13:16 [INFO] features: [THALL] Features built: 2416 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/THALL_features.parquet
+2026-08-31 17:13:17 [INFO] model: [THALL] test=2024-09-19 to 2026-08-28 (484d) | acc=53.5% vs baseline=54.1% | precision=0.457 recall=0.072 f1=0.124 | top features: daily_return=0.1323, volatility_10=0.0865, volume_change=0.0861, macd_signal=0.0811, macd=0.078
+2026-08-31 17:13:17 [INFO] macro_experiment: [THALL] Macro experiment: price-only=52.2% vs price+macro=55.4% (+3.3pp)
+2026-08-31 17:13:17 [INFO] __main__: [THALL] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:20 [INFO] __main__: [TPLRF1] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:13:20 [INFO] features: [TPLRF1] Features built: 537 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/TPLRF1_features.parquet
+2026-08-31 17:13:20 [INFO] model: [TPLRF1] test=2026-03-18 to 2026-08-28 (108d) | acc=54.6% vs baseline=55.6% | precision=0.444 recall=0.083 f1=0.140 | top features: daily_return=0.1354, volume_change=0.1058, volatility_10=0.0875, ma_5=0.0792, ma_ratio_5_20=0.0743
+2026-08-31 17:13:21 [INFO] macro_experiment: [TPLRF1] Macro experiment: price-only=48.9% vs price+macro=52.2% (+3.3pp)
+2026-08-31 17:13:21 [INFO] __main__: [TPLRF1] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:25 [INFO] __main__: [TRG] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:13:25 [INFO] features: [TRG] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/TRG_features.parquet
+2026-08-31 17:13:26 [INFO] model: [TRG] test=2024-09-06 to 2026-08-28 (492d) | acc=51.6% vs baseline=53.9% | precision=0.465 recall=0.326 f1=0.383 | top features: daily_return=0.104, volatility_10=0.1035, high_low_range=0.0992, ma_ratio_5_20=0.086, volatility_20=0.0836
+2026-08-31 17:13:26 [INFO] macro_experiment: [TRG] Macro experiment: price-only=52.2% vs price+macro=50.0% (-2.2pp)
+2026-08-31 17:13:26 [INFO] __main__: [TRG] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:30 [INFO] __main__: [UBL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:13:30 [INFO] features: [UBL] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/UBL_features.parquet
+2026-08-31 17:13:31 [INFO] model: [UBL] test=2024-09-06 to 2026-08-28 (492d) | acc=49.8% vs baseline=49.4% | precision=0.750 recall=0.012 f1=0.024 | top features: daily_return=0.1145, volume_change=0.0908, high_low_range=0.0841, volume_ma_10=0.0813, macd_signal=0.0809
+2026-08-31 17:13:32 [INFO] macro_experiment: [UBL] Macro experiment: price-only=58.7% vs price+macro=57.6% (-1.1pp)
+2026-08-31 17:13:32 [INFO] __main__: [UBL] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:36 [INFO] __main__: [UPFL] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:13:36 [INFO] features: [UPFL] Features built: 1278 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/UPFL_features.parquet
+2026-08-31 17:13:37 [INFO] model: [UPFL] test=2025-08-20 to 2026-08-28 (256d) | acc=52.7% vs baseline=52.7% | precision=0.000 recall=0.000 f1=0.000 | top features: daily_return=0.1371, high_low_range=0.0915, macd_signal=0.0909, ma_20=0.076, ma_5=0.0737
+2026-08-31 17:13:37 [INFO] macro_experiment: [UPFL] Macro experiment: price-only=55.4% vs price+macro=51.1% (-4.3pp)
+2026-08-31 17:13:37 [INFO] __main__: [UPFL] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:41 [INFO] __main__: [YOUW] Incremental update: +1 new rows (now 2026-08-28 onward through 2026-08-31).
+2026-08-31 17:13:41 [INFO] features: [YOUW] Features built: 2459 usable rows, 21 columns. Saved to /home/runner/work/RiskWise-Advisor/RiskWise-Advisor/data/YOUW_features.parquet
+2026-08-31 17:13:42 [INFO] model: [YOUW] test=2024-09-06 to 2026-08-28 (492d) | acc=59.2% vs baseline=57.9% | precision=0.615 recall=0.077 f1=0.137 | top features: high_low_range=0.1325, volume_change=0.089, macd_signal=0.0864, daily_return=0.0791, macd=0.0769
+2026-08-31 17:13:43 [INFO] macro_experiment: [YOUW] Macro experiment: price-only=48.9% vs price+macro=51.1% (+2.2pp)
+2026-08-31 17:13:43 [INFO] __main__: [YOUW] Refresh complete (updated, +1 rows).
+2026-08-31 17:13:43 [INFO] __main__: Refresh summary: 93/100 stocks succeeded. Market index (KSE100): OK.
+2026-08-31 17:13:43 [WARNING] __main__: Failed/unavailable tickers (existing data, if any, left untouched): ['ABLXD', 'BAHLXD', 'BWCLXD', 'FABLXD', 'HMBXD', 'MCBXD', 'MEBLXD']

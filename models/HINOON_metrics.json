@@ -1,16 +1,16 @@
 {
   "ticker": "HINOON",
   "train_rows": 1956,
-  "test_rows": 489,
-  "test_period": "2024-09-10 to 2026-08-27",
-  "accuracy": 0.546,
-  "baseline_accuracy": 0.5337,
+  "test_rows": 490,
+  "test_period": "2024-09-10 to 2026-08-28",
+  "accuracy": 0.5469,
+  "baseline_accuracy": 0.5347,
   "precision": 0.875,
   "recall": 0.0307,
   "f1_score": 0.0593,
   "confusion_matrix": [
     [
-      260,
+      261,
       1
     ],
     [

@@ -1,16 +1,16 @@
 {
   "ticker": "NATF",
   "train_rows": 1900,
-  "test_rows": 475,
-  "test_period": "2024-10-01 to 2026-08-27",
-  "accuracy": 0.5179,
-  "baseline_accuracy": 0.5179,
+  "test_rows": 476,
+  "test_period": "2024-10-01 to 2026-08-28",
+  "accuracy": 0.5189,
+  "baseline_accuracy": 0.5189,
   "precision": 0.5,
   "recall": 0.0218,
   "f1_score": 0.0418,
   "confusion_matrix": [
     [
-      241,
+      242,
       5
     ],
     [

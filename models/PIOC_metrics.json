@@ -1,36 +1,36 @@
 {
   "ticker": "PIOC",
-  "train_rows": 1966,
+  "train_rows": 1967,
   "test_rows": 492,
-  "test_period": "2024-09-05 to 2026-08-27",
-  "accuracy": 0.4939,
-  "baseline_accuracy": 0.5183,
-  "precision": 0.4634,
-  "recall": 0.3207,
-  "f1_score": 0.3791,
+  "test_period": "2024-09-06 to 2026-08-28",
+  "accuracy": 0.502,
+  "baseline_accuracy": 0.5203,
+  "precision": 0.4751,
+  "recall": 0.3644,
+  "f1_score": 0.4125,
   "confusion_matrix": [
     [
-      167,
-      88
+      161,
+      95
     ],
     [
-      161,
-      76
+      150,
+      86
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1326,
-    "high_low_range": 0.0913,
-    "volatility_10": 0.0896,
-    "volume_change": 0.0821,
-    "ma_ratio_5_20": 0.0772,
-    "macd_signal": 0.076,
-    "macd": 0.0757,
-    "volatility_20": 0.0682,
-    "ma_20": 0.0662,
-    "ma_5": 0.0646,
-    "ma_10": 0.0626,
-    "volume_ma_10": 0.06,
-    "rsi_14": 0.0539
+    "daily_return": 0.1335,
+    "high_low_range": 0.0939,
+    "volatility_10": 0.0916,
+    "volume_change": 0.08,
+    "ma_ratio_5_20": 0.078,
+    "macd": 0.0754,
+    "macd_signal": 0.0744,
+    "volatility_20": 0.0684,
+    "ma_5": 0.0656,
+    "ma_20": 0.0648,
+    "ma_10": 0.0631,
+    "volume_ma_10": 0.0577,
+    "rsi_14": 0.0535
   }
 }
