@@ -1,20 +1,20 @@
 {
   "ticker": "PAKT",
   "train_rows": 1432,
-  "test_rows": 358,
-  "test_period": "2025-03-18 to 2026-08-28",
-  "accuracy": 0.514,
-  "baseline_accuracy": 0.486,
+  "test_rows": 359,
+  "test_period": "2025-03-18 to 2026-08-31",
+  "accuracy": 0.5125,
+  "baseline_accuracy": 0.4847,
   "precision": 0.5225,
-  "recall": 0.6304,
-  "f1_score": 0.5714,
+  "recall": 0.627,
+  "f1_score": 0.57,
   "confusion_matrix": [
     [
       68,
       106
     ],
     [
-      68,
+      69,
       116
     ]
   ],

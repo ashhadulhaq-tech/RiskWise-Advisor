@@ -1,36 +1,36 @@
 {
   "ticker": "KTML",
-  "train_rows": 1854,
+  "train_rows": 1855,
   "test_rows": 464,
-  "test_period": "2024-10-17 to 2026-08-28",
-  "accuracy": 0.4871,
+  "test_period": "2024-10-18 to 2026-08-31",
+  "accuracy": 0.4935,
   "baseline_accuracy": 0.5259,
-  "precision": 0.4741,
-  "recall": 0.75,
-  "f1_score": 0.581,
+  "precision": 0.4789,
+  "recall": 0.7727,
+  "f1_score": 0.5913,
   "confusion_matrix": [
     [
-      61,
-      183
+      59,
+      185
     ],
     [
-      55,
-      165
+      50,
+      170
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1193,
-    "high_low_range": 0.1132,
-    "volume_change": 0.0883,
+    "daily_return": 0.1199,
+    "high_low_range": 0.1131,
+    "volume_change": 0.0878,
     "volatility_10": 0.0785,
-    "rsi_14": 0.0734,
-    "volume_ma_10": 0.0713,
-    "ma_5": 0.0701,
-    "ma_ratio_5_20": 0.0696,
-    "ma_10": 0.0677,
-    "ma_20": 0.0649,
-    "volatility_20": 0.0638,
-    "macd_signal": 0.0611,
-    "macd": 0.0588
+    "rsi_14": 0.0724,
+    "volume_ma_10": 0.0718,
+    "ma_5": 0.0696,
+    "ma_ratio_5_20": 0.0693,
+    "ma_10": 0.0675,
+    "volatility_20": 0.0656,
+    "ma_20": 0.063,
+    "macd_signal": 0.0629,
+    "macd": 0.0586
   }
 }

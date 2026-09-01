@@ -1,36 +1,36 @@
 {
   "ticker": "INDU",
-  "train_rows": 1966,
+  "train_rows": 1967,
   "test_rows": 492,
-  "test_period": "2024-09-06 to 2026-08-28",
-  "accuracy": 0.5061,
-  "baseline_accuracy": 0.5,
-  "precision": 0.5882,
-  "recall": 0.0407,
-  "f1_score": 0.076,
+  "test_period": "2024-09-09 to 2026-08-31",
+  "accuracy": 0.5102,
+  "baseline_accuracy": 0.498,
+  "precision": 0.65,
+  "recall": 0.0526,
+  "f1_score": 0.0974,
   "confusion_matrix": [
     [
-      239,
+      238,
       7
     ],
     [
-      236,
-      10
+      234,
+      13
     ]
   ],
   "feature_importance": {
-    "ma_5": 0.1057,
-    "ma_10": 0.0922,
-    "ma_ratio_5_20": 0.0876,
-    "ma_20": 0.0835,
-    "daily_return": 0.0795,
-    "volatility_10": 0.0792,
-    "rsi_14": 0.0765,
-    "volume_change": 0.0703,
-    "macd": 0.0682,
-    "volatility_20": 0.0678,
-    "volume_ma_10": 0.0666,
-    "macd_signal": 0.0616,
-    "high_low_range": 0.0611
+    "ma_5": 0.1038,
+    "ma_10": 0.0931,
+    "ma_ratio_5_20": 0.0868,
+    "ma_20": 0.0813,
+    "daily_return": 0.0797,
+    "volatility_10": 0.0788,
+    "rsi_14": 0.0783,
+    "volume_change": 0.0697,
+    "macd": 0.069,
+    "volume_ma_10": 0.0687,
+    "volatility_20": 0.0677,
+    "macd_signal": 0.0621,
+    "high_low_range": 0.0608
   }
 }

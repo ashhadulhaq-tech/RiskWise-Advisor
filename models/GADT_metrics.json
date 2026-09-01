@@ -1,16 +1,16 @@
 {
   "ticker": "GADT",
   "train_rows": 1656,
-  "test_rows": 414,
-  "test_period": "2024-12-27 to 2026-08-28",
-  "accuracy": 0.5749,
-  "baseline_accuracy": 0.5483,
+  "test_rows": 415,
+  "test_period": "2024-12-27 to 2026-08-31",
+  "accuracy": 0.5759,
+  "baseline_accuracy": 0.5494,
   "precision": 0.641,
   "recall": 0.1337,
   "f1_score": 0.2212,
   "confusion_matrix": [
     [
-      213,
+      214,
       14
     ],
     [

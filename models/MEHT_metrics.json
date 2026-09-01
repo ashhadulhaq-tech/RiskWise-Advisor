@@ -1,36 +1,36 @@
 {
   "ticker": "MEHT",
-  "train_rows": 724,
+  "train_rows": 725,
   "test_rows": 182,
-  "test_period": "2025-12-02 to 2026-08-28",
-  "accuracy": 0.4451,
+  "test_period": "2025-12-03 to 2026-08-31",
+  "accuracy": 0.467,
   "baseline_accuracy": 0.5769,
-  "precision": 0.4118,
-  "recall": 0.7273,
-  "f1_score": 0.5258,
+  "precision": 0.4153,
+  "recall": 0.6364,
+  "f1_score": 0.5026,
   "confusion_matrix": [
     [
-      25,
-      80
+      36,
+      69
     ],
     [
-      21,
-      56
+      28,
+      49
     ]
   ],
   "feature_importance": {
-    "volatility_20": 0.1124,
-    "daily_return": 0.1102,
-    "volume_ma_10": 0.1088,
-    "volatility_10": 0.1041,
-    "macd_signal": 0.0857,
-    "ma_20": 0.0778,
-    "ma_5": 0.0668,
-    "ma_ratio_5_20": 0.0664,
-    "macd": 0.063,
-    "ma_10": 0.0594,
-    "volume_change": 0.0523,
-    "rsi_14": 0.0472,
-    "high_low_range": 0.046
+    "volatility_20": 0.1122,
+    "volume_ma_10": 0.1104,
+    "daily_return": 0.1072,
+    "volatility_10": 0.102,
+    "macd_signal": 0.0869,
+    "ma_20": 0.077,
+    "ma_ratio_5_20": 0.0666,
+    "ma_5": 0.066,
+    "macd": 0.062,
+    "ma_10": 0.06,
+    "volume_change": 0.0524,
+    "rsi_14": 0.0487,
+    "high_low_range": 0.0484
   }
 }

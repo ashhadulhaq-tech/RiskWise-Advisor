@@ -1,36 +1,36 @@
 {
   "ticker": "ABOT",
-  "train_rows": 1912,
+  "train_rows": 1913,
   "test_rows": 479,
-  "test_period": "2024-09-26 to 2026-08-28",
-  "accuracy": 0.5553,
-  "baseline_accuracy": 0.5574,
-  "precision": 0.4938,
-  "recall": 0.1887,
-  "f1_score": 0.273,
+  "test_period": "2024-09-27 to 2026-08-31",
+  "accuracy": 0.5532,
+  "baseline_accuracy": 0.5553,
+  "precision": 0.494,
+  "recall": 0.1925,
+  "f1_score": 0.277,
   "confusion_matrix": [
     [
-      226,
-      41
+      224,
+      42
     ],
     [
       172,
-      40
+      41
     ]
   ],
   "feature_importance": {
-    "high_low_range": 0.1101,
-    "volume_ma_10": 0.11,
+    "high_low_range": 0.1095,
+    "volume_ma_10": 0.1089,
     "ma_10": 0.0931,
-    "ma_5": 0.0842,
-    "ma_20": 0.0814,
-    "macd": 0.0747,
-    "macd_signal": 0.0701,
-    "daily_return": 0.0675,
-    "volatility_20": 0.0639,
-    "volume_change": 0.0626,
-    "ma_ratio_5_20": 0.0625,
-    "volatility_10": 0.0611,
-    "rsi_14": 0.0585
+    "ma_5": 0.0851,
+    "ma_20": 0.0821,
+    "macd": 0.0753,
+    "macd_signal": 0.0695,
+    "daily_return": 0.0679,
+    "volatility_20": 0.0631,
+    "volume_change": 0.063,
+    "volatility_10": 0.0614,
+    "ma_ratio_5_20": 0.0613,
+    "rsi_14": 0.0597
   }
 }

@@ -1,36 +1,36 @@
 {
   "ticker": "FATIMA",
-  "train_rows": 1964,
+  "train_rows": 1965,
   "test_rows": 492,
-  "test_period": "2024-09-06 to 2026-08-28",
-  "accuracy": 0.5305,
-  "baseline_accuracy": 0.4939,
-  "precision": 0.6184,
-  "recall": 0.1888,
-  "f1_score": 0.2892,
+  "test_period": "2024-09-09 to 2026-08-31",
+  "accuracy": 0.5203,
+  "baseline_accuracy": 0.4919,
+  "precision": 0.6129,
+  "recall": 0.152,
+  "f1_score": 0.2436,
   "confusion_matrix": [
     [
-      214,
-      29
+      218,
+      24
     ],
     [
-      202,
-      47
+      212,
+      38
     ]
   ],
   "feature_importance": {
     "daily_return": 0.1289,
-    "high_low_range": 0.117,
-    "volatility_10": 0.0787,
-    "volume_change": 0.0752,
-    "volume_ma_10": 0.0751,
-    "ma_5": 0.0734,
-    "macd_signal": 0.0727,
-    "macd": 0.0688,
-    "volatility_20": 0.0667,
-    "ma_ratio_5_20": 0.0631,
-    "rsi_14": 0.0618,
-    "ma_10": 0.0617,
-    "ma_20": 0.0568
+    "high_low_range": 0.1158,
+    "volume_ma_10": 0.079,
+    "volatility_10": 0.0781,
+    "volume_change": 0.0751,
+    "ma_5": 0.0729,
+    "macd_signal": 0.0717,
+    "macd": 0.0676,
+    "volatility_20": 0.0647,
+    "ma_ratio_5_20": 0.0646,
+    "rsi_14": 0.0639,
+    "ma_10": 0.0626,
+    "ma_20": 0.0551
   }
 }

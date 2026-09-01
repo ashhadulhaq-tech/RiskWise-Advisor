@@ -1,36 +1,36 @@
 {
   "ticker": "GLAXO",
-  "train_rows": 1965,
+  "train_rows": 1966,
   "test_rows": 492,
-  "test_period": "2024-09-06 to 2026-08-28",
-  "accuracy": 0.563,
-  "baseline_accuracy": 0.5346,
-  "precision": 0.5686,
-  "recall": 0.2533,
-  "f1_score": 0.3505,
+  "test_period": "2024-09-09 to 2026-08-31",
+  "accuracy": 0.561,
+  "baseline_accuracy": 0.5366,
+  "precision": 0.5577,
+  "recall": 0.2544,
+  "f1_score": 0.3494,
   "confusion_matrix": [
     [
-      219,
-      44
+      218,
+      46
     ],
     [
-      171,
+      170,
       58
     ]
   ],
   "feature_importance": {
-    "high_low_range": 0.1036,
-    "daily_return": 0.1035,
-    "volatility_10": 0.0897,
-    "volume_change": 0.0878,
-    "macd_signal": 0.0795,
-    "volatility_20": 0.0783,
-    "ma_ratio_5_20": 0.0728,
-    "volume_ma_10": 0.0694,
-    "macd": 0.0672,
-    "rsi_14": 0.065,
-    "ma_10": 0.0616,
-    "ma_5": 0.0611,
-    "ma_20": 0.0606
+    "high_low_range": 0.1039,
+    "daily_return": 0.1038,
+    "volatility_10": 0.0889,
+    "volume_change": 0.0875,
+    "macd_signal": 0.0783,
+    "volatility_20": 0.0756,
+    "ma_ratio_5_20": 0.0747,
+    "volume_ma_10": 0.0711,
+    "macd": 0.0684,
+    "rsi_14": 0.0664,
+    "ma_10": 0.0635,
+    "ma_5": 0.0603,
+    "ma_20": 0.0576
   }
 }

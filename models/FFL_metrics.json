@@ -1,36 +1,36 @@
 {
   "ticker": "FFL",
-  "train_rows": 1967,
+  "train_rows": 1968,
   "test_rows": 492,
-  "test_period": "2024-09-06 to 2026-08-28",
-  "accuracy": 0.563,
+  "test_period": "2024-09-09 to 2026-08-31",
+  "accuracy": 0.5691,
   "baseline_accuracy": 0.5589,
-  "precision": 0.5122,
-  "recall": 0.1935,
-  "f1_score": 0.2809,
+  "precision": 0.5309,
+  "recall": 0.1982,
+  "f1_score": 0.2886,
   "confusion_matrix": [
     [
-      235,
-      40
+      237,
+      38
     ],
     [
-      175,
-      42
+      174,
+      43
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1828,
-    "volume_change": 0.0967,
-    "volatility_20": 0.081,
-    "volatility_10": 0.0776,
-    "rsi_14": 0.0725,
-    "high_low_range": 0.0725,
+    "daily_return": 0.1811,
+    "volume_change": 0.0969,
+    "volatility_20": 0.0804,
+    "volatility_10": 0.0797,
+    "rsi_14": 0.0715,
+    "high_low_range": 0.0707,
     "ma_ratio_5_20": 0.0684,
-    "volume_ma_10": 0.0634,
-    "ma_20": 0.0617,
-    "macd": 0.0578,
-    "ma_10": 0.0574,
-    "macd_signal": 0.0558,
-    "ma_5": 0.0525
+    "volume_ma_10": 0.0642,
+    "ma_20": 0.0621,
+    "macd": 0.0584,
+    "macd_signal": 0.058,
+    "ma_10": 0.0562,
+    "ma_5": 0.0523
   }
 }

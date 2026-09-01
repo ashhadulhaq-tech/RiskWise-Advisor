@@ -1,17 +1,17 @@
 {
   "ticker": "LUCK",
-  "train_rows": 1963,
+  "train_rows": 1964,
   "test_rows": 491,
-  "test_period": "2024-09-02 to 2026-08-28",
-  "accuracy": 0.4521,
+  "test_period": "2024-09-03 to 2026-08-31",
+  "accuracy": 0.4664,
   "baseline_accuracy": 0.4868,
-  "precision": 0.4437,
+  "precision": 0.4653,
   "recall": 0.2659,
-  "f1_score": 0.3325,
+  "f1_score": 0.3384,
   "confusion_matrix": [
     [
-      155,
-      84
+      162,
+      77
     ],
     [
       185,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "rsi_14": 0.1087,
-    "daily_return": 0.0972,
-    "ma_ratio_5_20": 0.0935,
-    "ma_5": 0.0832,
-    "high_low_range": 0.08,
-    "macd": 0.0785,
-    "volatility_10": 0.074,
-    "volatility_20": 0.072,
-    "ma_10": 0.0682,
-    "volume_change": 0.0651,
-    "macd_signal": 0.0645,
-    "ma_20": 0.06,
-    "volume_ma_10": 0.0551
+    "rsi_14": 0.1117,
+    "daily_return": 0.0985,
+    "ma_ratio_5_20": 0.0938,
+    "ma_5": 0.0824,
+    "high_low_range": 0.0793,
+    "macd": 0.0773,
+    "volatility_10": 0.073,
+    "volatility_20": 0.0722,
+    "ma_10": 0.0694,
+    "volume_change": 0.0664,
+    "macd_signal": 0.0635,
+    "ma_20": 0.0575,
+    "volume_ma_10": 0.0549
   }
 }

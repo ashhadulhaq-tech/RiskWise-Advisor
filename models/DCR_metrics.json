@@ -1,13 +1,13 @@
 {
   "ticker": "DCR",
   "train_rows": 1964,
-  "test_rows": 491,
-  "test_period": "2024-09-09 to 2026-08-28",
-  "accuracy": 0.4949,
-  "baseline_accuracy": 0.4603,
-  "precision": 0.5535,
-  "recall": 0.3321,
-  "f1_score": 0.4151,
+  "test_rows": 492,
+  "test_period": "2024-09-09 to 2026-08-31",
+  "accuracy": 0.4959,
+  "baseline_accuracy": 0.4593,
+  "precision": 0.5563,
+  "recall": 0.3346,
+  "f1_score": 0.4178,
   "confusion_matrix": [
     [
       155,
@@ -15,7 +15,7 @@
     ],
     [
       177,
-      88
+      89
     ]
   ],
   "feature_importance": {

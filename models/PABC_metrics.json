@@ -1,17 +1,17 @@
 {
   "ticker": "PABC",
   "train_rows": 996,
-  "test_rows": 249,
-  "test_period": "2025-08-29 to 2026-08-28",
-  "accuracy": 0.5582,
-  "baseline_accuracy": 0.5863,
-  "precision": 0.4624,
+  "test_rows": 250,
+  "test_period": "2025-08-29 to 2026-08-31",
+  "accuracy": 0.556,
+  "baseline_accuracy": 0.588,
+  "precision": 0.4574,
   "recall": 0.4175,
-  "f1_score": 0.4388,
+  "f1_score": 0.4365,
   "confusion_matrix": [
     [
       96,
-      50
+      51
     ],
     [
       60,
