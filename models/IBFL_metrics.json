@@ -1,36 +1,36 @@
 {
   "ticker": "IBFL",
-  "train_rows": 1136,
+  "train_rows": 1137,
   "test_rows": 285,
-  "test_period": "2025-06-13 to 2026-08-31",
-  "accuracy": 0.6351,
-  "baseline_accuracy": 0.7018,
+  "test_period": "2025-06-17 to 2026-09-01",
+  "accuracy": 0.6316,
+  "baseline_accuracy": 0.6982,
   "precision": 0.3061,
-  "recall": 0.1765,
-  "f1_score": 0.2239,
+  "recall": 0.1744,
+  "f1_score": 0.2222,
   "confusion_matrix": [
     [
-      166,
+      165,
       34
     ],
     [
-      70,
+      71,
       15
     ]
   ],
   "feature_importance": {
-    "volatility_10": 0.1257,
-    "volatility_20": 0.1209,
-    "daily_return": 0.0961,
-    "macd": 0.0816,
-    "ma_ratio_5_20": 0.0788,
-    "high_low_range": 0.0748,
-    "macd_signal": 0.0671,
-    "ma_5": 0.0614,
-    "volume_change": 0.0612,
-    "volume_ma_10": 0.0603,
-    "rsi_14": 0.0592,
-    "ma_10": 0.0588,
-    "ma_20": 0.0542
+    "volatility_10": 0.1243,
+    "volatility_20": 0.1204,
+    "daily_return": 0.0976,
+    "macd": 0.0809,
+    "ma_ratio_5_20": 0.0798,
+    "high_low_range": 0.0753,
+    "macd_signal": 0.0668,
+    "volume_change": 0.0633,
+    "volume_ma_10": 0.0601,
+    "ma_5": 0.0597,
+    "ma_10": 0.059,
+    "rsi_14": 0.0582,
+    "ma_20": 0.0547
   }
 }

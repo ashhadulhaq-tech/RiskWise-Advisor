@@ -1,36 +1,36 @@
 {
   "ticker": "MUREB",
-  "train_rows": 1743,
+  "train_rows": 1744,
   "test_rows": 436,
-  "test_period": "2024-11-27 to 2026-08-31",
-  "accuracy": 0.5459,
-  "baseline_accuracy": 0.5459,
+  "test_period": "2024-11-28 to 2026-09-01",
+  "accuracy": 0.5436,
+  "baseline_accuracy": 0.5436,
   "precision": 0.5,
-  "recall": 0.1111,
-  "f1_score": 0.1818,
+  "recall": 0.1055,
+  "f1_score": 0.1743,
   "confusion_matrix": [
     [
       216,
-      22
+      21
     ],
     [
-      176,
-      22
+      178,
+      21
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1127,
-    "rsi_14": 0.0948,
-    "high_low_range": 0.0832,
-    "ma_20": 0.0821,
-    "ma_5": 0.0784,
-    "ma_ratio_5_20": 0.0752,
-    "macd_signal": 0.0738,
-    "volatility_10": 0.0708,
-    "ma_10": 0.0695,
-    "volume_ma_10": 0.0695,
-    "volume_change": 0.0649,
-    "macd": 0.0642,
-    "volatility_20": 0.0609
+    "daily_return": 0.1126,
+    "rsi_14": 0.0958,
+    "ma_20": 0.083,
+    "high_low_range": 0.0828,
+    "ma_5": 0.0779,
+    "ma_ratio_5_20": 0.0749,
+    "macd_signal": 0.0724,
+    "volatility_10": 0.072,
+    "ma_10": 0.0702,
+    "volume_ma_10": 0.0701,
+    "macd": 0.0645,
+    "volume_change": 0.0642,
+    "volatility_20": 0.0596
   }
 }

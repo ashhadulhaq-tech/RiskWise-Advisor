@@ -1,16 +1,16 @@
 {
   "ticker": "DGKC",
   "train_rows": 1968,
-  "test_rows": 492,
-  "test_period": "2024-09-09 to 2026-08-31",
-  "accuracy": 0.4878,
-  "baseline_accuracy": 0.5122,
+  "test_rows": 493,
+  "test_period": "2024-09-09 to 2026-09-01",
+  "accuracy": 0.4888,
+  "baseline_accuracy": 0.5132,
   "precision": 0.4375,
   "recall": 0.175,
   "f1_score": 0.25,
   "confusion_matrix": [
     [
-      198,
+      199,
       54
     ],
     [

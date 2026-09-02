@@ -1,17 +1,17 @@
 {
   "ticker": "NBP",
   "train_rows": 1968,
-  "test_rows": 492,
-  "test_period": "2024-09-09 to 2026-08-31",
-  "accuracy": 0.4736,
-  "baseline_accuracy": 0.5041,
-  "precision": 0.4096,
+  "test_rows": 493,
+  "test_period": "2024-09-09 to 2026-09-01",
+  "accuracy": 0.4726,
+  "baseline_accuracy": 0.5051,
+  "precision": 0.4048,
   "recall": 0.1393,
-  "f1_score": 0.208,
+  "f1_score": 0.2073,
   "confusion_matrix": [
     [
       199,
-      49
+      50
     ],
     [
       210,

@@ -1,36 +1,36 @@
 {
   "ticker": "THALL",
-  "train_rows": 1933,
+  "train_rows": 1934,
   "test_rows": 484,
-  "test_period": "2024-09-20 to 2026-08-31",
-  "accuracy": 0.5351,
+  "test_period": "2024-09-23 to 2026-09-01",
+  "accuracy": 0.5372,
   "baseline_accuracy": 0.5413,
-  "precision": 0.4545,
-  "recall": 0.0676,
-  "f1_score": 0.1176,
+  "precision": 0.4722,
+  "recall": 0.0766,
+  "f1_score": 0.1318,
   "confusion_matrix": [
     [
-      244,
-      18
+      243,
+      19
     ],
     [
-      207,
-      15
+      205,
+      17
     ]
   ],
   "feature_importance": {
     "daily_return": 0.1329,
-    "volume_change": 0.0861,
-    "volatility_10": 0.0854,
-    "macd_signal": 0.0799,
-    "macd": 0.0773,
-    "high_low_range": 0.0763,
-    "rsi_14": 0.0691,
-    "ma_10": 0.0687,
-    "ma_ratio_5_20": 0.0682,
-    "volatility_20": 0.067,
-    "volume_ma_10": 0.0661,
-    "ma_20": 0.0628,
-    "ma_5": 0.0601
+    "volatility_10": 0.0858,
+    "volume_change": 0.0803,
+    "macd_signal": 0.0777,
+    "macd": 0.0776,
+    "high_low_range": 0.0765,
+    "ma_10": 0.0716,
+    "rsi_14": 0.0714,
+    "ma_ratio_5_20": 0.0697,
+    "volatility_20": 0.0677,
+    "volume_ma_10": 0.0664,
+    "ma_20": 0.0619,
+    "ma_5": 0.0604
   }
 }

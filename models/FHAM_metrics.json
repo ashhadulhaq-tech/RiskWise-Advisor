@@ -1,36 +1,36 @@
 {
   "ticker": "FHAM",
-  "train_rows": 1761,
+  "train_rows": 1762,
   "test_rows": 441,
-  "test_period": "2024-11-20 to 2026-08-31",
-  "accuracy": 0.5351,
+  "test_period": "2024-11-21 to 2026-09-01",
+  "accuracy": 0.551,
   "baseline_accuracy": 0.4921,
-  "precision": 0.5473,
-  "recall": 0.4911,
-  "f1_score": 0.5176,
+  "precision": 0.5591,
+  "recall": 0.5491,
+  "f1_score": 0.5541,
   "confusion_matrix": [
     [
-      126,
-      91
+      120,
+      97
     ],
     [
-      114,
-      110
+      101,
+      123
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.2393,
-    "volume_change": 0.0998,
-    "rsi_14": 0.0905,
-    "volatility_10": 0.0701,
-    "ma_ratio_5_20": 0.0674,
-    "high_low_range": 0.0655,
-    "macd_signal": 0.0645,
-    "macd": 0.0602,
-    "volatility_20": 0.0587,
-    "ma_5": 0.0494,
-    "volume_ma_10": 0.0453,
-    "ma_20": 0.0449,
-    "ma_10": 0.0445
+    "daily_return": 0.238,
+    "volume_change": 0.0993,
+    "rsi_14": 0.0911,
+    "ma_ratio_5_20": 0.0687,
+    "volatility_10": 0.0686,
+    "macd_signal": 0.0647,
+    "high_low_range": 0.0631,
+    "volatility_20": 0.0595,
+    "macd": 0.0594,
+    "ma_5": 0.0487,
+    "ma_10": 0.0467,
+    "ma_20": 0.0467,
+    "volume_ma_10": 0.0456
   }
 }

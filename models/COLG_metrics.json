@@ -1,16 +1,16 @@
 {
   "ticker": "COLG",
   "train_rows": 1560,
-  "test_rows": 390,
-  "test_period": "2025-01-31 to 2026-08-31",
-  "accuracy": 0.5436,
-  "baseline_accuracy": 0.5513,
+  "test_rows": 391,
+  "test_period": "2025-01-31 to 2026-09-01",
+  "accuracy": 0.5448,
+  "baseline_accuracy": 0.5524,
   "precision": 0.4824,
   "recall": 0.2343,
   "f1_score": 0.3154,
   "confusion_matrix": [
     [
-      171,
+      172,
       44
     ],
     [

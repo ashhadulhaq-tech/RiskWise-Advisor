@@ -1,16 +1,16 @@
 {
   "ticker": "FCCL",
   "train_rows": 1968,
-  "test_rows": 492,
-  "test_period": "2024-09-09 to 2026-08-31",
-  "accuracy": 0.5203,
-  "baseline_accuracy": 0.5264,
+  "test_rows": 493,
+  "test_period": "2024-09-09 to 2026-09-01",
+  "accuracy": 0.5213,
+  "baseline_accuracy": 0.5274,
   "precision": 0.4118,
   "recall": 0.03,
   "f1_score": 0.056,
   "confusion_matrix": [
     [
-      249,
+      250,
       10
     ],
     [

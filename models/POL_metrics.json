@@ -1,16 +1,16 @@
 {
   "ticker": "POL",
   "train_rows": 1968,
-  "test_rows": 492,
-  "test_period": "2024-09-09 to 2026-08-31",
-  "accuracy": 0.5183,
-  "baseline_accuracy": 0.5102,
+  "test_rows": 493,
+  "test_period": "2024-09-09 to 2026-09-01",
+  "accuracy": 0.5193,
+  "baseline_accuracy": 0.5112,
   "precision": 0.5128,
   "recall": 0.332,
   "f1_score": 0.403,
   "confusion_matrix": [
     [
-      175,
+      176,
       76
     ],
     [

@@ -1,36 +1,36 @@
 {
   "ticker": "PABC",
-  "train_rows": 996,
+  "train_rows": 997,
   "test_rows": 250,
-  "test_period": "2025-08-29 to 2026-08-31",
-  "accuracy": 0.556,
+  "test_period": "2025-09-01 to 2026-09-01",
+  "accuracy": 0.56,
   "baseline_accuracy": 0.588,
-  "precision": 0.4574,
-  "recall": 0.4175,
-  "f1_score": 0.4365,
+  "precision": 0.4607,
+  "recall": 0.3981,
+  "f1_score": 0.4271,
   "confusion_matrix": [
     [
-      96,
-      51
+      99,
+      48
     ],
     [
-      60,
-      43
+      62,
+      41
     ]
   ],
   "feature_importance": {
-    "volume_change": 0.1123,
-    "high_low_range": 0.0936,
-    "daily_return": 0.0904,
-    "macd_signal": 0.0816,
-    "volatility_10": 0.0792,
-    "ma_ratio_5_20": 0.0787,
-    "rsi_14": 0.0755,
-    "ma_20": 0.0692,
-    "volume_ma_10": 0.0692,
-    "volatility_20": 0.0684,
-    "macd": 0.0636,
-    "ma_5": 0.0625,
-    "ma_10": 0.0557
+    "volume_change": 0.112,
+    "high_low_range": 0.0943,
+    "daily_return": 0.0869,
+    "volatility_10": 0.0802,
+    "macd_signal": 0.0789,
+    "ma_ratio_5_20": 0.0766,
+    "rsi_14": 0.073,
+    "volume_ma_10": 0.0719,
+    "ma_20": 0.0698,
+    "ma_5": 0.0679,
+    "volatility_20": 0.0677,
+    "macd": 0.0645,
+    "ma_10": 0.0563
   }
 }

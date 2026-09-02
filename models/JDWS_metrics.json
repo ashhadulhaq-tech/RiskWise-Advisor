@@ -1,20 +1,20 @@
 {
   "ticker": "JDWS",
   "train_rows": 1232,
-  "test_rows": 308,
-  "test_period": "2025-06-04 to 2026-08-31",
-  "accuracy": 0.5065,
-  "baseline_accuracy": 0.526,
+  "test_rows": 309,
+  "test_period": "2025-06-04 to 2026-09-01",
+  "accuracy": 0.5049,
+  "baseline_accuracy": 0.5243,
   "precision": 0.4762,
-  "recall": 0.411,
-  "f1_score": 0.4412,
+  "recall": 0.4082,
+  "f1_score": 0.4396,
   "confusion_matrix": [
     [
       96,
       66
     ],
     [
-      86,
+      87,
       60
     ]
   ],

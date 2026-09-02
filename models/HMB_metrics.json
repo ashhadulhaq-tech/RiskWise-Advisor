@@ -1,17 +1,17 @@
 {
   "ticker": "HMB",
   "train_rows": 1936,
-  "test_rows": 484,
-  "test_period": "2024-09-20 to 2026-08-31",
-  "accuracy": 0.5434,
-  "baseline_accuracy": 0.5455,
-  "precision": 0.4444,
+  "test_rows": 485,
+  "test_period": "2024-09-20 to 2026-09-01",
+  "accuracy": 0.5423,
+  "baseline_accuracy": 0.5464,
+  "precision": 0.4,
   "recall": 0.0182,
-  "f1_score": 0.0349,
+  "f1_score": 0.0348,
   "confusion_matrix": [
     [
       259,
-      5
+      6
     ],
     [
       216,

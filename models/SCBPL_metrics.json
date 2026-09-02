@@ -1,36 +1,36 @@
 {
   "ticker": "SCBPL",
-  "train_rows": 1729,
+  "train_rows": 1730,
   "test_rows": 433,
-  "test_period": "2024-12-02 to 2026-08-31",
-  "accuracy": 0.5127,
+  "test_period": "2024-12-03 to 2026-09-01",
+  "accuracy": 0.5035,
   "baseline_accuracy": 0.5173,
-  "precision": 0.4868,
-  "recall": 0.177,
-  "f1_score": 0.2596,
+  "precision": 0.4583,
+  "recall": 0.1579,
+  "f1_score": 0.2349,
   "confusion_matrix": [
     [
       185,
       39
     ],
     [
-      172,
-      37
+      176,
+      33
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1249,
-    "high_low_range": 0.107,
-    "volume_ma_10": 0.1028,
-    "ma_10": 0.0792,
-    "ma_5": 0.0748,
-    "ma_20": 0.0717,
-    "volume_change": 0.0676,
-    "ma_ratio_5_20": 0.0654,
-    "macd_signal": 0.0649,
-    "rsi_14": 0.0612,
-    "volatility_10": 0.0611,
-    "macd": 0.0609,
-    "volatility_20": 0.0585
+    "daily_return": 0.124,
+    "high_low_range": 0.1086,
+    "volume_ma_10": 0.1022,
+    "ma_10": 0.0804,
+    "ma_5": 0.0741,
+    "ma_20": 0.0715,
+    "volume_change": 0.0692,
+    "ma_ratio_5_20": 0.0667,
+    "macd_signal": 0.0635,
+    "rsi_14": 0.0619,
+    "volatility_10": 0.0615,
+    "macd": 0.0588,
+    "volatility_20": 0.0576
   }
 }

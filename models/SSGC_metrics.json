@@ -1,16 +1,16 @@
 {
   "ticker": "SSGC",
   "train_rows": 1968,
-  "test_rows": 492,
-  "test_period": "2024-09-09 to 2026-08-31",
-  "accuracy": 0.498,
-  "baseline_accuracy": 0.5549,
+  "test_rows": 493,
+  "test_period": "2024-09-09 to 2026-09-01",
+  "accuracy": 0.499,
+  "baseline_accuracy": 0.5558,
   "precision": 0.4462,
   "recall": 0.5297,
   "f1_score": 0.4843,
   "confusion_matrix": [
     [
-      129,
+      130,
       144
     ],
     [
