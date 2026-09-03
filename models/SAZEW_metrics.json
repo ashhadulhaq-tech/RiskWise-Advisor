@@ -1,36 +1,36 @@
 {
   "ticker": "SAZEW",
-  "train_rows": 1934,
+  "train_rows": 1935,
   "test_rows": 484,
-  "test_period": "2024-09-23 to 2026-09-01",
-  "accuracy": 0.5682,
-  "baseline_accuracy": 0.5723,
-  "precision": 0.4896,
-  "recall": 0.2271,
-  "f1_score": 0.3102,
+  "test_period": "2024-09-24 to 2026-09-02",
+  "accuracy": 0.564,
+  "baseline_accuracy": 0.5744,
+  "precision": 0.479,
+  "recall": 0.2767,
+  "f1_score": 0.3508,
   "confusion_matrix": [
     [
-      228,
-      49
+      216,
+      62
     ],
     [
-      160,
-      47
+      149,
+      57
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.2056,
-    "ma_ratio_5_20": 0.0861,
-    "volume_ma_10": 0.0759,
-    "volatility_10": 0.0743,
-    "volume_change": 0.0743,
-    "rsi_14": 0.0712,
-    "high_low_range": 0.0638,
-    "ma_5": 0.0606,
-    "macd": 0.0592,
-    "ma_20": 0.0583,
-    "macd_signal": 0.0579,
-    "volatility_20": 0.0577,
-    "ma_10": 0.0551
+    "daily_return": 0.2049,
+    "ma_ratio_5_20": 0.0849,
+    "volume_ma_10": 0.0765,
+    "volatility_10": 0.0744,
+    "volume_change": 0.0742,
+    "rsi_14": 0.0711,
+    "ma_5": 0.0628,
+    "high_low_range": 0.0628,
+    "macd": 0.0594,
+    "ma_20": 0.0581,
+    "macd_signal": 0.0575,
+    "ma_10": 0.0574,
+    "volatility_20": 0.0561
   }
 }

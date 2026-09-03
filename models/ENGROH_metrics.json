@@ -1,36 +1,36 @@
 {
   "ticker": "ENGROH",
-  "train_rows": 1952,
+  "train_rows": 1953,
   "test_rows": 489,
-  "test_period": "2024-09-13 to 2026-09-01",
-  "accuracy": 0.4949,
-  "baseline_accuracy": 0.501,
-  "precision": 0.2857,
+  "test_period": "2024-09-16 to 2026-09-02",
+  "accuracy": 0.4908,
+  "baseline_accuracy": 0.499,
+  "precision": 0.25,
   "recall": 0.0082,
-  "f1_score": 0.0159,
+  "f1_score": 0.0158,
   "confusion_matrix": [
     [
-      240,
-      5
+      238,
+      6
     ],
     [
-      242,
+      243,
       2
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1434,
-    "ma_20": 0.0934,
-    "volume_change": 0.0863,
-    "rsi_14": 0.0831,
-    "ma_5": 0.0801,
-    "ma_10": 0.0732,
-    "ma_ratio_5_20": 0.0713,
-    "volatility_20": 0.0685,
-    "volatility_10": 0.0671,
-    "macd": 0.0626,
-    "macd_signal": 0.0619,
-    "high_low_range": 0.0562,
-    "volume_ma_10": 0.0528
+    "daily_return": 0.1451,
+    "ma_20": 0.0927,
+    "volume_change": 0.0855,
+    "rsi_14": 0.0848,
+    "ma_5": 0.0814,
+    "ma_10": 0.0727,
+    "ma_ratio_5_20": 0.0707,
+    "volatility_20": 0.0686,
+    "volatility_10": 0.0651,
+    "macd": 0.0636,
+    "macd_signal": 0.0603,
+    "high_low_range": 0.0568,
+    "volume_ma_10": 0.0526
   }
 }

@@ -1,36 +1,36 @@
 {
   "ticker": "HUMNL",
-  "train_rows": 1965,
+  "train_rows": 1966,
   "test_rows": 492,
-  "test_period": "2024-09-10 to 2026-09-01",
-  "accuracy": 0.5224,
+  "test_period": "2024-09-11 to 2026-09-02",
+  "accuracy": 0.5264,
   "baseline_accuracy": 0.5244,
-  "precision": 0.4737,
-  "recall": 0.0385,
-  "f1_score": 0.0711,
+  "precision": 0.5263,
+  "recall": 0.0427,
+  "f1_score": 0.0791,
   "confusion_matrix": [
     [
-      248,
-      10
+      249,
+      9
     ],
     [
-      225,
-      9
+      224,
+      10
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1118,
-    "high_low_range": 0.1075,
-    "volume_change": 0.0884,
-    "ma_ratio_5_20": 0.0861,
-    "volume_ma_10": 0.0851,
-    "volatility_20": 0.0833,
-    "rsi_14": 0.0772,
-    "volatility_10": 0.0686,
-    "macd": 0.0663,
-    "ma_20": 0.0613,
-    "ma_10": 0.0566,
-    "macd_signal": 0.0558,
-    "ma_5": 0.0521
+    "daily_return": 0.111,
+    "high_low_range": 0.1049,
+    "volume_change": 0.0907,
+    "ma_ratio_5_20": 0.0846,
+    "volume_ma_10": 0.0843,
+    "volatility_20": 0.082,
+    "rsi_14": 0.0776,
+    "volatility_10": 0.0698,
+    "macd": 0.0682,
+    "ma_20": 0.0623,
+    "ma_10": 0.0571,
+    "macd_signal": 0.0561,
+    "ma_5": 0.0514
   }
 }

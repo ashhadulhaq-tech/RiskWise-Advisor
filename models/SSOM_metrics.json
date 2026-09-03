@@ -1,16 +1,16 @@
 {
   "ticker": "SSOM",
   "train_rows": 1388,
-  "test_rows": 347,
-  "test_period": "2025-04-10 to 2026-09-01",
-  "accuracy": 0.5389,
-  "baseline_accuracy": 0.5159,
+  "test_rows": 348,
+  "test_period": "2025-04-10 to 2026-09-02",
+  "accuracy": 0.5402,
+  "baseline_accuracy": 0.5172,
   "precision": 0.5392,
   "recall": 0.3274,
   "f1_score": 0.4074,
   "confusion_matrix": [
     [
-      132,
+      133,
       47
     ],
     [

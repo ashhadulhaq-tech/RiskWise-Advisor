@@ -1,20 +1,20 @@
 {
   "ticker": "KOHC",
   "train_rows": 1968,
-  "test_rows": 492,
-  "test_period": "2024-09-10 to 2026-09-01",
-  "accuracy": 0.5122,
-  "baseline_accuracy": 0.5346,
+  "test_rows": 493,
+  "test_period": "2024-09-10 to 2026-09-02",
+  "accuracy": 0.5112,
+  "baseline_accuracy": 0.5335,
   "precision": 0.4645,
-  "recall": 0.3144,
-  "f1_score": 0.375,
+  "recall": 0.313,
+  "f1_score": 0.374,
   "confusion_matrix": [
     [
       180,
       83
     ],
     [
-      157,
+      158,
       72
     ]
   ],

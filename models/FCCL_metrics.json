@@ -1,17 +1,17 @@
 {
   "ticker": "FCCL",
-  "train_rows": 1968,
+  "train_rows": 1969,
   "test_rows": 493,
-  "test_period": "2024-09-09 to 2026-09-01",
-  "accuracy": 0.5213,
+  "test_period": "2024-09-10 to 2026-09-02",
+  "accuracy": 0.5193,
   "baseline_accuracy": 0.5274,
-  "precision": 0.4118,
+  "precision": 0.3889,
   "recall": 0.03,
-  "f1_score": 0.056,
+  "f1_score": 0.0558,
   "confusion_matrix": [
     [
-      250,
-      10
+      249,
+      11
     ],
     [
       226,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "rsi_14": 0.0867,
-    "daily_return": 0.0864,
-    "high_low_range": 0.0856,
-    "volume_ma_10": 0.0826,
-    "ma_ratio_5_20": 0.0817,
-    "volatility_20": 0.0778,
-    "volume_change": 0.0776,
-    "volatility_10": 0.0748,
-    "ma_5": 0.0744,
-    "ma_10": 0.07,
+    "daily_return": 0.0883,
+    "high_low_range": 0.0852,
+    "rsi_14": 0.0847,
+    "ma_ratio_5_20": 0.0838,
+    "volume_ma_10": 0.0821,
+    "volatility_20": 0.0787,
+    "volume_change": 0.0767,
+    "ma_5": 0.0745,
+    "volatility_10": 0.0743,
+    "ma_10": 0.0707,
     "macd": 0.0694,
-    "macd_signal": 0.0672,
-    "ma_20": 0.0658
+    "macd_signal": 0.067,
+    "ma_20": 0.0645
   }
 }

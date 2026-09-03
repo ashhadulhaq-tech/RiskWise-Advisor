@@ -1,20 +1,20 @@
 {
   "ticker": "GAL",
   "train_rows": 1968,
-  "test_rows": 492,
-  "test_period": "2024-09-10 to 2026-09-01",
-  "accuracy": 0.5264,
-  "baseline_accuracy": 0.5102,
+  "test_rows": 493,
+  "test_period": "2024-09-10 to 2026-09-02",
+  "accuracy": 0.5254,
+  "baseline_accuracy": 0.5091,
   "precision": 0.6,
-  "recall": 0.0996,
-  "f1_score": 0.1708,
+  "recall": 0.0992,
+  "f1_score": 0.1702,
   "confusion_matrix": [
     [
       235,
       16
     ],
     [
-      217,
+      218,
       24
     ]
   ],

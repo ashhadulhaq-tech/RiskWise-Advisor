@@ -1,20 +1,20 @@
 {
   "ticker": "EFERT",
   "train_rows": 1968,
-  "test_rows": 492,
-  "test_period": "2024-09-10 to 2026-09-01",
-  "accuracy": 0.5427,
-  "baseline_accuracy": 0.4533,
+  "test_rows": 493,
+  "test_period": "2024-09-10 to 2026-09-02",
+  "accuracy": 0.5416,
+  "baseline_accuracy": 0.4544,
   "precision": 0.4931,
-  "recall": 0.3184,
-  "f1_score": 0.3869,
+  "recall": 0.317,
+  "f1_score": 0.3859,
   "confusion_matrix": [
     [
       196,
       73
     ],
     [
-      152,
+      153,
       71
     ]
   ],
