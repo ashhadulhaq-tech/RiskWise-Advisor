@@ -1,36 +1,36 @@
 {
   "ticker": "APL",
-  "train_rows": 1965,
+  "train_rows": 1966,
   "test_rows": 492,
-  "test_period": "2024-09-11 to 2026-09-02",
-  "accuracy": 0.5366,
-  "baseline_accuracy": 0.5224,
-  "precision": 0.5493,
-  "recall": 0.166,
-  "f1_score": 0.2549,
+  "test_period": "2024-09-12 to 2026-09-03",
+  "accuracy": 0.5467,
+  "baseline_accuracy": 0.5203,
+  "precision": 0.6032,
+  "recall": 0.161,
+  "f1_score": 0.2542,
   "confusion_matrix": [
     [
-      225,
-      32
+      231,
+      25
     ],
     [
-      196,
-      39
+      198,
+      38
     ]
   ],
   "feature_importance": {
-    "volatility_10": 0.1107,
-    "volatility_20": 0.09,
-    "ma_5": 0.081,
-    "macd_signal": 0.0807,
-    "ma_20": 0.0792,
-    "high_low_range": 0.0788,
-    "ma_ratio_5_20": 0.0757,
-    "ma_10": 0.0737,
-    "rsi_14": 0.07,
-    "volume_ma_10": 0.068,
-    "volume_change": 0.0649,
-    "macd": 0.0643,
-    "daily_return": 0.0629
+    "volatility_10": 0.1104,
+    "volatility_20": 0.0889,
+    "ma_5": 0.0837,
+    "macd_signal": 0.0802,
+    "ma_20": 0.0796,
+    "high_low_range": 0.0781,
+    "ma_ratio_5_20": 0.0746,
+    "ma_10": 0.0728,
+    "rsi_14": 0.0711,
+    "volume_ma_10": 0.0671,
+    "volume_change": 0.0654,
+    "macd": 0.0648,
+    "daily_return": 0.0631
   }
 }

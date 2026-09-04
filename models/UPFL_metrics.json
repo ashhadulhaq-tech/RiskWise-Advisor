@@ -1,8 +1,8 @@
 {
   "ticker": "UPFL",
-  "train_rows": 1024,
+  "train_rows": 1025,
   "test_rows": 257,
-  "test_period": "2025-08-22 to 2026-09-02",
+  "test_period": "2025-08-25 to 2026-09-03",
   "accuracy": 0.5253,
   "baseline_accuracy": 0.5253,
   "precision": 0.0,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1361,
-    "high_low_range": 0.0907,
-    "macd_signal": 0.0885,
-    "ma_20": 0.0786,
-    "ma_5": 0.0782,
-    "ma_10": 0.074,
-    "macd": 0.0701,
-    "volatility_10": 0.0684,
-    "volatility_20": 0.0684,
-    "ma_ratio_5_20": 0.0638,
-    "volume_change": 0.0615,
-    "rsi_14": 0.061,
-    "volume_ma_10": 0.0607
+    "daily_return": 0.1313,
+    "macd_signal": 0.0896,
+    "high_low_range": 0.0892,
+    "ma_5": 0.0789,
+    "ma_20": 0.0759,
+    "macd": 0.0742,
+    "ma_10": 0.0698,
+    "volatility_10": 0.0693,
+    "ma_ratio_5_20": 0.0689,
+    "volatility_20": 0.0671,
+    "rsi_14": 0.0659,
+    "volume_change": 0.0633,
+    "volume_ma_10": 0.0566
   }
 }

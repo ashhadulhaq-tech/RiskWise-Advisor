@@ -1,36 +1,36 @@
 {
   "ticker": "GAL",
-  "train_rows": 1968,
+  "train_rows": 1969,
   "test_rows": 493,
-  "test_period": "2024-09-10 to 2026-09-02",
-  "accuracy": 0.5254,
+  "test_period": "2024-09-11 to 2026-09-03",
+  "accuracy": 0.5314,
   "baseline_accuracy": 0.5091,
-  "precision": 0.6,
-  "recall": 0.0992,
-  "f1_score": 0.1702,
+  "precision": 0.6222,
+  "recall": 0.1157,
+  "f1_score": 0.1951,
   "confusion_matrix": [
     [
-      235,
-      16
+      234,
+      17
     ],
     [
-      218,
-      24
+      214,
+      28
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1701,
-    "volatility_10": 0.1056,
-    "volatility_20": 0.0741,
-    "volume_change": 0.0734,
-    "volume_ma_10": 0.0724,
-    "macd_signal": 0.0721,
-    "high_low_range": 0.0674,
-    "ma_ratio_5_20": 0.0672,
-    "rsi_14": 0.066,
-    "ma_10": 0.0616,
-    "ma_5": 0.0613,
-    "ma_20": 0.0569,
-    "macd": 0.0519
+    "daily_return": 0.1687,
+    "volatility_10": 0.1066,
+    "volatility_20": 0.0748,
+    "macd_signal": 0.0736,
+    "volume_change": 0.0735,
+    "volume_ma_10": 0.0719,
+    "high_low_range": 0.0685,
+    "ma_ratio_5_20": 0.0675,
+    "rsi_14": 0.0651,
+    "ma_5": 0.0616,
+    "ma_10": 0.0605,
+    "ma_20": 0.0557,
+    "macd": 0.0522
   }
 }

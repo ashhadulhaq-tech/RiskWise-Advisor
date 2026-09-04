@@ -1,16 +1,16 @@
 {
   "ticker": "LCI",
   "train_rows": 1940,
-  "test_rows": 485,
-  "test_period": "2024-09-23 to 2026-09-02",
-  "accuracy": 0.5691,
-  "baseline_accuracy": 0.5691,
+  "test_rows": 486,
+  "test_period": "2024-09-23 to 2026-09-03",
+  "accuracy": 0.57,
+  "baseline_accuracy": 0.57,
   "precision": 0.5,
   "recall": 0.2201,
   "f1_score": 0.3056,
   "confusion_matrix": [
     [
-      230,
+      231,
       46
     ],
     [

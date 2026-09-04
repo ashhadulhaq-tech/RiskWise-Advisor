@@ -1,20 +1,20 @@
 {
   "ticker": "MCB",
   "train_rows": 1964,
-  "test_rows": 491,
-  "test_period": "2024-09-12 to 2026-09-02",
-  "accuracy": 0.499,
-  "baseline_accuracy": 0.499,
+  "test_rows": 492,
+  "test_period": "2024-09-12 to 2026-09-03",
+  "accuracy": 0.498,
+  "baseline_accuracy": 0.498,
   "precision": 0.5,
-  "recall": 0.0122,
-  "f1_score": 0.0238,
+  "recall": 0.0121,
+  "f1_score": 0.0237,
   "confusion_matrix": [
     [
       242,
       3
     ],
     [
-      243,
+      244,
       3
     ]
   ],
