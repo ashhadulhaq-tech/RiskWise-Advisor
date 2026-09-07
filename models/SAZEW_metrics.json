@@ -1,16 +1,16 @@
 {
   "ticker": "SAZEW",
   "train_rows": 1936,
-  "test_rows": 484,
-  "test_period": "2024-09-25 to 2026-09-03",
-  "accuracy": 0.562,
-  "baseline_accuracy": 0.5764,
+  "test_rows": 485,
+  "test_period": "2024-09-25 to 2026-09-04",
+  "accuracy": 0.5629,
+  "baseline_accuracy": 0.5773,
   "precision": 0.4737,
   "recall": 0.3073,
   "f1_score": 0.3728,
   "confusion_matrix": [
     [
-      209,
+      210,
       70
     ],
     [

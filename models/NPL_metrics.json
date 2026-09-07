@@ -1,16 +1,16 @@
 {
   "ticker": "NPL",
   "train_rows": 1944,
-  "test_rows": 486,
-  "test_period": "2024-09-23 to 2026-09-03",
-  "accuracy": 0.5288,
-  "baseline_accuracy": 0.5473,
+  "test_rows": 487,
+  "test_period": "2024-09-23 to 2026-09-04",
+  "accuracy": 0.5298,
+  "baseline_accuracy": 0.5483,
   "precision": 0.4698,
   "recall": 0.3182,
   "f1_score": 0.3794,
   "confusion_matrix": [
     [
-      187,
+      188,
       79
     ],
     [

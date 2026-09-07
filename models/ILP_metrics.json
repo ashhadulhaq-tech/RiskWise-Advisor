@@ -1,36 +1,36 @@
 {
   "ticker": "ILP",
-  "train_rows": 1450,
+  "train_rows": 1451,
   "test_rows": 363,
-  "test_period": "2025-03-17 to 2026-09-03",
+  "test_period": "2025-03-18 to 2026-09-04",
   "accuracy": 0.551,
-  "baseline_accuracy": 0.5399,
-  "precision": 0.5476,
-  "recall": 0.1377,
-  "f1_score": 0.2201,
+  "baseline_accuracy": 0.5427,
+  "precision": 0.5333,
+  "recall": 0.1446,
+  "f1_score": 0.2275,
   "confusion_matrix": [
     [
-      177,
-      19
+      176,
+      21
     ],
     [
-      144,
-      23
+      142,
+      24
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1202,
-    "volume_change": 0.0963,
-    "high_low_range": 0.0875,
-    "ma_5": 0.0851,
-    "volume_ma_10": 0.0782,
-    "volatility_10": 0.0745,
-    "ma_10": 0.0728,
-    "rsi_14": 0.0723,
-    "ma_ratio_5_20": 0.0699,
-    "macd_signal": 0.0667,
-    "volatility_20": 0.0652,
-    "ma_20": 0.0577,
-    "macd": 0.0535
+    "daily_return": 0.1228,
+    "volume_change": 0.0953,
+    "high_low_range": 0.0883,
+    "ma_5": 0.0846,
+    "volume_ma_10": 0.078,
+    "volatility_10": 0.0754,
+    "ma_10": 0.0742,
+    "rsi_14": 0.0734,
+    "ma_ratio_5_20": 0.0684,
+    "volatility_20": 0.0648,
+    "macd_signal": 0.0647,
+    "ma_20": 0.0557,
+    "macd": 0.0543
   }
 }

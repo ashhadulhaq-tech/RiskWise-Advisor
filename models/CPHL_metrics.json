@@ -1,16 +1,16 @@
 {
   "ticker": "CPHL",
   "train_rows": 1004,
-  "test_rows": 251,
-  "test_period": "2025-09-02 to 2026-09-03",
-  "accuracy": 0.5498,
-  "baseline_accuracy": 0.5179,
+  "test_rows": 252,
+  "test_period": "2025-09-02 to 2026-09-04",
+  "accuracy": 0.5516,
+  "baseline_accuracy": 0.5198,
   "precision": 0.5769,
   "recall": 0.2479,
   "f1_score": 0.3468,
   "confusion_matrix": [
     [
-      108,
+      109,
       22
     ],
     [

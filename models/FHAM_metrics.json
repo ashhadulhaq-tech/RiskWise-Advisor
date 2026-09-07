@@ -1,17 +1,17 @@
 {
   "ticker": "FHAM",
   "train_rows": 1764,
-  "test_rows": 441,
-  "test_period": "2024-11-25 to 2026-09-03",
-  "accuracy": 0.5533,
-  "baseline_accuracy": 0.4966,
-  "precision": 0.5556,
+  "test_rows": 442,
+  "test_period": "2024-11-25 to 2026-09-04",
+  "accuracy": 0.552,
+  "baseline_accuracy": 0.4977,
+  "precision": 0.5531,
   "recall": 0.5631,
-  "f1_score": 0.5593,
+  "f1_score": 0.558,
   "confusion_matrix": [
     [
       119,
-      100
+      101
     ],
     [
       97,

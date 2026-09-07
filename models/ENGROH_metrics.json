@@ -1,36 +1,36 @@
 {
   "ticker": "ENGROH",
-  "train_rows": 1954,
+  "train_rows": 1955,
   "test_rows": 489,
-  "test_period": "2024-09-18 to 2026-09-03",
-  "accuracy": 0.4908,
-  "baseline_accuracy": 0.4969,
+  "test_period": "2024-09-19 to 2026-09-04",
+  "accuracy": 0.4928,
+  "baseline_accuracy": 0.499,
   "precision": 0.2857,
-  "recall": 0.0081,
-  "f1_score": 0.0158,
+  "recall": 0.0082,
+  "f1_score": 0.0159,
   "confusion_matrix": [
     [
-      238,
+      239,
       5
     ],
     [
-      244,
+      243,
       2
     ]
   ],
   "feature_importance": {
     "daily_return": 0.1457,
-    "ma_20": 0.091,
-    "volume_change": 0.088,
-    "rsi_14": 0.0825,
-    "ma_5": 0.0822,
-    "ma_10": 0.0724,
-    "ma_ratio_5_20": 0.0709,
-    "volatility_20": 0.0676,
-    "volatility_10": 0.067,
-    "macd": 0.0633,
-    "macd_signal": 0.0588,
-    "high_low_range": 0.0569,
-    "volume_ma_10": 0.0536
+    "ma_20": 0.092,
+    "volume_change": 0.0876,
+    "rsi_14": 0.0817,
+    "ma_5": 0.0807,
+    "ma_ratio_5_20": 0.0723,
+    "ma_10": 0.0702,
+    "volatility_20": 0.0685,
+    "volatility_10": 0.0655,
+    "macd": 0.0652,
+    "macd_signal": 0.0602,
+    "high_low_range": 0.0573,
+    "volume_ma_10": 0.053
   }
 }

@@ -1,36 +1,36 @@
 {
   "ticker": "SRVI",
-  "train_rows": 1910,
+  "train_rows": 1911,
   "test_rows": 478,
-  "test_period": "2024-10-03 to 2026-09-03",
-  "accuracy": 0.546,
+  "test_period": "2024-10-04 to 2026-09-04",
+  "accuracy": 0.5523,
   "baseline_accuracy": 0.5356,
-  "precision": 0.5333,
-  "recall": 0.1802,
-  "f1_score": 0.2694,
+  "precision": 0.5541,
+  "recall": 0.1847,
+  "f1_score": 0.277,
   "confusion_matrix": [
     [
-      221,
-      35
+      223,
+      33
     ],
     [
-      182,
-      40
+      181,
+      41
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1593,
-    "volatility_10": 0.0921,
-    "high_low_range": 0.0905,
-    "volume_ma_10": 0.089,
-    "volatility_20": 0.0796,
-    "volume_change": 0.0778,
-    "rsi_14": 0.0716,
-    "macd": 0.0604,
-    "ma_5": 0.0602,
-    "ma_ratio_5_20": 0.0555,
-    "macd_signal": 0.0553,
-    "ma_10": 0.0546,
-    "ma_20": 0.0541
+    "daily_return": 0.1564,
+    "volatility_10": 0.0918,
+    "high_low_range": 0.0901,
+    "volume_ma_10": 0.0871,
+    "volatility_20": 0.0805,
+    "volume_change": 0.0774,
+    "rsi_14": 0.0721,
+    "ma_5": 0.0628,
+    "macd": 0.0598,
+    "ma_10": 0.0563,
+    "ma_ratio_5_20": 0.0563,
+    "macd_signal": 0.0555,
+    "ma_20": 0.0539
   }
 }
