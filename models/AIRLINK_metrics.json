@@ -1,17 +1,17 @@
 {
   "ticker": "AIRLINK",
-  "train_rows": 965,
+  "train_rows": 967,
   "test_rows": 242,
-  "test_period": "2025-09-16 to 2026-09-04",
-  "accuracy": 0.5496,
+  "test_period": "2025-09-18 to 2026-09-08",
+  "accuracy": 0.5413,
   "baseline_accuracy": 0.562,
-  "precision": 0.4737,
+  "precision": 0.4576,
   "recall": 0.2547,
-  "f1_score": 0.3313,
+  "f1_score": 0.3273,
   "confusion_matrix": [
     [
-      106,
-      30
+      104,
+      32
     ],
     [
       79,
@@ -20,17 +20,17 @@
   ],
   "feature_importance": {
     "macd": 0.0986,
-    "volatility_10": 0.0964,
-    "daily_return": 0.0901,
-    "ma_ratio_5_20": 0.0852,
-    "volume_ma_10": 0.0843,
-    "high_low_range": 0.083,
-    "macd_signal": 0.0812,
-    "rsi_14": 0.0734,
-    "volume_change": 0.0716,
-    "ma_10": 0.0626,
-    "volatility_20": 0.0625,
-    "ma_20": 0.0588,
-    "ma_5": 0.0524
+    "volatility_10": 0.0947,
+    "daily_return": 0.0868,
+    "ma_ratio_5_20": 0.0831,
+    "volume_ma_10": 0.0829,
+    "high_low_range": 0.0827,
+    "macd_signal": 0.0822,
+    "volume_change": 0.0726,
+    "rsi_14": 0.0724,
+    "volatility_20": 0.0647,
+    "ma_20": 0.0639,
+    "ma_10": 0.0618,
+    "ma_5": 0.0536
   }
 }

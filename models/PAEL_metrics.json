@@ -1,36 +1,36 @@
 {
   "ticker": "PAEL",
-  "train_rows": 1971,
-  "test_rows": 493,
-  "test_period": "2024-09-12 to 2026-09-04",
-  "accuracy": 0.5254,
-  "baseline_accuracy": 0.5254,
+  "train_rows": 1972,
+  "test_rows": 494,
+  "test_period": "2024-09-13 to 2026-09-08",
+  "accuracy": 0.5263,
+  "baseline_accuracy": 0.5263,
   "precision": 0.5,
-  "recall": 0.2179,
-  "f1_score": 0.3036,
+  "recall": 0.2094,
+  "f1_score": 0.2952,
   "confusion_matrix": [
     [
-      208,
-      51
+      211,
+      49
     ],
     [
-      183,
-      51
+      185,
+      49
     ]
   ],
   "feature_importance": {
-    "volatility_10": 0.1104,
-    "macd_signal": 0.0929,
-    "daily_return": 0.0925,
-    "volume_ma_10": 0.0903,
-    "high_low_range": 0.0853,
-    "volume_change": 0.0843,
-    "volatility_20": 0.0816,
-    "macd": 0.0749,
-    "ma_ratio_5_20": 0.065,
-    "rsi_14": 0.0644,
-    "ma_5": 0.0536,
-    "ma_10": 0.0536,
-    "ma_20": 0.0511
+    "volatility_10": 0.1109,
+    "daily_return": 0.0922,
+    "macd_signal": 0.092,
+    "volume_ma_10": 0.0869,
+    "high_low_range": 0.0857,
+    "volume_change": 0.0848,
+    "volatility_20": 0.0823,
+    "macd": 0.0771,
+    "ma_ratio_5_20": 0.0646,
+    "rsi_14": 0.064,
+    "ma_10": 0.0538,
+    "ma_5": 0.0533,
+    "ma_20": 0.0524
   }
 }

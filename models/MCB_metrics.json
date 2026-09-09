@@ -1,36 +1,36 @@
 {
   "ticker": "MCB",
-  "train_rows": 1965,
+  "train_rows": 1967,
   "test_rows": 492,
-  "test_period": "2024-09-13 to 2026-09-04",
+  "test_period": "2024-09-18 to 2026-09-08",
   "accuracy": 0.4898,
-  "baseline_accuracy": 0.498,
+  "baseline_accuracy": 0.5,
   "precision": 0.3333,
-  "recall": 0.0162,
-  "f1_score": 0.0309,
+  "recall": 0.0203,
+  "f1_score": 0.0383,
   "confusion_matrix": [
     [
-      237,
-      8
+      236,
+      10
     ],
     [
-      243,
-      4
+      241,
+      5
     ]
   ],
   "feature_importance": {
-    "macd_signal": 0.0921,
-    "high_low_range": 0.0884,
-    "volume_change": 0.0845,
-    "rsi_14": 0.0842,
-    "volatility_20": 0.0825,
-    "macd": 0.0802,
-    "daily_return": 0.0743,
-    "ma_ratio_5_20": 0.0739,
-    "volume_ma_10": 0.073,
-    "ma_5": 0.0716,
-    "ma_10": 0.0664,
-    "ma_20": 0.0647,
-    "volatility_10": 0.0641
+    "macd_signal": 0.0943,
+    "rsi_14": 0.0879,
+    "high_low_range": 0.0857,
+    "volume_change": 0.0825,
+    "volatility_20": 0.0824,
+    "macd": 0.077,
+    "daily_return": 0.0755,
+    "ma_5": 0.0733,
+    "ma_ratio_5_20": 0.0704,
+    "volume_ma_10": 0.0697,
+    "ma_10": 0.0689,
+    "volatility_10": 0.0689,
+    "ma_20": 0.0635
   }
 }
