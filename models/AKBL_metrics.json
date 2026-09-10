@@ -1,36 +1,36 @@
 {
   "ticker": "AKBL",
-  "train_rows": 1970,
+  "train_rows": 1971,
   "test_rows": 493,
-  "test_period": "2024-09-16 to 2026-09-08",
-  "accuracy": 0.4828,
-  "baseline_accuracy": 0.4807,
-  "precision": 0.5185,
-  "recall": 0.0547,
-  "f1_score": 0.0989,
+  "test_period": "2024-09-18 to 2026-09-09",
+  "accuracy": 0.4807,
+  "baseline_accuracy": 0.4828,
+  "precision": 0.48,
+  "recall": 0.0471,
+  "f1_score": 0.0857,
   "confusion_matrix": [
     [
-      224,
+      225,
       13
     ],
     [
-      242,
-      14
+      243,
+      12
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1175,
-    "high_low_range": 0.0891,
-    "volume_change": 0.0849,
-    "rsi_14": 0.0835,
-    "volatility_10": 0.0778,
-    "volume_ma_10": 0.0776,
-    "volatility_20": 0.0747,
-    "ma_ratio_5_20": 0.0731,
-    "ma_5": 0.0728,
-    "ma_20": 0.0654,
-    "ma_10": 0.0631,
-    "macd": 0.0629,
+    "daily_return": 0.1209,
+    "volume_change": 0.0857,
+    "high_low_range": 0.0853,
+    "rsi_14": 0.0822,
+    "volatility_10": 0.079,
+    "ma_5": 0.0745,
+    "volatility_20": 0.0745,
+    "volume_ma_10": 0.0745,
+    "ma_ratio_5_20": 0.0739,
+    "ma_20": 0.0658,
+    "ma_10": 0.0636,
+    "macd": 0.0623,
     "macd_signal": 0.0577
   }
 }

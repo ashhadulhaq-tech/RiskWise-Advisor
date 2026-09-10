@@ -1,36 +1,36 @@
 {
   "ticker": "SSGC",
-  "train_rows": 1972,
+  "train_rows": 1973,
   "test_rows": 494,
-  "test_period": "2024-09-13 to 2026-09-08",
-  "accuracy": 0.502,
+  "test_period": "2024-09-16 to 2026-09-09",
+  "accuracy": 0.5061,
   "baseline_accuracy": 0.5567,
-  "precision": 0.4471,
-  "recall": 0.5205,
-  "f1_score": 0.481,
+  "precision": 0.451,
+  "recall": 0.5251,
+  "f1_score": 0.4852,
   "confusion_matrix": [
     [
-      134,
-      141
+      135,
+      140
     ],
     [
-      105,
-      114
+      104,
+      115
     ]
   ],
   "feature_importance": {
-    "volatility_20": 0.1106,
-    "volatility_10": 0.1092,
-    "daily_return": 0.0864,
-    "ma_20": 0.0847,
-    "macd_signal": 0.0823,
-    "high_low_range": 0.0774,
-    "ma_10": 0.0765,
-    "ma_5": 0.0727,
-    "macd": 0.0651,
-    "ma_ratio_5_20": 0.0647,
-    "rsi_14": 0.0645,
-    "volume_change": 0.0577,
-    "volume_ma_10": 0.0481
+    "volatility_20": 0.1104,
+    "volatility_10": 0.1084,
+    "daily_return": 0.0869,
+    "ma_20": 0.0856,
+    "macd_signal": 0.0807,
+    "high_low_range": 0.0775,
+    "ma_10": 0.0752,
+    "ma_5": 0.0723,
+    "macd": 0.0654,
+    "ma_ratio_5_20": 0.0651,
+    "rsi_14": 0.0648,
+    "volume_change": 0.0597,
+    "volume_ma_10": 0.048
   }
 }

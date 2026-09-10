@@ -1,16 +1,16 @@
 {
   "ticker": "MUREB",
   "train_rows": 1748,
-  "test_rows": 437,
-  "test_period": "2024-12-04 to 2026-09-08",
-  "accuracy": 0.54,
-  "baseline_accuracy": 0.5492,
+  "test_rows": 438,
+  "test_period": "2024-12-04 to 2026-09-09",
+  "accuracy": 0.5411,
+  "baseline_accuracy": 0.5502,
   "precision": 0.4583,
   "recall": 0.1117,
   "f1_score": 0.1796,
   "confusion_matrix": [
     [
-      214,
+      215,
       26
     ],
     [

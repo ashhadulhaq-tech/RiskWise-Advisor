@@ -1,36 +1,36 @@
 {
   "ticker": "SEARL",
-  "train_rows": 1972,
+  "train_rows": 1973,
   "test_rows": 494,
-  "test_period": "2024-09-13 to 2026-09-08",
-  "accuracy": 0.5121,
+  "test_period": "2024-09-16 to 2026-09-09",
+  "accuracy": 0.5202,
   "baseline_accuracy": 0.504,
-  "precision": 0.5323,
-  "recall": 0.1347,
-  "f1_score": 0.215,
+  "precision": 0.5667,
+  "recall": 0.1388,
+  "f1_score": 0.223,
   "confusion_matrix": [
     [
-      220,
-      29
+      223,
+      26
     ],
     [
-      212,
-      33
+      211,
+      34
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1055,
-    "high_low_range": 0.0956,
-    "volume_change": 0.0887,
-    "volatility_10": 0.0783,
-    "ma_ratio_5_20": 0.0778,
-    "volume_ma_10": 0.0754,
+    "daily_return": 0.1076,
+    "high_low_range": 0.0962,
+    "volume_change": 0.0878,
+    "volatility_10": 0.0789,
+    "ma_ratio_5_20": 0.0757,
     "volatility_20": 0.0749,
-    "rsi_14": 0.0725,
-    "macd_signal": 0.0713,
-    "macd": 0.069,
-    "ma_5": 0.0674,
-    "ma_10": 0.0632,
-    "ma_20": 0.0605
+    "volume_ma_10": 0.0745,
+    "rsi_14": 0.0716,
+    "macd_signal": 0.0709,
+    "macd": 0.0699,
+    "ma_5": 0.0664,
+    "ma_10": 0.0633,
+    "ma_20": 0.0624
   }
 }

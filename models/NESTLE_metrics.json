@@ -1,17 +1,17 @@
 {
   "ticker": "NESTLE",
-  "train_rows": 1468,
+  "train_rows": 1469,
   "test_rows": 368,
-  "test_period": "2025-03-13 to 2026-09-08",
-  "accuracy": 0.5435,
+  "test_period": "2025-03-14 to 2026-09-09",
+  "accuracy": 0.5462,
   "baseline_accuracy": 0.5326,
-  "precision": 0.5312,
+  "precision": 0.5397,
   "recall": 0.1977,
-  "f1_score": 0.2881,
+  "f1_score": 0.2894,
   "confusion_matrix": [
     [
-      166,
-      30
+      167,
+      29
     ],
     [
       138,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.2159,
-    "volume_change": 0.0813,
-    "rsi_14": 0.075,
-    "macd": 0.0704,
+    "daily_return": 0.2198,
+    "volume_change": 0.0809,
+    "rsi_14": 0.0747,
+    "macd": 0.0724,
     "volatility_10": 0.0689,
-    "ma_ratio_5_20": 0.0664,
-    "macd_signal": 0.0654,
-    "high_low_range": 0.0651,
-    "volatility_20": 0.0629,
-    "ma_5": 0.0627,
-    "ma_20": 0.0612,
-    "ma_10": 0.0528,
-    "volume_ma_10": 0.0521
+    "ma_ratio_5_20": 0.0665,
+    "high_low_range": 0.0642,
+    "macd_signal": 0.0639,
+    "volatility_20": 0.0635,
+    "ma_20": 0.0607,
+    "ma_5": 0.0596,
+    "ma_10": 0.0529,
+    "volume_ma_10": 0.0519
   }
 }

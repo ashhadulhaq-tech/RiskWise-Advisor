@@ -1,36 +1,36 @@
 {
   "ticker": "JVDC",
-  "train_rows": 1662,
+  "train_rows": 1663,
   "test_rows": 416,
-  "test_period": "2025-01-03 to 2026-09-08",
+  "test_period": "2025-01-06 to 2026-09-09",
   "accuracy": 0.4736,
-  "baseline_accuracy": 0.4856,
-  "precision": 0.4324,
-  "recall": 0.0748,
-  "f1_score": 0.1275,
+  "baseline_accuracy": 0.488,
+  "precision": 0.4375,
+  "recall": 0.0986,
+  "f1_score": 0.1609,
   "confusion_matrix": [
     [
-      181,
-      21
+      176,
+      27
     ],
     [
-      198,
-      16
+      192,
+      21
     ]
   ],
   "feature_importance": {
-    "volume_change": 0.109,
-    "daily_return": 0.0933,
-    "volume_ma_10": 0.0836,
-    "macd_signal": 0.0805,
-    "macd": 0.0797,
-    "volatility_10": 0.078,
-    "ma_5": 0.0765,
-    "rsi_14": 0.075,
-    "ma_ratio_5_20": 0.0715,
-    "high_low_range": 0.0659,
-    "ma_10": 0.0654,
-    "volatility_20": 0.0632,
+    "volume_change": 0.1099,
+    "daily_return": 0.0961,
+    "volume_ma_10": 0.0861,
+    "volatility_10": 0.0825,
+    "macd_signal": 0.0811,
+    "macd": 0.0755,
+    "ma_5": 0.0741,
+    "rsi_14": 0.0733,
+    "ma_ratio_5_20": 0.0706,
+    "high_low_range": 0.0658,
+    "ma_10": 0.0645,
+    "volatility_20": 0.0622,
     "ma_20": 0.0584
   }
 }
