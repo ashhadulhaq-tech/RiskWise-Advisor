@@ -1,17 +1,17 @@
 {
   "ticker": "YOUW",
-  "train_rows": 1973,
+  "train_rows": 1974,
   "test_rows": 494,
-  "test_period": "2024-09-16 to 2026-09-09",
-  "accuracy": 0.5951,
+  "test_period": "2024-09-18 to 2026-09-10",
+  "accuracy": 0.5992,
   "baseline_accuracy": 0.583,
-  "precision": 0.6071,
+  "precision": 0.6538,
   "recall": 0.0825,
-  "f1_score": 0.1453,
+  "f1_score": 0.1466,
   "confusion_matrix": [
     [
-      277,
-      11
+      279,
+      9
     ],
     [
       189,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "high_low_range": 0.1298,
-    "macd_signal": 0.0894,
+    "high_low_range": 0.1299,
+    "macd_signal": 0.0904,
     "volume_change": 0.0882,
-    "macd": 0.0798,
-    "ma_ratio_5_20": 0.0777,
-    "daily_return": 0.0736,
-    "ma_5": 0.0716,
-    "volatility_10": 0.0688,
-    "ma_10": 0.068,
-    "ma_20": 0.0651,
-    "volatility_20": 0.0639,
-    "rsi_14": 0.0621,
+    "macd": 0.0779,
+    "daily_return": 0.0759,
+    "ma_ratio_5_20": 0.0755,
+    "ma_5": 0.0714,
+    "volatility_10": 0.069,
+    "ma_10": 0.0686,
+    "ma_20": 0.0641,
+    "volatility_20": 0.0641,
+    "rsi_14": 0.0632,
     "volume_ma_10": 0.0618
   }
 }

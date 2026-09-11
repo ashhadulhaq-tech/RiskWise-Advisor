@@ -1,36 +1,36 @@
 {
   "ticker": "ATLH",
-  "train_rows": 1703,
+  "train_rows": 1704,
   "test_rows": 426,
-  "test_period": "2024-12-20 to 2026-09-09",
-  "accuracy": 0.4953,
-  "baseline_accuracy": 0.4883,
-  "precision": 0.8,
-  "recall": 0.0183,
-  "f1_score": 0.0359,
+  "test_period": "2024-12-23 to 2026-09-10",
+  "accuracy": 0.4977,
+  "baseline_accuracy": 0.4906,
+  "precision": 0.6364,
+  "recall": 0.0323,
+  "f1_score": 0.0614,
   "confusion_matrix": [
     [
-      207,
-      1
+      205,
+      4
     ],
     [
-      214,
-      4
+      210,
+      7
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1394,
+    "daily_return": 0.1378,
     "rsi_14": 0.0882,
-    "volume_change": 0.0814,
-    "volatility_10": 0.0797,
-    "macd_signal": 0.0792,
+    "volume_change": 0.0815,
+    "macd_signal": 0.081,
+    "volatility_10": 0.0787,
+    "volatility_20": 0.0725,
     "high_low_range": 0.0722,
-    "volatility_20": 0.0713,
-    "ma_20": 0.0705,
-    "macd": 0.0654,
-    "ma_ratio_5_20": 0.0653,
-    "ma_10": 0.0647,
-    "volume_ma_10": 0.0642,
-    "ma_5": 0.0585
+    "ma_20": 0.07,
+    "macd": 0.0662,
+    "ma_ratio_5_20": 0.0654,
+    "ma_10": 0.0646,
+    "volume_ma_10": 0.0646,
+    "ma_5": 0.0573
   }
 }

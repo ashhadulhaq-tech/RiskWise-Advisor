@@ -1,36 +1,36 @@
 {
   "ticker": "PAEL",
-  "train_rows": 1973,
+  "train_rows": 1974,
   "test_rows": 494,
-  "test_period": "2024-09-16 to 2026-09-09",
-  "accuracy": 0.5304,
+  "test_period": "2024-09-18 to 2026-09-10",
+  "accuracy": 0.5263,
   "baseline_accuracy": 0.5263,
-  "precision": 0.5096,
-  "recall": 0.2265,
-  "f1_score": 0.3136,
+  "precision": 0.5,
+  "recall": 0.2094,
+  "f1_score": 0.2952,
   "confusion_matrix": [
     [
-      209,
-      51
+      211,
+      49
     ],
     [
-      181,
-      53
+      185,
+      49
     ]
   ],
   "feature_importance": {
-    "volatility_10": 0.1089,
-    "daily_return": 0.0945,
-    "macd_signal": 0.0913,
-    "volume_ma_10": 0.0855,
-    "high_low_range": 0.0852,
-    "volume_change": 0.0843,
-    "volatility_20": 0.0814,
-    "macd": 0.0761,
-    "ma_ratio_5_20": 0.0663,
-    "rsi_14": 0.0636,
-    "ma_10": 0.055,
-    "ma_20": 0.0544,
-    "ma_5": 0.0534
+    "volatility_10": 0.1118,
+    "daily_return": 0.0934,
+    "macd_signal": 0.0909,
+    "volume_ma_10": 0.0877,
+    "high_low_range": 0.0861,
+    "volume_change": 0.0846,
+    "volatility_20": 0.0813,
+    "macd": 0.0778,
+    "ma_ratio_5_20": 0.0651,
+    "rsi_14": 0.063,
+    "ma_10": 0.0549,
+    "ma_20": 0.0517,
+    "ma_5": 0.0516
   }
 }

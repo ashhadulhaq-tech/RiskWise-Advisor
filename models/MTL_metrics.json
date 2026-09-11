@@ -1,36 +1,36 @@
 {
   "ticker": "MTL",
-  "train_rows": 1973,
+  "train_rows": 1974,
   "test_rows": 494,
-  "test_period": "2024-09-16 to 2026-09-09",
-  "accuracy": 0.5081,
-  "baseline_accuracy": 0.5344,
-  "precision": 0.4787,
-  "recall": 0.6348,
-  "f1_score": 0.5458,
+  "test_period": "2024-09-18 to 2026-09-10",
+  "accuracy": 0.5142,
+  "baseline_accuracy": 0.5324,
+  "precision": 0.4852,
+  "recall": 0.6407,
+  "f1_score": 0.5522,
   "confusion_matrix": [
     [
-      105,
-      159
+      106,
+      157
     ],
     [
-      84,
-      146
+      83,
+      148
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1258,
-    "volume_change": 0.0846,
-    "volume_ma_10": 0.0845,
-    "ma_5": 0.0786,
-    "macd_signal": 0.0783,
+    "daily_return": 0.1241,
+    "volume_ma_10": 0.0849,
+    "volume_change": 0.0845,
+    "macd_signal": 0.0811,
+    "ma_5": 0.0791,
     "ma_10": 0.0773,
-    "ma_20": 0.0722,
-    "ma_ratio_5_20": 0.0712,
-    "high_low_range": 0.0704,
+    "ma_ratio_5_20": 0.0716,
+    "high_low_range": 0.0708,
+    "ma_20": 0.0685,
     "volatility_20": 0.0675,
-    "rsi_14": 0.0652,
-    "volatility_10": 0.0625,
-    "macd": 0.062
+    "rsi_14": 0.0665,
+    "macd": 0.063,
+    "volatility_10": 0.0611
   }
 }
