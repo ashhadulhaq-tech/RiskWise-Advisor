@@ -1,36 +1,36 @@
 {
   "ticker": "FABL",
-  "train_rows": 1964,
+  "train_rows": 1965,
   "test_rows": 492,
-  "test_period": "2024-09-20 to 2026-09-10",
-  "accuracy": 0.5264,
+  "test_period": "2024-09-23 to 2026-09-11",
+  "accuracy": 0.5285,
   "baseline_accuracy": 0.5386,
-  "precision": 0.4318,
-  "recall": 0.0837,
-  "f1_score": 0.1402,
+  "precision": 0.439,
+  "recall": 0.0793,
+  "f1_score": 0.1343,
   "confusion_matrix": [
     [
-      240,
-      25
+      242,
+      23
     ],
     [
-      208,
-      19
+      209,
+      18
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1189,
-    "volume_change": 0.1071,
-    "high_low_range": 0.09,
-    "volatility_10": 0.0845,
-    "rsi_14": 0.076,
-    "ma_10": 0.071,
-    "ma_5": 0.0681,
-    "volatility_20": 0.0681,
-    "ma_ratio_5_20": 0.0678,
-    "volume_ma_10": 0.0668,
-    "macd_signal": 0.0618,
-    "macd": 0.0612,
-    "ma_20": 0.0587
+    "daily_return": 0.1172,
+    "volume_change": 0.1077,
+    "high_low_range": 0.0907,
+    "volatility_10": 0.0858,
+    "rsi_14": 0.0755,
+    "volume_ma_10": 0.0691,
+    "ma_10": 0.0679,
+    "ma_ratio_5_20": 0.0673,
+    "ma_5": 0.0672,
+    "volatility_20": 0.0671,
+    "macd_signal": 0.0644,
+    "ma_20": 0.0605,
+    "macd": 0.0595
   }
 }

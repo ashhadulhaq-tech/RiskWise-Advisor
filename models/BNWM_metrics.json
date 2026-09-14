@@ -1,36 +1,36 @@
 {
   "ticker": "BNWM",
-  "train_rows": 1615,
+  "train_rows": 1616,
   "test_rows": 404,
-  "test_period": "2025-01-23 to 2026-09-10",
-  "accuracy": 0.5792,
+  "test_period": "2025-01-24 to 2026-09-11",
+  "accuracy": 0.5668,
   "baseline_accuracy": 0.5842,
-  "precision": 0.4773,
-  "recall": 0.125,
-  "f1_score": 0.1981,
+  "precision": 0.4314,
+  "recall": 0.131,
+  "f1_score": 0.2009,
   "confusion_matrix": [
     [
-      213,
-      23
+      207,
+      29
     ],
     [
-      147,
-      21
+      146,
+      22
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1461,
-    "macd": 0.0962,
-    "high_low_range": 0.0867,
-    "macd_signal": 0.0856,
-    "ma_ratio_5_20": 0.0798,
-    "volume_change": 0.0792,
-    "rsi_14": 0.0716,
-    "volume_ma_10": 0.0616,
-    "volatility_10": 0.0614,
-    "volatility_20": 0.0595,
-    "ma_10": 0.058,
-    "ma_5": 0.0578,
-    "ma_20": 0.0563
+    "daily_return": 0.1463,
+    "macd": 0.0949,
+    "macd_signal": 0.0887,
+    "high_low_range": 0.0861,
+    "volume_change": 0.0781,
+    "ma_ratio_5_20": 0.0777,
+    "rsi_14": 0.0737,
+    "volume_ma_10": 0.0617,
+    "volatility_20": 0.0602,
+    "ma_10": 0.0595,
+    "volatility_10": 0.0592,
+    "ma_20": 0.0572,
+    "ma_5": 0.0567
   }
 }

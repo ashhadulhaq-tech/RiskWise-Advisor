@@ -1,16 +1,16 @@
 {
   "ticker": "ABOT",
   "train_rows": 1920,
-  "test_rows": 480,
-  "test_period": "2024-10-08 to 2026-09-10",
-  "accuracy": 0.5583,
-  "baseline_accuracy": 0.5542,
+  "test_rows": 481,
+  "test_period": "2024-10-08 to 2026-09-11",
+  "accuracy": 0.5593,
+  "baseline_accuracy": 0.5551,
   "precision": 0.5116,
   "recall": 0.2056,
   "f1_score": 0.2933,
   "confusion_matrix": [
     [
-      224,
+      225,
       42
     ],
     [

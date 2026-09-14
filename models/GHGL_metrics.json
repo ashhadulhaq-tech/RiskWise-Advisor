@@ -1,36 +1,36 @@
 {
   "ticker": "GHGL",
-  "train_rows": 1969,
+  "train_rows": 1970,
   "test_rows": 493,
-  "test_period": "2024-09-19 to 2026-09-10",
-  "accuracy": 0.5254,
+  "test_period": "2024-09-20 to 2026-09-11",
+  "accuracy": 0.5294,
   "baseline_accuracy": 0.501,
-  "precision": 0.6,
-  "recall": 0.1463,
-  "f1_score": 0.2353,
+  "precision": 0.6129,
+  "recall": 0.1545,
+  "f1_score": 0.2468,
   "confusion_matrix": [
     [
       223,
       24
     ],
     [
-      210,
-      36
+      208,
+      38
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1371,
-    "volume_change": 0.1125,
-    "volume_ma_10": 0.0851,
-    "rsi_14": 0.0799,
-    "ma_20": 0.0688,
-    "macd_signal": 0.0675,
-    "ma_5": 0.0665,
-    "volatility_10": 0.066,
-    "ma_ratio_5_20": 0.0658,
-    "volatility_20": 0.0651,
-    "ma_10": 0.0647,
-    "high_low_range": 0.0612,
-    "macd": 0.0597
+    "daily_return": 0.1385,
+    "volume_change": 0.1126,
+    "volume_ma_10": 0.0849,
+    "rsi_14": 0.0776,
+    "ma_20": 0.07,
+    "ma_ratio_5_20": 0.0681,
+    "macd_signal": 0.0671,
+    "volatility_10": 0.067,
+    "volatility_20": 0.0665,
+    "ma_5": 0.0649,
+    "ma_10": 0.0621,
+    "high_low_range": 0.0607,
+    "macd": 0.0601
   }
 }
