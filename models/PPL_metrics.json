@@ -1,36 +1,36 @@
 {
   "ticker": "PPL",
-  "train_rows": 1975,
+  "train_rows": 1976,
   "test_rows": 494,
-  "test_period": "2024-09-19 to 2026-09-11",
+  "test_period": "2024-09-20 to 2026-09-14",
   "accuracy": 0.5142,
   "baseline_accuracy": 0.5142,
   "precision": 0.5,
-  "recall": 0.1708,
-  "f1_score": 0.2547,
+  "recall": 0.1792,
+  "f1_score": 0.2638,
   "confusion_matrix": [
     [
-      213,
-      41
+      211,
+      43
     ],
     [
-      199,
-      41
+      197,
+      43
     ]
   ],
   "feature_importance": {
-    "volume_ma_10": 0.111,
-    "high_low_range": 0.0892,
-    "daily_return": 0.0886,
-    "ma_5": 0.0819,
-    "ma_20": 0.078,
-    "volume_change": 0.0746,
-    "ma_10": 0.0723,
-    "volatility_20": 0.0723,
-    "volatility_10": 0.0718,
+    "volume_ma_10": 0.1133,
+    "high_low_range": 0.0904,
+    "daily_return": 0.0859,
+    "ma_5": 0.0823,
+    "ma_20": 0.0762,
+    "volatility_10": 0.0746,
+    "volume_change": 0.0737,
     "ma_ratio_5_20": 0.0713,
-    "rsi_14": 0.0671,
-    "macd": 0.0647,
-    "macd_signal": 0.0573
+    "ma_10": 0.0708,
+    "volatility_20": 0.0707,
+    "rsi_14": 0.0663,
+    "macd": 0.0648,
+    "macd_signal": 0.0599
   }
 }

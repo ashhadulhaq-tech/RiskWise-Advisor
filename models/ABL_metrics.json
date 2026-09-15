@@ -1,36 +1,36 @@
 {
   "ticker": "ABL",
-  "train_rows": 1924,
+  "train_rows": 1925,
   "test_rows": 482,
-  "test_period": "2024-10-07 to 2026-09-11",
-  "accuracy": 0.4959,
+  "test_period": "2024-10-08 to 2026-09-14",
+  "accuracy": 0.4938,
   "baseline_accuracy": 0.5083,
-  "precision": 0.3125,
-  "recall": 0.0211,
-  "f1_score": 0.0395,
+  "precision": 0.2308,
+  "recall": 0.0127,
+  "f1_score": 0.024,
   "confusion_matrix": [
     [
-      234,
-      11
+      235,
+      10
     ],
     [
-      232,
-      5
+      234,
+      3
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1343,
-    "volume_ma_10": 0.0989,
-    "high_low_range": 0.0892,
-    "volume_change": 0.0816,
-    "ma_20": 0.0779,
-    "rsi_14": 0.0729,
-    "volatility_20": 0.07,
-    "macd_signal": 0.0685,
-    "ma_10": 0.0648,
-    "ma_5": 0.0638,
-    "ma_ratio_5_20": 0.0627,
+    "daily_return": 0.1325,
+    "volume_ma_10": 0.0983,
+    "high_low_range": 0.0887,
+    "volume_change": 0.0823,
+    "ma_20": 0.0762,
+    "rsi_14": 0.0749,
+    "volatility_20": 0.0705,
+    "macd_signal": 0.0695,
+    "ma_5": 0.0637,
+    "ma_ratio_5_20": 0.0637,
+    "ma_10": 0.063,
     "volatility_10": 0.0604,
-    "macd": 0.0551
+    "macd": 0.0565
   }
 }

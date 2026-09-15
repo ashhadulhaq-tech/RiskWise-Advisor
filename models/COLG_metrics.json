@@ -1,36 +1,36 @@
 {
   "ticker": "COLG",
-  "train_rows": 1567,
+  "train_rows": 1568,
   "test_rows": 392,
-  "test_period": "2025-02-12 to 2026-09-11",
-  "accuracy": 0.5179,
+  "test_period": "2025-02-13 to 2026-09-14",
+  "accuracy": 0.5281,
   "baseline_accuracy": 0.5587,
-  "precision": 0.4216,
-  "recall": 0.2486,
-  "f1_score": 0.3127,
+  "precision": 0.44,
+  "recall": 0.2543,
+  "f1_score": 0.3223,
   "confusion_matrix": [
     [
-      160,
-      59
+      163,
+      56
     ],
     [
-      130,
-      43
+      129,
+      44
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1217,
-    "rsi_14": 0.0937,
-    "macd_signal": 0.0828,
+    "daily_return": 0.1226,
+    "rsi_14": 0.0941,
     "volume_change": 0.0825,
-    "volatility_10": 0.0781,
-    "high_low_range": 0.0772,
-    "macd": 0.0742,
-    "ma_5": 0.0729,
-    "ma_10": 0.0691,
-    "volatility_20": 0.0662,
-    "ma_ratio_5_20": 0.066,
-    "ma_20": 0.0617,
-    "volume_ma_10": 0.054
+    "macd_signal": 0.0823,
+    "volatility_10": 0.0772,
+    "macd": 0.0761,
+    "high_low_range": 0.0752,
+    "ma_5": 0.0736,
+    "ma_10": 0.0709,
+    "ma_ratio_5_20": 0.0662,
+    "volatility_20": 0.0644,
+    "ma_20": 0.0602,
+    "volume_ma_10": 0.0547
   }
 }

@@ -1,17 +1,17 @@
 {
   "ticker": "FFC",
-  "train_rows": 1975,
+  "train_rows": 1976,
   "test_rows": 494,
-  "test_period": "2024-09-19 to 2026-09-11",
-  "accuracy": 0.4757,
+  "test_period": "2024-09-20 to 2026-09-14",
+  "accuracy": 0.4696,
   "baseline_accuracy": 0.5304,
-  "precision": 0.4725,
+  "precision": 0.4696,
   "recall": 1.0,
-  "f1_score": 0.6418,
+  "f1_score": 0.6391,
   "confusion_matrix": [
     [
-      3,
-      259
+      0,
+      262
     ],
     [
       0,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.0999,
+    "daily_return": 0.1006,
     "high_low_range": 0.0869,
-    "volume_ma_10": 0.0842,
-    "ma_ratio_5_20": 0.0839,
-    "macd_signal": 0.0837,
-    "macd": 0.0836,
-    "volatility_20": 0.0785,
-    "rsi_14": 0.0734,
-    "volatility_10": 0.0724,
-    "volume_change": 0.0715,
-    "ma_20": 0.063,
-    "ma_10": 0.0597,
-    "ma_5": 0.0594
+    "volume_ma_10": 0.0863,
+    "macd_signal": 0.086,
+    "ma_ratio_5_20": 0.0846,
+    "macd": 0.0823,
+    "volatility_20": 0.0762,
+    "volatility_10": 0.0718,
+    "rsi_14": 0.0713,
+    "volume_change": 0.0698,
+    "ma_20": 0.0648,
+    "ma_5": 0.0613,
+    "ma_10": 0.0582
   }
 }

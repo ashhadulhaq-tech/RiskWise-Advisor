@@ -1,17 +1,17 @@
 {
   "ticker": "AGP",
   "train_rows": 1668,
-  "test_rows": 417,
-  "test_period": "2025-01-07 to 2026-09-11",
-  "accuracy": 0.482,
-  "baseline_accuracy": 0.53,
-  "precision": 0.4324,
+  "test_rows": 418,
+  "test_period": "2025-01-07 to 2026-09-14",
+  "accuracy": 0.4809,
+  "baseline_accuracy": 0.5311,
+  "precision": 0.4295,
   "recall": 0.3265,
-  "f1_score": 0.3721,
+  "f1_score": 0.371,
   "confusion_matrix": [
     [
       137,
-      84
+      85
     ],
     [
       132,
