@@ -1,36 +1,36 @@
 {
   "ticker": "HUMNL",
-  "train_rows": 1972,
+  "train_rows": 1973,
   "test_rows": 494,
-  "test_period": "2024-09-20 to 2026-09-14",
+  "test_period": "2024-09-23 to 2026-09-15",
   "accuracy": 0.5263,
   "baseline_accuracy": 0.5243,
-  "precision": 0.5263,
-  "recall": 0.0426,
-  "f1_score": 0.0787,
+  "precision": 0.5294,
+  "recall": 0.0383,
+  "f1_score": 0.0714,
   "confusion_matrix": [
     [
-      250,
-      9
+      251,
+      8
     ],
     [
-      225,
-      10
+      226,
+      9
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1126,
-    "high_low_range": 0.1069,
-    "volume_change": 0.0899,
-    "ma_ratio_5_20": 0.0854,
-    "volatility_20": 0.083,
-    "volume_ma_10": 0.0829,
-    "rsi_14": 0.0753,
-    "macd": 0.0681,
-    "volatility_10": 0.0667,
-    "ma_20": 0.0605,
+    "daily_return": 0.1125,
+    "high_low_range": 0.1051,
+    "volume_change": 0.0894,
+    "ma_ratio_5_20": 0.0857,
+    "volume_ma_10": 0.0841,
+    "volatility_20": 0.0832,
+    "rsi_14": 0.0781,
+    "macd": 0.0666,
+    "volatility_10": 0.0663,
+    "ma_20": 0.0602,
     "ma_10": 0.0587,
-    "macd_signal": 0.0569,
-    "ma_5": 0.0531
+    "macd_signal": 0.0566,
+    "ma_5": 0.0535
   }
 }

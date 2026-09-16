@@ -1,36 +1,36 @@
 {
   "ticker": "AGP",
-  "train_rows": 1668,
+  "train_rows": 1669,
   "test_rows": 418,
-  "test_period": "2025-01-07 to 2026-09-14",
-  "accuracy": 0.4809,
+  "test_period": "2025-01-08 to 2026-09-15",
+  "accuracy": 0.4856,
   "baseline_accuracy": 0.5311,
-  "precision": 0.4295,
-  "recall": 0.3265,
-  "f1_score": 0.371,
+  "precision": 0.3956,
+  "recall": 0.1837,
+  "f1_score": 0.2509,
   "confusion_matrix": [
     [
-      137,
-      85
+      167,
+      55
     ],
     [
-      132,
-      64
+      160,
+      36
     ]
   ],
   "feature_importance": {
-    "macd_signal": 0.1166,
-    "macd": 0.1063,
-    "volume_change": 0.1026,
-    "ma_ratio_5_20": 0.0942,
-    "daily_return": 0.0747,
-    "volatility_20": 0.0705,
-    "high_low_range": 0.0696,
-    "volume_ma_10": 0.0666,
-    "volatility_10": 0.0657,
-    "rsi_14": 0.0641,
-    "ma_20": 0.059,
-    "ma_10": 0.0551,
-    "ma_5": 0.055
+    "macd_signal": 0.1154,
+    "macd": 0.1069,
+    "volume_change": 0.1004,
+    "ma_ratio_5_20": 0.0947,
+    "daily_return": 0.0737,
+    "high_low_range": 0.0708,
+    "volume_ma_10": 0.0691,
+    "volatility_20": 0.0684,
+    "volatility_10": 0.0662,
+    "rsi_14": 0.064,
+    "ma_20": 0.0609,
+    "ma_10": 0.0557,
+    "ma_5": 0.054
   }
 }

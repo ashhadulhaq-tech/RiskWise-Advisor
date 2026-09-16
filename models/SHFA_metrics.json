@@ -1,36 +1,36 @@
 {
   "ticker": "SHFA",
-  "train_rows": 1777,
+  "train_rows": 1778,
   "test_rows": 445,
-  "test_period": "2024-11-28 to 2026-09-14",
-  "accuracy": 0.5483,
-  "baseline_accuracy": 0.5416,
-  "precision": 0.5789,
-  "recall": 0.0539,
-  "f1_score": 0.0987,
+  "test_period": "2024-11-29 to 2026-09-15",
+  "accuracy": 0.5438,
+  "baseline_accuracy": 0.5438,
+  "precision": 0.5,
+  "recall": 0.0542,
+  "f1_score": 0.0978,
   "confusion_matrix": [
     [
-      233,
-      8
+      231,
+      11
     ],
     [
-      193,
+      192,
       11
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1035,
-    "volatility_20": 0.0879,
-    "volume_ma_10": 0.0866,
-    "volatility_10": 0.0832,
-    "rsi_14": 0.0766,
-    "ma_20": 0.0759,
-    "volume_change": 0.0749,
-    "ma_5": 0.0745,
-    "high_low_range": 0.0735,
-    "ma_ratio_5_20": 0.0695,
-    "macd": 0.0674,
-    "ma_10": 0.0654,
-    "macd_signal": 0.061
+    "daily_return": 0.1029,
+    "volatility_20": 0.088,
+    "volume_ma_10": 0.0867,
+    "volatility_10": 0.0814,
+    "rsi_14": 0.0779,
+    "high_low_range": 0.0749,
+    "ma_5": 0.0732,
+    "volume_change": 0.0732,
+    "ma_20": 0.073,
+    "ma_ratio_5_20": 0.0706,
+    "macd": 0.0679,
+    "ma_10": 0.0672,
+    "macd_signal": 0.0631
   }
 }

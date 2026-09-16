@@ -1,36 +1,36 @@
 {
   "ticker": "GAL",
-  "train_rows": 1975,
+  "train_rows": 1976,
   "test_rows": 494,
-  "test_period": "2024-09-20 to 2026-09-14",
-  "accuracy": 0.5344,
+  "test_period": "2024-09-23 to 2026-09-15",
+  "accuracy": 0.5324,
   "baseline_accuracy": 0.5101,
-  "precision": 0.6429,
-  "recall": 0.1116,
-  "f1_score": 0.1901,
+  "precision": 0.6341,
+  "recall": 0.1074,
+  "f1_score": 0.1837,
   "confusion_matrix": [
     [
       237,
       15
     ],
     [
-      215,
-      27
+      216,
+      26
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1671,
-    "volatility_10": 0.1064,
-    "volume_change": 0.0758,
-    "volatility_20": 0.0748,
-    "macd_signal": 0.0735,
-    "volume_ma_10": 0.0706,
-    "rsi_14": 0.0688,
-    "high_low_range": 0.0682,
-    "ma_ratio_5_20": 0.0681,
+    "daily_return": 0.1676,
+    "volatility_10": 0.106,
+    "volatility_20": 0.076,
+    "volume_change": 0.0757,
+    "macd_signal": 0.0738,
+    "volume_ma_10": 0.0695,
+    "ma_ratio_5_20": 0.0691,
+    "rsi_14": 0.0689,
+    "high_low_range": 0.0681,
     "ma_10": 0.0613,
-    "ma_5": 0.0584,
-    "ma_20": 0.0563,
-    "macd": 0.0506
+    "ma_5": 0.0587,
+    "ma_20": 0.055,
+    "macd": 0.0503
   }
 }

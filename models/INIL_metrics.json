@@ -1,16 +1,16 @@
 {
   "ticker": "INIL",
   "train_rows": 1976,
-  "test_rows": 494,
-  "test_period": "2024-09-20 to 2026-09-14",
-  "accuracy": 0.5425,
-  "baseline_accuracy": 0.5526,
+  "test_rows": 495,
+  "test_period": "2024-09-20 to 2026-09-15",
+  "accuracy": 0.5434,
+  "baseline_accuracy": 0.5535,
   "precision": 0.4742,
   "recall": 0.2081,
   "f1_score": 0.2893,
   "confusion_matrix": [
     [
-      222,
+      223,
       51
     ],
     [

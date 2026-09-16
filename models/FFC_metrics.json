@@ -1,17 +1,17 @@
 {
   "ticker": "FFC",
   "train_rows": 1976,
-  "test_rows": 494,
-  "test_period": "2024-09-20 to 2026-09-14",
-  "accuracy": 0.4696,
-  "baseline_accuracy": 0.5304,
-  "precision": 0.4696,
+  "test_rows": 495,
+  "test_period": "2024-09-20 to 2026-09-15",
+  "accuracy": 0.4687,
+  "baseline_accuracy": 0.5313,
+  "precision": 0.4687,
   "recall": 1.0,
-  "f1_score": 0.6391,
+  "f1_score": 0.6382,
   "confusion_matrix": [
     [
       0,
-      262
+      263
     ],
     [
       0,

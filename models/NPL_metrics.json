@@ -1,36 +1,36 @@
 {
   "ticker": "NPL",
-  "train_rows": 1949,
+  "train_rows": 1950,
   "test_rows": 488,
-  "test_period": "2024-09-30 to 2026-09-14",
+  "test_period": "2024-10-01 to 2026-09-15",
   "accuracy": 0.5225,
-  "baseline_accuracy": 0.5451,
-  "precision": 0.4574,
-  "recall": 0.2658,
-  "f1_score": 0.3362,
+  "baseline_accuracy": 0.5471,
+  "precision": 0.4559,
+  "recall": 0.2805,
+  "f1_score": 0.3473,
   "confusion_matrix": [
     [
-      196,
-      70
+      193,
+      74
     ],
     [
-      163,
-      59
+      159,
+      62
     ]
   ],
   "feature_importance": {
-    "volume_change": 0.1132,
-    "high_low_range": 0.1069,
+    "volume_change": 0.1158,
+    "high_low_range": 0.1086,
     "daily_return": 0.0996,
-    "ma_ratio_5_20": 0.0799,
-    "volatility_20": 0.0788,
-    "volatility_10": 0.0709,
-    "ma_20": 0.0699,
-    "volume_ma_10": 0.0696,
-    "macd": 0.0695,
-    "rsi_14": 0.0635,
-    "macd_signal": 0.0626,
-    "ma_10": 0.0584,
-    "ma_5": 0.0571
+    "ma_ratio_5_20": 0.0807,
+    "volatility_20": 0.0786,
+    "volume_ma_10": 0.0716,
+    "volatility_10": 0.0698,
+    "macd": 0.0683,
+    "ma_20": 0.0662,
+    "rsi_14": 0.0607,
+    "macd_signal": 0.0607,
+    "ma_10": 0.0601,
+    "ma_5": 0.0592
   }
 }

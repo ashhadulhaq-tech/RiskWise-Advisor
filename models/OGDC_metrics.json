@@ -1,16 +1,16 @@
 {
   "ticker": "OGDC",
   "train_rows": 1976,
-  "test_rows": 494,
-  "test_period": "2024-09-20 to 2026-09-14",
-  "accuracy": 0.5081,
-  "baseline_accuracy": 0.4939,
+  "test_rows": 495,
+  "test_period": "2024-09-20 to 2026-09-15",
+  "accuracy": 0.5091,
+  "baseline_accuracy": 0.4949,
   "precision": 0.6667,
   "recall": 0.056,
   "f1_score": 0.1033,
   "confusion_matrix": [
     [
-      237,
+      238,
       7
     ],
     [

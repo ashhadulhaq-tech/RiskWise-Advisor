@@ -1,16 +1,16 @@
 {
   "ticker": "SRVI",
   "train_rows": 1916,
-  "test_rows": 479,
-  "test_period": "2024-10-11 to 2026-09-14",
-  "accuracy": 0.5574,
-  "baseline_accuracy": 0.5386,
+  "test_rows": 480,
+  "test_period": "2024-10-11 to 2026-09-15",
+  "accuracy": 0.5583,
+  "baseline_accuracy": 0.5396,
   "precision": 0.5616,
   "recall": 0.1855,
   "f1_score": 0.2789,
   "confusion_matrix": [
     [
-      226,
+      227,
       32
     ],
     [
