@@ -1,36 +1,36 @@
 {
   "ticker": "PSX",
-  "train_rows": 1808,
+  "train_rows": 1810,
   "test_rows": 453,
-  "test_period": "2024-11-19 to 2026-09-15",
-  "accuracy": 0.5408,
-  "baseline_accuracy": 0.521,
-  "precision": 0.7143,
-  "recall": 0.0691,
-  "f1_score": 0.1261,
+  "test_period": "2024-11-21 to 2026-09-17",
+  "accuracy": 0.5342,
+  "baseline_accuracy": 0.5166,
+  "precision": 0.6818,
+  "recall": 0.0685,
+  "f1_score": 0.1245,
   "confusion_matrix": [
     [
-      230,
-      6
+      227,
+      7
     ],
     [
-      202,
+      204,
       15
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1236,
-    "high_low_range": 0.1,
-    "ma_5": 0.0819,
-    "rsi_14": 0.0809,
-    "volatility_10": 0.0771,
-    "macd_signal": 0.0724,
-    "volume_change": 0.0712,
-    "volume_ma_10": 0.0708,
-    "ma_ratio_5_20": 0.0676,
+    "daily_return": 0.1242,
+    "high_low_range": 0.0993,
+    "rsi_14": 0.0845,
+    "ma_5": 0.0822,
+    "macd_signal": 0.0739,
+    "volatility_10": 0.0733,
+    "volume_change": 0.0713,
+    "volume_ma_10": 0.0706,
     "ma_10": 0.0675,
-    "volatility_20": 0.0629,
-    "macd": 0.0627,
-    "ma_20": 0.0615
+    "ma_ratio_5_20": 0.0659,
+    "ma_20": 0.0634,
+    "macd": 0.0628,
+    "volatility_20": 0.0613
   }
 }

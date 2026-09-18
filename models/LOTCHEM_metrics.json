@@ -1,17 +1,17 @@
 {
   "ticker": "LOTCHEM",
-  "train_rows": 1976,
+  "train_rows": 1978,
   "test_rows": 495,
-  "test_period": "2024-09-20 to 2026-09-15",
-  "accuracy": 0.5273,
+  "test_period": "2024-09-24 to 2026-09-17",
+  "accuracy": 0.5212,
   "baseline_accuracy": 0.5333,
-  "precision": 0.4795,
+  "precision": 0.4605,
   "recall": 0.1515,
-  "f1_score": 0.2303,
+  "f1_score": 0.228,
   "confusion_matrix": [
     [
-      226,
-      38
+      223,
+      41
     ],
     [
       196,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "high_low_range": 0.0953,
-    "daily_return": 0.0912,
-    "volume_ma_10": 0.089,
-    "rsi_14": 0.0874,
-    "ma_10": 0.0804,
-    "volume_change": 0.0751,
-    "ma_5": 0.0744,
-    "ma_ratio_5_20": 0.0733,
-    "macd": 0.0727,
-    "ma_20": 0.0681,
-    "volatility_20": 0.0665,
-    "macd_signal": 0.0643,
-    "volatility_10": 0.0623
+    "high_low_range": 0.0961,
+    "volume_ma_10": 0.0892,
+    "daily_return": 0.0889,
+    "rsi_14": 0.0873,
+    "ma_10": 0.0784,
+    "macd": 0.0757,
+    "volume_change": 0.074,
+    "ma_5": 0.0738,
+    "ma_ratio_5_20": 0.0723,
+    "ma_20": 0.0685,
+    "macd_signal": 0.0661,
+    "volatility_20": 0.065,
+    "volatility_10": 0.0646
   }
 }

@@ -1,36 +1,36 @@
 {
   "ticker": "HCAR",
-  "train_rows": 1976,
+  "train_rows": 1978,
   "test_rows": 495,
-  "test_period": "2024-09-20 to 2026-09-15",
-  "accuracy": 0.5414,
-  "baseline_accuracy": 0.5556,
-  "precision": 0.4545,
-  "recall": 0.1591,
-  "f1_score": 0.2357,
+  "test_period": "2024-09-24 to 2026-09-17",
+  "accuracy": 0.5434,
+  "baseline_accuracy": 0.5535,
+  "precision": 0.4684,
+  "recall": 0.1674,
+  "f1_score": 0.2467,
   "confusion_matrix": [
     [
-      233,
+      232,
       42
     ],
     [
-      185,
-      35
+      184,
+      37
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1993,
-    "volatility_10": 0.0913,
-    "macd_signal": 0.0788,
-    "rsi_14": 0.0757,
-    "volatility_20": 0.0715,
-    "volume_change": 0.0701,
-    "high_low_range": 0.0661,
-    "ma_ratio_5_20": 0.0619,
-    "ma_5": 0.0607,
-    "macd": 0.0606,
-    "volume_ma_10": 0.0573,
-    "ma_10": 0.0551,
-    "ma_20": 0.0514
+    "daily_return": 0.1991,
+    "volatility_10": 0.0924,
+    "macd_signal": 0.0783,
+    "rsi_14": 0.0769,
+    "volatility_20": 0.0708,
+    "volume_change": 0.07,
+    "high_low_range": 0.0657,
+    "ma_ratio_5_20": 0.0633,
+    "macd": 0.0613,
+    "ma_5": 0.0602,
+    "volume_ma_10": 0.0566,
+    "ma_10": 0.0542,
+    "ma_20": 0.0513
   }
 }
