@@ -1,20 +1,20 @@
 {
   "ticker": "ABL",
   "train_rows": 1928,
-  "test_rows": 482,
-  "test_period": "2024-10-11 to 2026-09-17",
-  "accuracy": 0.4959,
-  "baseline_accuracy": 0.5062,
+  "test_rows": 483,
+  "test_period": "2024-10-11 to 2026-09-18",
+  "accuracy": 0.4948,
+  "baseline_accuracy": 0.5052,
   "precision": 0.3333,
-  "recall": 0.021,
-  "f1_score": 0.0395,
+  "recall": 0.0209,
+  "f1_score": 0.0394,
   "confusion_matrix": [
     [
       234,
       10
     ],
     [
-      233,
+      234,
       5
     ]
   ],

@@ -1,20 +1,20 @@
 {
   "ticker": "PGLC",
   "train_rows": 932,
-  "test_rows": 233,
-  "test_period": "2025-10-10 to 2026-09-17",
-  "accuracy": 0.588,
-  "baseline_accuracy": 0.5107,
+  "test_rows": 234,
+  "test_period": "2025-10-10 to 2026-09-18",
+  "accuracy": 0.5855,
+  "baseline_accuracy": 0.5085,
   "precision": 0.725,
-  "recall": 0.2544,
-  "f1_score": 0.3766,
+  "recall": 0.2522,
+  "f1_score": 0.3742,
   "confusion_matrix": [
     [
       108,
       11
     ],
     [
-      85,
+      86,
       29
     ]
   ],

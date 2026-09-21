@@ -1,20 +1,20 @@
 {
   "ticker": "FATIMA",
   "train_rows": 1976,
-  "test_rows": 494,
-  "test_period": "2024-09-25 to 2026-09-17",
-  "accuracy": 0.5263,
-  "baseline_accuracy": 0.496,
+  "test_rows": 495,
+  "test_period": "2024-09-25 to 2026-09-18",
+  "accuracy": 0.5253,
+  "baseline_accuracy": 0.4949,
   "precision": 0.5503,
-  "recall": 0.3293,
-  "f1_score": 0.4121,
+  "recall": 0.328,
+  "f1_score": 0.411,
   "confusion_matrix": [
     [
       178,
       67
     ],
     [
-      167,
+      168,
       82
     ]
   ],

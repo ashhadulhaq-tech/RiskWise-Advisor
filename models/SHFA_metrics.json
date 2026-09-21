@@ -1,20 +1,20 @@
 {
   "ticker": "SHFA",
   "train_rows": 1780,
-  "test_rows": 445,
-  "test_period": "2024-12-03 to 2026-09-17",
-  "accuracy": 0.5461,
-  "baseline_accuracy": 0.5438,
+  "test_rows": 446,
+  "test_period": "2024-12-03 to 2026-09-18",
+  "accuracy": 0.5448,
+  "baseline_accuracy": 0.5426,
   "precision": 0.5263,
-  "recall": 0.0493,
-  "f1_score": 0.0901,
+  "recall": 0.049,
+  "f1_score": 0.0897,
   "confusion_matrix": [
     [
       233,
       9
     ],
     [
-      193,
+      194,
       10
     ]
   ],

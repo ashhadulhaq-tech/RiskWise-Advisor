@@ -1,17 +1,17 @@
 {
   "ticker": "AHCL",
-  "train_rows": 1843,
+  "train_rows": 1844,
   "test_rows": 461,
-  "test_period": "2024-11-06 to 2026-09-17",
-  "accuracy": 0.4902,
+  "test_period": "2024-11-07 to 2026-09-18",
+  "accuracy": 0.4924,
   "baseline_accuracy": 0.5206,
-  "precision": 0.4643,
+  "precision": 0.4667,
   "recall": 0.4118,
-  "f1_score": 0.4365,
+  "f1_score": 0.4375,
   "confusion_matrix": [
     [
-      135,
-      105
+      136,
+      104
     ],
     [
       130,
@@ -19,18 +19,18 @@
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1352,
-    "volume_ma_10": 0.0946,
-    "rsi_14": 0.0865,
-    "ma_ratio_5_20": 0.0797,
-    "volatility_10": 0.073,
-    "volatility_20": 0.0714,
-    "macd": 0.0701,
-    "high_low_range": 0.0681,
-    "ma_20": 0.066,
-    "macd_signal": 0.066,
-    "volume_change": 0.0636,
-    "ma_10": 0.0634,
-    "ma_5": 0.0623
+    "daily_return": 0.136,
+    "volume_ma_10": 0.0933,
+    "rsi_14": 0.0848,
+    "ma_ratio_5_20": 0.0813,
+    "macd": 0.074,
+    "volatility_10": 0.0732,
+    "volatility_20": 0.0709,
+    "ma_20": 0.0678,
+    "macd_signal": 0.0671,
+    "high_low_range": 0.065,
+    "volume_change": 0.0644,
+    "ma_10": 0.0622,
+    "ma_5": 0.06
   }
 }

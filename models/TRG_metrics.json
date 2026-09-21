@@ -1,36 +1,36 @@
 {
   "ticker": "TRG",
-  "train_rows": 1978,
+  "train_rows": 1979,
   "test_rows": 495,
-  "test_period": "2024-09-24 to 2026-09-17",
-  "accuracy": 0.5232,
+  "test_period": "2024-09-25 to 2026-09-18",
+  "accuracy": 0.5172,
   "baseline_accuracy": 0.5475,
-  "precision": 0.4615,
-  "recall": 0.3214,
-  "f1_score": 0.3789,
+  "precision": 0.4522,
+  "recall": 0.317,
+  "f1_score": 0.3727,
   "confusion_matrix": [
     [
-      187,
-      84
+      185,
+      86
     ],
     [
-      152,
-      72
+      153,
+      71
     ]
   ],
   "feature_importance": {
-    "volatility_10": 0.1027,
-    "daily_return": 0.1024,
-    "high_low_range": 0.0985,
-    "ma_ratio_5_20": 0.086,
-    "volatility_20": 0.0831,
-    "rsi_14": 0.0767,
-    "volume_ma_10": 0.0767,
-    "macd": 0.0671,
-    "macd_signal": 0.0656,
-    "volume_change": 0.0632,
-    "ma_10": 0.0622,
-    "ma_5": 0.0583,
-    "ma_20": 0.0576
+    "volatility_10": 0.104,
+    "high_low_range": 0.0999,
+    "daily_return": 0.0993,
+    "ma_ratio_5_20": 0.0867,
+    "volatility_20": 0.0823,
+    "rsi_14": 0.077,
+    "volume_ma_10": 0.0761,
+    "macd": 0.068,
+    "macd_signal": 0.0651,
+    "volume_change": 0.063,
+    "ma_10": 0.062,
+    "ma_5": 0.0589,
+    "ma_20": 0.0577
   }
 }

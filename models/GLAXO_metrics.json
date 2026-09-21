@@ -1,36 +1,36 @@
 {
   "ticker": "GLAXO",
-  "train_rows": 1976,
+  "train_rows": 1977,
   "test_rows": 495,
-  "test_period": "2024-09-24 to 2026-09-17",
+  "test_period": "2024-09-25 to 2026-09-18",
   "accuracy": 0.5596,
   "baseline_accuracy": 0.5434,
-  "precision": 0.5328,
-  "recall": 0.2876,
-  "f1_score": 0.3736,
+  "precision": 0.5333,
+  "recall": 0.2832,
+  "f1_score": 0.3699,
   "confusion_matrix": [
     [
-      212,
-      57
+      213,
+      56
     ],
     [
-      161,
-      65
+      162,
+      64
     ]
   ],
   "feature_importance": {
-    "high_low_range": 0.1061,
-    "daily_return": 0.0998,
-    "volatility_10": 0.0873,
-    "volume_change": 0.086,
-    "macd_signal": 0.083,
-    "volatility_20": 0.0783,
-    "ma_ratio_5_20": 0.0748,
-    "volume_ma_10": 0.0731,
-    "macd": 0.0669,
-    "rsi_14": 0.0663,
-    "ma_10": 0.0616,
-    "ma_20": 0.0605,
-    "ma_5": 0.0563
+    "high_low_range": 0.1066,
+    "daily_return": 0.1009,
+    "volume_change": 0.0866,
+    "volatility_10": 0.0857,
+    "macd_signal": 0.0822,
+    "volatility_20": 0.0765,
+    "ma_ratio_5_20": 0.0755,
+    "volume_ma_10": 0.0751,
+    "macd": 0.067,
+    "rsi_14": 0.0634,
+    "ma_20": 0.0621,
+    "ma_10": 0.0611,
+    "ma_5": 0.0574
   }
 }
