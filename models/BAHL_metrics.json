@@ -1,36 +1,36 @@
 {
   "ticker": "BAHL",
-  "train_rows": 1979,
+  "train_rows": 1980,
   "test_rows": 495,
-  "test_period": "2024-09-25 to 2026-09-18",
-  "accuracy": 0.5192,
-  "baseline_accuracy": 0.5394,
-  "precision": 0.3333,
-  "recall": 0.0439,
-  "f1_score": 0.0775,
+  "test_period": "2024-09-26 to 2026-09-21",
+  "accuracy": 0.5253,
+  "baseline_accuracy": 0.5414,
+  "precision": 0.375,
+  "recall": 0.0529,
+  "f1_score": 0.0927,
   "confusion_matrix": [
     [
-      247,
+      248,
       20
     ],
     [
-      218,
-      10
+      215,
+      12
     ]
   ],
   "feature_importance": {
     "daily_return": 0.1015,
-    "high_low_range": 0.0963,
-    "volatility_10": 0.0858,
+    "high_low_range": 0.0945,
+    "volatility_10": 0.0875,
     "volume_ma_10": 0.0858,
-    "ma_10": 0.0761,
-    "volume_change": 0.0759,
-    "ma_20": 0.0757,
-    "ma_5": 0.0746,
-    "volatility_20": 0.0727,
-    "ma_ratio_5_20": 0.0675,
-    "macd": 0.0644,
-    "rsi_14": 0.064,
-    "macd_signal": 0.0596
+    "volume_change": 0.0775,
+    "ma_20": 0.0749,
+    "ma_10": 0.0743,
+    "ma_5": 0.0741,
+    "volatility_20": 0.0712,
+    "ma_ratio_5_20": 0.0661,
+    "macd": 0.0656,
+    "rsi_14": 0.0652,
+    "macd_signal": 0.0618
   }
 }
