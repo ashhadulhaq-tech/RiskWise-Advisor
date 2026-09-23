@@ -1,20 +1,20 @@
 {
   "ticker": "ISL",
   "train_rows": 1980,
-  "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5434,
-  "baseline_accuracy": 0.5576,
+  "test_rows": 496,
+  "test_period": "2024-09-26 to 2026-09-22",
+  "accuracy": 0.5423,
+  "baseline_accuracy": 0.5565,
   "precision": 0.472,
-  "recall": 0.2694,
-  "f1_score": 0.343,
+  "recall": 0.2682,
+  "f1_score": 0.342,
   "confusion_matrix": [
     [
       210,
       66
     ],
     [
-      160,
+      161,
       59
     ]
   ],

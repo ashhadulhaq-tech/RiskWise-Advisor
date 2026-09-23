@@ -1,16 +1,16 @@
 {
   "ticker": "RMPL",
   "train_rows": 1212,
-  "test_rows": 303,
-  "test_period": "2025-07-04 to 2026-09-21",
-  "accuracy": 0.5413,
-  "baseline_accuracy": 0.4983,
+  "test_rows": 304,
+  "test_period": "2025-07-04 to 2026-09-22",
+  "accuracy": 0.5428,
+  "baseline_accuracy": 0.5,
   "precision": 0.5699,
   "recall": 0.3487,
   "f1_score": 0.4327,
   "confusion_matrix": [
     [
-      111,
+      112,
       40
     ],
     [

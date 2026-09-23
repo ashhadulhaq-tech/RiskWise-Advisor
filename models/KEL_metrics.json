@@ -1,16 +1,16 @@
 {
   "ticker": "KEL",
   "train_rows": 1980,
-  "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5515,
-  "baseline_accuracy": 0.5475,
+  "test_rows": 496,
+  "test_period": "2024-09-26 to 2026-09-22",
+  "accuracy": 0.5524,
+  "baseline_accuracy": 0.5484,
   "precision": 0.75,
   "recall": 0.0134,
   "f1_score": 0.0263,
   "confusion_matrix": [
     [
-      270,
+      271,
       1
     ],
     [

@@ -1,20 +1,20 @@
 {
   "ticker": "KAPCO",
   "train_rows": 1980,
-  "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5677,
-  "baseline_accuracy": 0.5616,
+  "test_rows": 496,
+  "test_period": "2024-09-26 to 2026-09-22",
+  "accuracy": 0.5665,
+  "baseline_accuracy": 0.5605,
   "precision": 0.5138,
-  "recall": 0.2581,
-  "f1_score": 0.3436,
+  "recall": 0.2569,
+  "f1_score": 0.3425,
   "confusion_matrix": [
     [
       225,
       53
     ],
     [
-      161,
+      162,
       56
     ]
   ],

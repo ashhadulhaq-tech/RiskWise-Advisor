@@ -1,20 +1,20 @@
 {
   "ticker": "HGFA",
   "train_rows": 1380,
-  "test_rows": 345,
-  "test_period": "2025-05-02 to 2026-09-21",
-  "accuracy": 0.5014,
-  "baseline_accuracy": 0.4928,
+  "test_rows": 346,
+  "test_period": "2025-05-02 to 2026-09-22",
+  "accuracy": 0.5,
+  "baseline_accuracy": 0.4913,
   "precision": 0.5484,
-  "recall": 0.0971,
-  "f1_score": 0.165,
+  "recall": 0.0966,
+  "f1_score": 0.1643,
   "confusion_matrix": [
     [
       156,
       14
     ],
     [
-      158,
+      159,
       17
     ]
   ],

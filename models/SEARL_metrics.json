@@ -1,20 +1,20 @@
 {
   "ticker": "SEARL",
   "train_rows": 1980,
-  "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5192,
-  "baseline_accuracy": 0.503,
+  "test_rows": 496,
+  "test_period": "2024-09-26 to 2026-09-22",
+  "accuracy": 0.5181,
+  "baseline_accuracy": 0.502,
   "precision": 0.5741,
-  "recall": 0.126,
-  "f1_score": 0.2067,
+  "recall": 0.1255,
+  "f1_score": 0.206,
   "confusion_matrix": [
     [
       226,
       23
     ],
     [
-      215,
+      216,
       31
     ]
   ],

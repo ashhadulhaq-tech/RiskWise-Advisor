@@ -1,36 +1,36 @@
 {
   "ticker": "SYS",
-  "train_rows": 1969,
+  "train_rows": 1970,
   "test_rows": 493,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5254,
-  "baseline_accuracy": 0.5193,
-  "precision": 0.514,
-  "recall": 0.2321,
-  "f1_score": 0.3198,
+  "test_period": "2024-09-27 to 2026-09-22",
+  "accuracy": 0.5274,
+  "baseline_accuracy": 0.5172,
+  "precision": 0.5243,
+  "recall": 0.2269,
+  "f1_score": 0.3167,
   "confusion_matrix": [
     [
-      204,
-      52
+      206,
+      49
     ],
     [
-      182,
-      55
+      184,
+      54
     ]
   ],
   "feature_importance": {
-    "high_low_range": 0.1134,
-    "daily_return": 0.1074,
-    "ma_ratio_5_20": 0.0855,
-    "volume_change": 0.0826,
-    "macd_signal": 0.0757,
-    "volatility_10": 0.0754,
-    "volatility_20": 0.0722,
-    "rsi_14": 0.0712,
-    "ma_5": 0.0692,
-    "macd": 0.0668,
-    "volume_ma_10": 0.0637,
-    "ma_20": 0.0607,
-    "ma_10": 0.0561
+    "high_low_range": 0.1123,
+    "daily_return": 0.107,
+    "ma_ratio_5_20": 0.085,
+    "volume_change": 0.0827,
+    "volatility_10": 0.0764,
+    "macd_signal": 0.0743,
+    "volatility_20": 0.0719,
+    "rsi_14": 0.0702,
+    "ma_5": 0.0696,
+    "macd": 0.0688,
+    "volume_ma_10": 0.0641,
+    "ma_20": 0.0608,
+    "ma_10": 0.0569
   }
 }

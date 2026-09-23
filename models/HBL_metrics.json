@@ -1,36 +1,36 @@
 {
   "ticker": "HBL",
-  "train_rows": 1979,
+  "train_rows": 1980,
   "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5273,
-  "baseline_accuracy": 0.5192,
-  "precision": 0.5169,
-  "recall": 0.2563,
-  "f1_score": 0.3427,
+  "test_period": "2024-09-27 to 2026-09-22",
+  "accuracy": 0.5313,
+  "baseline_accuracy": 0.5172,
+  "precision": 0.5299,
+  "recall": 0.2594,
+  "f1_score": 0.3483,
   "confusion_matrix": [
     [
-      200,
-      57
+      201,
+      55
     ],
     [
       177,
-      61
+      62
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1305,
-    "volume_change": 0.1036,
-    "high_low_range": 0.0983,
+    "daily_return": 0.1323,
+    "volume_change": 0.1034,
+    "high_low_range": 0.0979,
     "volume_ma_10": 0.0824,
-    "volatility_10": 0.0741,
-    "ma_20": 0.0682,
-    "volatility_20": 0.0657,
-    "ma_ratio_5_20": 0.0656,
-    "macd_signal": 0.0656,
-    "ma_10": 0.0632,
-    "rsi_14": 0.0629,
-    "ma_5": 0.0627,
-    "macd": 0.0572
+    "volatility_10": 0.0747,
+    "ma_20": 0.0685,
+    "ma_ratio_5_20": 0.066,
+    "rsi_14": 0.0649,
+    "volatility_20": 0.0646,
+    "ma_10": 0.0641,
+    "macd_signal": 0.0626,
+    "ma_5": 0.0625,
+    "macd": 0.0559
   }
 }

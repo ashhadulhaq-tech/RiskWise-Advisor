@@ -1,20 +1,20 @@
 {
   "ticker": "GHNI",
   "train_rows": 1980,
-  "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.497,
-  "baseline_accuracy": 0.501,
+  "test_rows": 496,
+  "test_period": "2024-09-26 to 2026-09-22",
+  "accuracy": 0.496,
+  "baseline_accuracy": 0.5,
   "precision": 0.4875,
-  "recall": 0.1579,
-  "f1_score": 0.2385,
+  "recall": 0.1573,
+  "f1_score": 0.2378,
   "confusion_matrix": [
     [
       207,
       41
     ],
     [
-      208,
+      209,
       39
     ]
   ],

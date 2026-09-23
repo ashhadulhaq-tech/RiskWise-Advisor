@@ -1,36 +1,36 @@
 {
   "ticker": "TPLRF1",
-  "train_rows": 442,
+  "train_rows": 443,
   "test_rows": 111,
-  "test_period": "2026-04-08 to 2026-09-21",
-  "accuracy": 0.5856,
+  "test_period": "2026-04-09 to 2026-09-22",
+  "accuracy": 0.5766,
   "baseline_accuracy": 0.5766,
-  "precision": 0.6,
-  "recall": 0.0638,
-  "f1_score": 0.1154,
+  "precision": 0.5,
+  "recall": 0.0426,
+  "f1_score": 0.0784,
   "confusion_matrix": [
     [
       62,
       2
     ],
     [
-      44,
-      3
+      45,
+      2
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1387,
-    "volume_change": 0.0964,
-    "volatility_10": 0.0855,
-    "ma_ratio_5_20": 0.0803,
-    "macd_signal": 0.0794,
-    "ma_5": 0.0788,
-    "macd": 0.0676,
-    "volatility_20": 0.0673,
-    "ma_10": 0.0648,
-    "high_low_range": 0.0647,
-    "rsi_14": 0.0645,
+    "daily_return": 0.1383,
+    "volume_change": 0.0946,
+    "volatility_10": 0.0886,
+    "ma_5": 0.0804,
+    "ma_ratio_5_20": 0.08,
+    "macd_signal": 0.0757,
+    "macd": 0.0699,
+    "volatility_20": 0.0678,
+    "rsi_14": 0.0646,
+    "ma_10": 0.0644,
+    "high_low_range": 0.0613,
     "ma_20": 0.0595,
-    "volume_ma_10": 0.0526
+    "volume_ma_10": 0.0551
   }
 }

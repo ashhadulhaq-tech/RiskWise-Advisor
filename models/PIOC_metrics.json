@@ -1,20 +1,20 @@
 {
   "ticker": "PIOC",
   "train_rows": 1980,
-  "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.4949,
-  "baseline_accuracy": 0.5232,
+  "test_rows": 496,
+  "test_period": "2024-09-26 to 2026-09-22",
+  "accuracy": 0.494,
+  "baseline_accuracy": 0.5222,
   "precision": 0.4731,
-  "recall": 0.5212,
-  "f1_score": 0.496,
+  "recall": 0.519,
+  "f1_score": 0.495,
   "confusion_matrix": [
     [
       122,
       137
     ],
     [
-      113,
+      114,
       123
     ]
   ],

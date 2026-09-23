@@ -1,36 +1,36 @@
 {
   "ticker": "KOHC",
-  "train_rows": 1979,
+  "train_rows": 1980,
   "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5273,
-  "baseline_accuracy": 0.5313,
-  "precision": 0.4937,
-  "recall": 0.3362,
-  "f1_score": 0.4,
+  "test_period": "2024-09-27 to 2026-09-22",
+  "accuracy": 0.5232,
+  "baseline_accuracy": 0.5293,
+  "precision": 0.4902,
+  "recall": 0.3219,
+  "f1_score": 0.3886,
   "confusion_matrix": [
     [
-      183,
-      80
+      184,
+      78
     ],
     [
-      154,
-      78
+      158,
+      75
     ]
   ],
   "feature_importance": {
-    "daily_return": 0.1512,
-    "volume_change": 0.0983,
-    "volatility_10": 0.0913,
-    "high_low_range": 0.0848,
-    "volatility_20": 0.0838,
+    "daily_return": 0.1509,
+    "volume_change": 0.0969,
+    "volatility_10": 0.0904,
+    "high_low_range": 0.0841,
+    "volatility_20": 0.0827,
     "ma_ratio_5_20": 0.0711,
-    "macd_signal": 0.0698,
-    "macd": 0.0676,
-    "rsi_14": 0.0641,
-    "volume_ma_10": 0.0594,
+    "macd_signal": 0.069,
+    "macd": 0.0684,
+    "rsi_14": 0.0665,
+    "volume_ma_10": 0.059,
     "ma_5": 0.0585,
-    "ma_10": 0.0512,
-    "ma_20": 0.0491
+    "ma_10": 0.0522,
+    "ma_20": 0.0502
   }
 }

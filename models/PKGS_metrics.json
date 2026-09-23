@@ -1,20 +1,20 @@
 {
   "ticker": "PKGS",
   "train_rows": 1964,
-  "test_rows": 491,
-  "test_period": "2024-10-02 to 2026-09-21",
-  "accuracy": 0.499,
-  "baseline_accuracy": 0.5153,
+  "test_rows": 492,
+  "test_period": "2024-10-02 to 2026-09-22",
+  "accuracy": 0.498,
+  "baseline_accuracy": 0.5142,
   "precision": 0.4744,
-  "recall": 0.3109,
-  "f1_score": 0.3756,
+  "recall": 0.3096,
+  "f1_score": 0.3747,
   "confusion_matrix": [
     [
       171,
       82
     ],
     [
-      164,
+      165,
       74
     ]
   ],

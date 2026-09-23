@@ -1,20 +1,20 @@
 {
   "ticker": "SNGP",
   "train_rows": 1980,
-  "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5111,
-  "baseline_accuracy": 0.5475,
+  "test_rows": 496,
+  "test_period": "2024-09-26 to 2026-09-22",
+  "accuracy": 0.5101,
+  "baseline_accuracy": 0.5464,
   "precision": 0.4392,
-  "recall": 0.2902,
-  "f1_score": 0.3495,
+  "recall": 0.2889,
+  "f1_score": 0.3485,
   "confusion_matrix": [
     [
       188,
       83
     ],
     [
-      159,
+      160,
       65
     ]
   ],

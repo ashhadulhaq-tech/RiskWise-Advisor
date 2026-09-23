@@ -1,13 +1,13 @@
 {
   "ticker": "LOTCHEM",
   "train_rows": 1980,
-  "test_rows": 495,
-  "test_period": "2024-09-26 to 2026-09-21",
-  "accuracy": 0.5131,
-  "baseline_accuracy": 0.5333,
-  "precision": 0.4342,
-  "recall": 0.1429,
-  "f1_score": 0.215,
+  "test_rows": 496,
+  "test_period": "2024-09-26 to 2026-09-22",
+  "accuracy": 0.5141,
+  "baseline_accuracy": 0.5323,
+  "precision": 0.4416,
+  "recall": 0.1466,
+  "f1_score": 0.2201,
   "confusion_matrix": [
     [
       221,
@@ -15,7 +15,7 @@
     ],
     [
       198,
-      33
+      34
     ]
   ],
   "feature_importance": {
